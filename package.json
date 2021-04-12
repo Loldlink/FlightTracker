@@ -1,0 +1,22 @@
+{
+  "name": "flightstracker",
+  "version": "1.0.0",
+  "description": "Progetto per il corso di \"Linguaggi e Tecnologie per il Web\" creato da Musciaglia Marco e Lorenzo Magni.\r Il sito, hostato in locale, serve per monitorare e creare simulazioni di traffico aereo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loldlink/FlightsTracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Loldlink/FlightsTracker/issues"
+  },
+  "homepage": "https://github.com/Loldlink/FlightsTracker#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
