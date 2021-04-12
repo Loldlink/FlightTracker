@@ -8,7 +8,10 @@ function httpGet() {
     var info = xmlHttp.responseText;
     const j = JSON.parse(info);
     var pippo = j.pilots[0];
-    console.log(pippo)
+}
+    
+window.onload = function () {
+    document.getElementById("m").innerHTML = pippo;
 }
 
 httpGet();
