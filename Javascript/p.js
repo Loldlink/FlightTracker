@@ -7,7 +7,7 @@ function httpGet() {
     xmlHttp.send(null);
     var info = xmlHttp.responseText;
     const j = JSON.parse(info);
-    var pippo = parseInt(j.pilots[0].cid);
+    var pippo = j.pilots[0];
     console.log(pippo)
 }
 
