@@ -7,11 +7,8 @@ function httpGet() {
     xmlHttp.send(null);
     var info = xmlHttp.responseText;    //all'interno di info hai il json con tutti i dati di vatsim
     const j = JSON.parse(info);         //in j hai un dizionario chiave/valore 
-    var pippo = j.pilots[0];
-}
-    
-window.onload = function () {
+    var pippo = j.pilots[0].cid;
     document.getElementById("m").innerHTML = pippo;
 }
-
+    
 httpGet();
