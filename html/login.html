@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" href="res/favicon.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Log in</title>
+  <!--Cancella eventuali sessioni in corso-->
+  <script>
+    window.localStorage.clear();
+  </script>
+</head>
+
+<body>
+  <!--Scritta di benvenuto-->
+  <div class="form">
+    <div class="tab-content">
+      <div id="login">
+        <h1 style="text-align: center; margin-top: -10px; margin-bottom: 30px;">
+          Welcome to Flights Tracker
+        </h1>
+        <!--Form-->
+        <form action="php/login.php" method="post">
+          <div class="field-wrap">
+            <label for="user"> </label>
+            <input type="text" name="username" placeholder="Username" required autocomplete="username" />
+          </div>
+          <div class="field-wrap">
+            <label for="password"> </label>
+            <input type="password" name="password" placeholder="Password" required autocomplete="current-password" />
+          </div>
+          <!--Bottone del form-->
+          <input style="cursor: pointer;" type="submit" name="send" value="Log In" class="button button-block" />
+        </form>
+        <br>
+        <a href="aboutUs.html"><h5 style="text-align: center; margin-bottom: -10px">About us</h5></a>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</body>
+
+</html>
