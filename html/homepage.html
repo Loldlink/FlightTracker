@@ -4,28 +4,113 @@
     <title>FlightTracker</title>
     <meta charset = "utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!--link rel="stylesheet" type="text/css" href="CSS/stileMenu.css"-->
+    <link rel="stylesheet" type="text/css" href="CSS/stileMenu.css">
+    <link rel="icon" href="Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
 </head>
 
-<!-- Queste sono le bozze dei 3 pulsanti del menu.
-La schermata si comporrà di 3 collegamenti a 3 diverse pagine -->
 
-    <h1>FlightTracker Homepage</h1>
-    <div>
-        <img src="Aereo.png" alt="Foto di un aereo"> <!--capire perchè questa foto non si riesce a vedere-->
-    </div>
+
+    <h1>FlightTracker Homepage</h1>  <!--questo è lo stile del titolo-->
+    <style>
+        h1 {
+            text-decoration: blueviolet;
+            font-size: 40px;
+            height: 200px;
+            width: 400px;
+            color: darkred;
+            text-align: center;
+            margin: 10px; 
+            margin-left: 400px;
+            border: 10px black
+        }
+    </style>
+
+
     
 
-    <a href= CREAPIANODIVOLO role = "button">
+<!-- qui sotto le proprietà che regolano lo sfondo--->
+<body>
+<style> 
+    body{
+    background-image: url(Immagini/a320\ \(2\).png);
+    background-size:cover;
+    background-color: grey;
+    }
+</style>
+
+<!-- Queste sono le bozze dei 3 pulsanti del menu.
+Sono 3 collegamenti a 3 pagine diverse ognuna con il suo stile  -->
+
+    <a href= CREAPIANODIVOLO role = "button" class="pulsante1">
         Crea un piano di volo
+    <style>
+        a.pulsante1{
+            background-image: url(https://lh3.googleusercontent.com/proxy/Bz8Ldnb8GOEG2QXjGht2pgBWCzYbv_Hlr-w5apTTF_A_bXEJ1w44qngSQpD9QgeeFejSa7KiA4Lc9JdDatdnyf3WEZPuB2usfjkKsFQ8YVhcbYI9xwxRPG53OiGNXQrLjC3Y_S7TWkY);
+            background-size: cover;
+            border-radius: 4px;
+            size: 400px;     
+            font-size: 40px;
+            color: rgb(3, 30, 187);
+        }
+    </style>
     </a>
-    <br/>
-    <a href= VISTAAEREILIVE role = "button">
+
+
+
+
+
+    
+<!-- tabella con le varie info della rete di vatsim-->
+
+    <table id="vatsimStats" class="table table-striped"><tbody><tr><th><img src="/sites/all/themes/vatsim/favicon.ico" height="16" width="16"> Total</th>
+        <td id="vatsimStats-total">1253</td>
+        </tr><tr><th><img src="//stats.vatsim.net/images/connection_pilot.png" height="16" width="16"> Pilots</th>
+        <td id="vatsimStats-pilots">1008</td>
+        </tr><tr><th><img src="//stats.vatsim.net/images/connection_atc.png" height="16" width="16"> Controllers</th>
+        <td id="vatsimStats-controllers">126</td>
+        </tr><tr><th><img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16"> ATIS</th>
+        <td id="vatsimStats-atis">65</td>
+        </tr><tr><th><img src="//stats.vatsim.net/images/connection_sup.png" height="16" width="16"> Supervisors</th>
+        <td id="vatsimStats-supervisors">3</td>
+        </tr><tr><th><img src="//stats.vatsim.net/images/connection_obs.png" height="16" width="16"> Observers</th>
+        <td id="vatsimStats-observers">51</td>
+        </tr><tr><th><img src="/sites/all/themes/vatsim/favicon.ico" height="16" width="16"> Users over 24 hours</th>
+        <td id="vatsimStats-twentyfour">6531</td>
+        </tr><tr><th><img src="//stats.vatsim.net/images/marker.png" height="16" width="16">View Map</th>
+        <td><a href="https://map.vatsim.net/">map.vatsim.net</a><br></td></tr></tbody></table>
+
+
+
+
+
+
+
+    <a href= VISTAAEREILIVE role = "button" class="pulsanteVistaAerei">
         Vedi gli aerei attualmente in volo
+    <style>
+        a.pulsanteVistaAerei{
+            height: 500px;
+            width: 500px;
+            background-image: url(Immagini/vistaradar.png);
+            background-size:cover;
+            border-radius: 4px;
+            font-size: 40px;
+            color: lawngreen;
+            }         
+    </style>
     </a>
-    <br/>
-    <a href= STATISTICHEALTRIUTENTI role = "button">
-        Vedi le statistiche degli altri utenti
-    </a>
+
+
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+<div href="login.html" role="button">Torna al login</div>
     </h1>
+
 </body>
