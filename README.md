@@ -6,6 +6,6 @@ Il sito, hostato in locale, serve per monitorare e creare simulazioni di traffic
 Per far funzionare in modo corretto tutti i moduli di javascript è necessario aver installato node.js.
 Bisogna aver cambiato le variabili d'ambiente del sistema per far si che la macchina riconosca node.js come PATH e poter utilizzare senza problemi il sito.
 
-##Autori
+## Autori
 Musciaglia Marco - musciaglia.1816864@studenti.uniroma1.it - https://github.com/Loldlink
 Lorenzo Magni - magni.1872113@studenti.uniroma1.it - https://github.com/Lolloilpazzo
