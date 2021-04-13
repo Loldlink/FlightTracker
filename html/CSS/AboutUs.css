@@ -1,0 +1,10 @@
+.h1 {
+    text-decoration: blueviolet;
+    font-size: 40px;
+    width: 400px;
+    color: rgb(224, 49, 49);
+    text-align: center;
+    margin: 10px; 
+    margin-left: 400px;
+    border: 10px black
+}
