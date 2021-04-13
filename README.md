@@ -8,4 +8,5 @@ Bisogna aver cambiato le variabili d'ambiente del sistema per far si che la macc
 
 ## Autori
 Musciaglia Marco - musciaglia.1816864@studenti.uniroma1.it - https://github.com/Loldlink
+
 Lorenzo Magni - magni.1872113@studenti.uniroma1.it - https://github.com/Lolloilpazzo
