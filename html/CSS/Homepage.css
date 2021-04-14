@@ -10,12 +10,13 @@
     border: 10px black
 }
 
-.body{
+.sfondo{  /*lo stile per lo sfondo della homepage*/
     background-image: url(../Immagini/a320\ \(2\).png);
     background-size:cover;
     width: 100%;
     height: 98%;
     margin: 0;
+    background-repeat: no-repeat;
 }
 
 a.pulsante1{
@@ -27,6 +28,7 @@ a.pulsante1{
     color: rgb(1, 1, 2);
 }
 
+/* link per andare alla schermata di vista degli aerei dalla homepage*/
 a.pulsanteVistaAerei{
     height: 500px;
     width: 500px;
@@ -70,3 +72,4 @@ html {
     top: 0px;
     right: 5px;
 }
+

@@ -1,0 +1,15 @@
+.sfondo{
+    background-image: url(../Immagini/a320\ \(2\).png);
+    background-size:cover;
+    width: 100%;
+    height: 98%;
+    margin: 0;
+    background-repeat: no-repeat;
+}
+
+/* questo è lo stile per la pagina del piano di volo
+    in particolare questo è il main body del form */
+
+    .pianodivolo {
+        text-align: center;
+   }

@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/Homepage.css">
     <link rel="icon" href="Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body class="body">
+<body>
         <h1 class="h1">Homepage</h1>
         <h2 class="user">user</h2>
     <div class="pannelloSinistro">
-        <a role = "button" class="pulsante1">
+        <a role = "button" class="pulsante1" href="flightplan.html">
             Crea un piano di volo
         </a>        
     </div>
@@ -43,9 +44,21 @@
             Vedi gli aerei attualmente in volo
         </a>        
     </div>
-</br>
-</br>
-</br>
-</br>
+
+    <!--qui sotto lo script che cambia lo sfondo, funziona solo su un file HTML non su file js-->
+    <script>
+        $(document).ready(function() {
+        var urls = ["Immagini/Aereo.png", 'Immagini/kingair.png', 'Immagini/a320 (6).png', 'Immagini/a320 (2).png'];
+        var cout = 1;
+        $('body').css('background-image', 'url("' + urls[0] + '")');
+        setInterval(function() {
+            $('body').css('background-image', 'url("' + urls[cout] + '")');
+            cout == urls.length-1 ? cout = 0 : cout++;
+        }, 50000);
+    });
+    </script>
+    <!--termine del blocco di codice dello script-->
+
+
 </body>
 </html>
