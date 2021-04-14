@@ -10,15 +10,6 @@
     border: 10px black
 }
 
-.sfondo{  /*lo stile per lo sfondo della homepage*/
-    background-image: url(../Immagini/a320\ \(2\).png);
-    background-size:cover;
-    width: 100%;
-    height: 98%;
-    margin: 0;
-    background-repeat: no-repeat;
-}
-
 a.pulsante1{
     background-image: url(https://lh3.googleusercontent.com/proxy/Bz8Ldnb8GOEG2QXjGht2pgBWCzYbv_Hlr-w5apTTF_A_bXEJ1w44qngSQpD9QgeeFejSa7KiA4Lc9JdDatdnyf3WEZPuB2usfjkKsFQ8YVhcbYI9xwxRPG53OiGNXQrLjC3Y_S7TWkY);
     background-size: cover;

@@ -2,8 +2,7 @@
 
 <head>
     <title>FT-crea piano di Volo</title>
-    <meta charset = "utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/FlightPlan.css">
     <link rel="icon" href="Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,7 +10,7 @@
 
 
 <!-- NOTA: per arrivare a questa pagina bisogna far si che l'utente sia registrato. Se non lo è la pagina non deve essere accessibile-->
-<body class="sfondo">
+<body>
     
     <h1 class="titolo"> Registra piano di volo</h1>
     
@@ -38,8 +37,8 @@
         <br>
         <label for="destinazione"> Aeroporto di destinazione:</label>
         <input type="text" id="aeroportodestinazione">
-    </form>
 
+    </form>
 
     <script src = "../Javascript/inverti.js"></script>   <!-- il link allo script per invertire il contenuto delle due caselle di testo partenza/arrivo-->
 
@@ -50,12 +49,20 @@
         var urls = ["Immagini/Aereo.png", 'Immagini/kingair.png', 'Immagini/a320 (6).png', 'Immagini/a320 (2).png'];
         var cout = 1;
         $('body').css('background-image', 'url("' + urls[0] + '")');
+        $('body').css('width', "100%");
+        $('body').css('height', "100%");
+        $('body').css('background-repeat', "no-repeat");
+        $('body').css('background-size', "cover");
         setInterval(function() {
             $('body').css('background-image', 'url("' + urls[cout] + '")');
+            $('body').css('width', "100%");
+            $('body').css('height', "100%");
+            $('body').css('background-repeat', "no-repeat");
+            $('body').css('background-size', "cover");
             cout == urls.length-1 ? cout = 0 : cout++;
-        }, 60000);
+        }, 10000);
     });
     </script>
     <!--termine del blocco di codice dello script-->
 </body>
-
+</html>
