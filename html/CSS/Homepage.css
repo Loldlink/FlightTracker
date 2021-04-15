@@ -1,66 +1,101 @@
-.h1 {
-    text-decoration: blueviolet;
-    font-size: 35px;
-    height: 200px;
-    width: 400px;
-    color: rgb(165, 16, 16);
-    text-align: center;
-    margin: 10px; 
-    margin-left: 400px;
-    border: 10px black
-}
-
-a.pulsante1{
-    background-image: url(https://lh3.googleusercontent.com/proxy/Bz8Ldnb8GOEG2QXjGht2pgBWCzYbv_Hlr-w5apTTF_A_bXEJ1w44qngSQpD9QgeeFejSa7KiA4Lc9JdDatdnyf3WEZPuB2usfjkKsFQ8YVhcbYI9xwxRPG53OiGNXQrLjC3Y_S7TWkY);
-    background-size: cover;
-    border-radius: 4px;
-    size: 400px;     
-    font-size: 40px;
-    color: rgb(1, 1, 2);
-}
-
-/* link per andare alla schermata di vista degli aerei dalla homepage*/
-a.pulsanteVistaAerei{
-    height: 500px;
-    width: 500px;
-    background-image: url(../Immagini/vistaradar.png);
-    background-size:cover;
-    border-radius: 4px;
-    font-size: 40px;
-    color: lawngreen;
-}
-
 html {
     width: 100%;
     height: 98%;
     margin: 0;
 }
 
+.homepage {
+    font-size: 50px;
+    height: 200px;
+    color: lawngreen;
+    text-align: center;
+}
+
+.user {
+    position: absolute;
+    height: 30px;
+    font-size: 30px;
+    top: 0;
+    right: 5px;
+    color: lawngreen;
+    float: right;
+}
+
+.bottoneLogin{
+    font-size: 30px;
+    color: lawngreen;
+}
+
+.creaPiano{
+    overflow: hidden;
+}
+.overlayPiano{
+    background-image: url(../Immagini/vistaradar.png);
+    background-size:cover;
+    border-radius: 4px;     
+    font-size: 30px;
+    color: rgb(211, 211, 211);
+}
+
+.overlayPiano:hover{
+    color: #701121;
+}
+
+.creaPiano:hover .testo {  /*animazione in css*/
+    color: rgb(0, 0, 0);
+    right: 10%;
+    width: 100%;
+    height: 10%;
+    transition: 2s;
+    top: 20%;
+    left: -10%;
+    font-size: 30px;
+}
+
+.pulsanteVistaAerei{
+    height: 42px;
+    width: 200px;
+    background-image: url(../Immagini/vistaradar.png);
+    background-size:cover;
+    border-radius: 4px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.pulsanteVistaAerei:hover{
+    color: #701121;
+}
+
+.vistaAerei:hover .testo {  /*animazione in css*/
+    color: rgb(0, 0, 0);
+    left: -100%;
+    width: 100%;
+    height: 10%;
+    transition: 2s;
+    top: 20%;
+    right: 100%;
+    font-size: 30px;
+}
+
 .pannelloSinistro {
-    width: 35%;
-    height: 100%;
+    width: 40%;
+    height: 50%;
     float: left;
     border-collapse: collapse;
+    text-indent: 50px;
 }
 
 .pannelloCentrale {
     width: 25%;
-    height: 100%;
+    height: 50%;
     float: left;
     border-collapse: collapse;
 }
 
 .pannelloDestro {
-    width: 35%;
-    height: 100%;
+    width: 20%;
+    height: 50%;
     position: relative;
     float: right;
     border-collapse: collapse;
 }
-
-.user {
-    position: absolute;
-    top: 0px;
-    right: 5px;
-}
-

@@ -4,10 +4,12 @@ html {
     margin: 0;
 }
 
+.pianodivolo {
+    text-align: center;
+}
 
-/* questo è lo stile per la pagina del piano di volo
-    in particolare questo è il main body del form */
-
-    .pianodivolo {
-        text-align: center;
-   }
+.pulsanteHomepage{ 
+    height: 30px;
+    font-size: 20px;
+    color: lawngreen;
+}

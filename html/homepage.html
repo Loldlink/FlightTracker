@@ -9,40 +9,63 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-        <h1 class="h1">Homepage</h1>
-        <h2 class="user">user</h2>
+    <div>
+        <a href="login.html" class="bottoneLogin">Torna al login</a>
+        <h1 class="homepage">Homepage</h1>
+        <a href="" class="user">user</a>
+    </div>
     <div class="pannelloSinistro">
-        <a role = "button" class="pulsante1" href="flightplan.html">
-            Crea un piano di volo
-        </a>        
+        <div class="creaPiano"> 
+            <a href="flightplan.html">
+                <button class="overlayPiano">Crea un piano di volo</button>
+            </a>    
+            <h5 class="testo">Non capisco come si fa per bene </h5> <!-- animazione in css allegata-->
+        </div>
     </div>
     <div class="pannelloCentrale">
-        <table id="vatsimStats" class="table table-striped"><tbody><tr><th><img src="/sites/all/themes/vatsim/favicon.ico" height="16" width="16"> Total</th>
-            <td id="vatsimStats-total">1253</td>
-            </tr><tr><th><img src="//stats.vatsim.net/images/connection_pilot.png" height="16" width="16"> Pilots</th>
-            <td id="vatsimStats-pilots">1008</td>
-            </tr><tr><th><img src="//stats.vatsim.net/images/connection_atc.png" height="16" width="16"> Controllers</th>
-            <td id="vatsimStats-controllers">126</td>
-            </tr><tr><th><img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16"> ATIS</th>
-            <td id="vatsimStats-atis">65</td>
-            </tr><tr><th><img src="//stats.vatsim.net/images/connection_sup.png" height="16" width="16"> Supervisors</th>
-            <td id="vatsimStats-supervisors">3</td>
-            </tr><tr><th><img src="//stats.vatsim.net/images/connection_obs.png" height="16" width="16"> Observers</th>
-            <td id="vatsimStats-observers">51</td>
-            </tr><tr><th><img src="/sites/all/themes/vatsim/favicon.ico" height="16" width="16"> Users over 24 hours</th>
-            <td id="vatsimStats-twentyfour">6531</td>
-            </tr><tr><th><img src="//stats.vatsim.net/images/marker.png" height="16" width="16">View Map</th>
-            <td><a href="https://map.vatsim.net/">map.vatsim.net</a><br></td></tr></tbody>
+        <table style="color: rgb(238, 9, 9);">
+            <tbody>
+                <tr>
+                    <th><img src="/sites/all/themes/vatsim/favicon.ico" height="16" width="16"> Total</th>
+                    <th>1253</th>
+                </tr>
+                <tr>
+                    <th><img src="//stats.vatsim.net/images/connection_pilot.png" height="16" width="16"> Pilots</th>
+                    <th>1008</th>
+                </tr>
+                <tr>
+                    <th><img src="//stats.vatsim.net/images/connection_atc.png" height="16" width="16"> Controllers</th>
+                    <th>126</th>
+                </tr>
+                <tr>
+                    <th><img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16"> ATIS</th>
+                    <th>65</th>
+                </tr>
+                <tr>
+                    <th><img src="//stats.vatsim.net/images/connection_sup.png" height="16" width="16"> Supervisors</th>
+                    <th>3</th>
+                </tr>
+                <tr>
+                    <th><img src="//stats.vatsim.net/images/connection_obs.png" height="16" width="16"> Observers</th>
+                    <th>51</th>
+                </tr>
+                    <tr><th><img src="/sites/all/themes/vatsim/favicon.ico" height="16" width="16"> Users over 24 hours</th>
+                    <th>6531</th>
+                </tr>
+                <tr>
+                    <th><img src="//stats.vatsim.net/images/marker.png" height="16" width="16">View Map</th>
+                    <th><a href="https://map.vatsim.net/">map.vatsim.net</a></th>
+                </tr>
+            </tbody>
         </table>
-            <br />
-            <br />
-            <br />
-            <a href="login.html" class="bottoneLogin">Torna al login</a>
     </div>
     <div class="pannelloDestro">
-        <a role = "button" class="pulsanteVistaAerei" href="vistaAerei.html">
-            Vedi gli aerei attualmente in volo
-        </a>        
+        <div class="vistaAerei"> 
+            <a href="vistaAerei.html">
+                <button class="pulsanteVistaAerei">Aerei in volo</button> 
+            </a>  
+            <h5 class="testo">Non capisco come si fa per bene </h5> <!-- animazione in css allegata-->
+        </div>
     </div>
 
     <!--qui sotto lo script che cambia lo sfondo, funziona solo su un file HTML non su file js-->
@@ -62,11 +85,9 @@
             $('body').css('background-repeat', "no-repeat");
             $('body').css('background-size', "cover");
             cout == urls.length-1 ? cout = 0 : cout++;
-        }, 10000);
+        }, 50000);
     });
     </script>
     <!--termine del blocco di codice dello script-->
-
-
 </body>
 </html>
