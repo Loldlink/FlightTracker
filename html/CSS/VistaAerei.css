@@ -1,0 +1,11 @@
+
+#map{ position: absolute; top: 0; bottom: 0; left: 0; right: 0;} /* le impostazioni base della mappa*/
+
+#titoloRadar{} /* dobbiamo decidere degli attributi di stile da dare a tutti i titoli di tutte le schermate, così da avere un po' di coerenza */
+
+.pulsanteHomepage{  /* perchè sto pulsante non si vede? la mappa "gli passa sopra"? da capire...ora non ho tempo*/
+    height: 30px;
+    width: 50px;
+    font-size: 40px;
+    color: lawngreen;
+}
