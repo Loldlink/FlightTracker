@@ -82,10 +82,16 @@ html {
 }
 
 .pannelloCentrale {
+    background-color: whitesmoke;
+    border-radius: 3px; 
+    border-color: black;
+    border-width: 20px;     
+    opacity: 0.7;   /*bisogna capire come fare un opacità allo sfondo senza opacizzare il contenuto*/
     width: 25%;
     height: 100%;
     float: left;
     border-collapse: collapse;
+    margin-bottom: 600px;   /*questo non funziona, il pannello è troppo lungo*/
 }
 
 .pannelloDestro {

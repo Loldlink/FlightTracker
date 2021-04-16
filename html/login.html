@@ -17,13 +17,13 @@
   <!--Scritta di benvenuto-->
   <div class="form">
     <div class="tab-content">
-      <div id="login">
-        <h1 style="text-align: center; margin-top: -10px; margin-bottom: 30px;">
-          Welcome to Flights Tracker
+        <h1 id="titolo">
+          Welcome to Flight Tracker
         </h1>
         <!--Form-->
+        <div id="login">
         <form action="php/login.php" method="post">
-          <div class="field-wrap">
+          <div class="field-wrap" id="campo-username">
             <label for="user"> </label>
             <input type="text" name="username" placeholder="Username" required autocomplete="username" />
           </div>
@@ -32,12 +32,16 @@
             <input type="password" name="password" placeholder="Password" required autocomplete="current-password" />
           </div>
           <!--Bottone del form-->
+          <div class="field-wrap" id="bottone-login">
           <input style="cursor: pointer;" type="submit" name="send" value="Log In" class="button button-block" />
+        </div>
         </form>
         <br>
-        <a href="aboutUs.html" style="text-align: center;">About us</a>
+        <div id="saltalogin">
+          <a href="homepage.html" style="text-align: center">salta il login</a> <!-- anche questo dovrebbe stare al centro-->
+        </div>
+        <a href="aboutUs.html" style="text-align: center">About us</a>  <!-- questi due pulsanti dovrebbero stare al centro secondo me-->
       </div>
-      <div></div>
     </div>
   </div>
       <!--qui sotto lo script che cambia lo sfondo, funziona solo su un file HTML non su file js-->
