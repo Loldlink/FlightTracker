@@ -1,22 +1,18 @@
 html {
-    width: 100%;
+    width: 99%;
     height: 98%;
     margin: 0;
 }
 
 .homepage {
     font-size: 50px;
-    height: 200px;
+    height: 100px;
     color: lawngreen;
     text-align: center;
 }
 
 .user {
-    position: absolute;
-    height: 30px;
     font-size: 30px;
-    top: 0;
-    right: 5px;
     color: lawngreen;
     float: right;
 }
@@ -79,7 +75,7 @@ html {
 
 .pannelloSinistro {
     width: 40%;
-    height: 50%;
+    height: 100%;
     float: left;
     border-collapse: collapse;
     text-indent: 50px;
@@ -87,14 +83,14 @@ html {
 
 .pannelloCentrale {
     width: 25%;
-    height: 50%;
+    height: 100%;
     float: left;
     border-collapse: collapse;
 }
 
 .pannelloDestro {
     width: 20%;
-    height: 50%;
+    height: 100%;
     position: relative;
     float: right;
     border-collapse: collapse;
