@@ -12,7 +12,7 @@
 <!-- NOTA: per arrivare a questa pagina bisogna far si che l'utente sia registrato. Se non lo è la pagina non deve essere accessibile-->
 <body>
     
-    <h1 class="titolo" style="text-align: center;"> Registra piano di volo</h1>
+    <h1 id='titolo'> Registra piano di volo</h1>
     <a class="pulsanteHomepage" href="homepage.html">Homepage</a>
     <br />
     <br />
@@ -54,14 +54,14 @@
         var urls = ["Immagini/Aereo.png", 'Immagini/kingair.png', 'Immagini/a320 (6).png', 'Immagini/a320 (2).png'];
         var cout = 1;
         $('body').css('background-image', 'url("' + urls[0] + '")');
-        $('body').css('width', "100%");
-        $('body').css('height', "100%");
+        $('body').css('width', "99%");
+        $('body').css('height', "102%");
         $('body').css('background-repeat', "no-repeat");
         $('body').css('background-size', "cover");
         setInterval(function() {
             $('body').css('background-image', 'url("' + urls[cout] + '")');
-            $('body').css('width', "100%");
-            $('body').css('height', "100%");
+            $('body').css('width', "99%");
+            $('body').css('height', "102%");
             $('body').css('background-repeat', "no-repeat");
             $('body').css('background-size', "cover");
             cout == urls.length-1 ? cout = 0 : cout++;
