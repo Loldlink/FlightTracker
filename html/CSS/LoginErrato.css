@@ -67,3 +67,56 @@ text-align: center;
 .close:hover {
 color: #701121;
 }
+
+#login{
+    align-content: center;
+    margin-top: 100px;
+    background-color: red;
+    margin-left: 470px;
+    margin-right: 470px;
+}
+
+.tab-content{
+}
+
+
+html {
+    width: 100%;
+    height: 98%;
+    margin: 0;
+}
+
+/* le impostazioni per solo il campo username*/
+.field-wrap, #campo-username{
+    margin-top: 30px;   /* perchè il campo username non si riesce a centrare? Nella schermata rossa*/
+}
+
+/*le impostazioni per il campo username, password e il pusalnte di login*/
+.field-wrap{
+    margin-top: 70px;
+    text-align: center;
+    margin-top:  5px;
+    size: 25px;
+
+}
+
+/*le impostazioni per SOLO il pulsante login*/
+.field-wrap, #bottone-login{
+
+}
+
+/*le impostazioni per il titolo*/
+#titolo{
+    border-style: groove;
+    border-width: 15px;
+    border: black;
+    font-size: 70px;
+    color: red;
+    text-shadow: seagreen;
+    text-decoration: saddlebrown;
+    text-align: center; 
+    margin-top: -10px; 
+    margin-bottom: 30px;
+    background-color: rgb(19, 19, 34);
+    background-size: 25px;
+}
