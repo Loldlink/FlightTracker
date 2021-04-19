@@ -40,27 +40,39 @@ table{
     border-width: 20px;  
     color: rgb(238, 9, 9);
     top: 40%;
-    margin-left: 50px;
+    margin-left: 10px;
+}
+
+#titolo{
+    border-style: groove;
+    border-width: 10px;
+    border: black;
+    color: red;
+    text-shadow: seagreen;
+    text-decoration: saddlebrown;
+    margin-top: -5px; 
+    background-color: rgb(19, 19, 34);
+    background-size: 20px;
+}
+
+.bottoneLogout{
+    font-size: 35px;
+    color: red;
 }
 
 .homepage {
+    color: red;
     font-size: 50px;
-    height: 100px;
-    color: lawngreen;
     text-align: center;
+    margin-top: -20px;
 }
 
 .user {
-    font-size: 30px;
-    color: lawngreen;
-    float: right;
+    font-size: 35px;
+    color: red;
     margin-right: 15px;
-}
-
-.bottoneLogin{
-    font-size: 30px;
-    color: lawngreen;
-    margin-left: -35px;
+    float: right;
+    margin-top: -108px;
 }
 
 .pulsanteCreaPiano{

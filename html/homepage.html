@@ -10,7 +10,7 @@
 ?>
 
 <head>
-    <title>FlightTracker</title>
+    <title class=>FlightTracker</title>
     <meta charset = "utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/Homepage.css">
@@ -18,8 +18,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <div id="titolo">
+        <a href="../Php/logout.php" class="bottoneLogout">Logout</a>
+        <h1 class="homepage">Homepage</h1> 
+        <a href="" class="user">User</a>
+    </div>
     <div class="pannelloSinistro">
-        <a href="../Php/logout.php" class="bottoneLogin">Logout</a>
         <div class="creaPiano"> 
             <a href="flightplan.html">
                 <button class="pulsanteCreaPiano">Crea un piano di volo</button>
@@ -28,7 +32,7 @@
         </div>
     </div>
     <div class="pannelloCentrale">
-        <h1 class="homepage">Homepage</h1>  <!-- la homepage va qui che il css la riconosce da qua-->
+        
         <table class="table">
             <tbody>
                 <tr>
@@ -66,7 +70,6 @@
         </table>
     </div>
     <div class="pannelloDestro">
-        <a href="" class="user">User</a>
         <div class="vistaAerei"> 
             <a href="vistaAerei.html">
                 <button class="pulsanteVistaAerei">Aerei in volo</button> 
