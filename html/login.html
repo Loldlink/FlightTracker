@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="CSS/Login.css">
   <link rel="icon" href="Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
   <!--Cancella eventuali sessioni in corso-->
   <script>
     window.localStorage.clear();
@@ -22,7 +23,7 @@
         </h1>
         <!--Form-->
         <div id="login">
-        <form action="php/login.php" method="post">
+        <form action="../Php/login1.php method="post">
           <div class="field-wrap" id="campo-username">
             <label for="user"> </label>
             <input type="text" name="username" placeholder="Username" required autocomplete="username" />
@@ -38,7 +39,7 @@
         </form>
         <br>
         <div id="saltalogin">
-          <a href="homepage.html" style="text-align: center">salta il login</a> <!-- anche questo dovrebbe stare al centro-->
+          <a href="homepage1.html" style="text-align: center">salta il login</a> <!-- anche questo dovrebbe stare al centro-->
         </div>
         <a href="aboutUs.html" style="text-align: center">About us</a>  <!-- questi due pulsanti dovrebbero stare al centro secondo me-->
       </div>

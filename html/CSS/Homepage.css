@@ -5,6 +5,44 @@ html {
     overflow: hidden;
 }
 
+.pannelloSinistro {
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse;
+    text-indent: 50px;
+}
+
+.pannelloCentrale {   
+    width: 20%;
+    height: 100%;
+    float: left;
+    border-collapse: collapse; 
+}
+
+.pannelloDestro {
+    width: 20%;
+    height: 100%;
+    float: right;
+    border-collapse: collapse;
+}
+
+a{
+    text-decoration: none;
+}
+
+table{
+    position: absolute;
+    opacity: 0.7;        /*bisogna capire come fare un opacità allo sfondo senza opacizzare il contenuto*/
+    background-color: whitesmoke;
+    border-radius: 3px; 
+    border-color: black;
+    border-width: 20px;  
+    color: rgb(238, 9, 9);
+    top: 40%;
+    margin-left: 50px;
+}
+
 .homepage {
     font-size: 50px;
     height: 100px;
@@ -25,13 +63,10 @@ html {
     margin-left: -35px;
 }
 
-.creaPiano{
-    width: 40%;
-}
-.overlayPiano{
+.pulsanteCreaPiano{
     position: absolute;
     height: 42px;
-    width: 300px;
+    width: 260px;
     background-image: url(../Immagini/vistaradar.png);
     background-size:cover;
     border-radius: 4px;
@@ -41,19 +76,23 @@ html {
     margin-left: 60px
 }
 
-.overlayPiano:hover{
+.pulsanteCreaPiano:hover{
     color: #701121;
+    font-size: 25px;
+    transition: 1s;
 }
 
-.creaPiano:hover .testo {  /*animazione in css*/
-    color: rgb(0, 0, 0);
-    right: 10%;
+.testo{
+    color: #701121;
+    margin-top: 420px;
+    margin-left: -300px;
     width: 100%;
-    height: 10%;
+}
+
+.creaPiano:hover .testo{
+    color: #000000;
+    margin-left: 130px;
     transition: 2s;
-    top: 20%;
-    left: -10%;
-    font-size: 30px;
 }
 
 .pulsanteVistaAerei{
@@ -70,50 +109,19 @@ html {
 
 .pulsanteVistaAerei:hover{
     color: #701121;
+    font-size: 25px;
+    transition: 1s;
 }
 
-.vistaAerei:hover .testo {  /*animazione in css*/
-    color: rgb(0, 0, 0);
-    left: -100%;
+.testo1{
+    color: #701121;
     width: 100%;
-    height: 10%;
+    margin-top: 455px;
+    margin-left: 300px;
+}
+
+.vistaAerei:hover .testo1{
+    color: #000000;
+    margin-left: 0px;
     transition: 2s;
-    top: 20%;
-    right: 100%;
-    font-size: 30px;
-}
-
-.pannelloSinistro {
-    width: 40%;
-    height: 100%;
-    float: left;
-    border-collapse: collapse;
-    text-indent: 50px;
-}
-
-.pannelloCentrale {   
-    width: 20%;
-    height: 30%;
-    float: left;
-    border-collapse: collapse; 
-}
-
-.pannelloDestro {
-    width: 20%;
-    height: 100%;
-    position: relative;
-    float: right;
-    border-collapse: collapse;
-}
-
-.table{
-    position: absolute;
-    opacity: 0.7;   /*bisogna capire come fare un opacità allo sfondo senza opacizzare il contenuto*/
-    background-color: whitesmoke;
-    border-radius: 3px; 
-    border-color: black;
-    border-width: 20px;  
-    color: rgb(238, 9, 9);
-    top: 40%;
-    margin-left: 50px;
 }

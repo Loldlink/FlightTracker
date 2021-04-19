@@ -4,16 +4,6 @@ html {
     margin: 0;
 }
 
-.pianodivolo {
-    text-align: center;
-}
-
-.pulsanteHomepage{ 
-    height: 30px;
-    font-size: 20px;
-    color: lawngreen;
-}
-
 #titolo{
     border-style: groove;
     border-width: 15px;
@@ -28,3 +18,18 @@ html {
     background-color: rgb(19, 19, 34);
     background-size: 25px;
 }
+
+a{
+    text-decoration: none;
+}
+
+.pianodivolo {
+    text-align: center;
+}
+
+.pulsanteHomepage{ 
+    height: 30px;
+    font-size: 20px;
+    color: lawngreen;
+}
+

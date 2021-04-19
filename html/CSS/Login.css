@@ -1,6 +1,33 @@
 
 /* le impostazioni che regolano tutto il blocco: casella username, password e bottone.
     per identificarlo meglio uso un quadrato rosso, poi suggerisco di mettere uno sfondo più neutro*/
+
+html {
+    width: 100%;
+    height: 98%;
+    margin: 0;
+}
+
+/*le impostazioni per il titolo*/
+#titolo{
+    border-style: groove;
+    border-width: 15px;
+    border: black;
+    font-size: 70px;
+    color: red;
+    text-shadow: seagreen;
+    text-decoration: saddlebrown;
+    text-align: center; 
+    margin-top: -10px; 
+    margin-bottom: 30px;
+    background-color: rgb(19, 19, 34);
+    background-size: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+
 #login{
     align-content: center;
     margin-top: 100px;
@@ -10,13 +37,6 @@
 }
 
 .tab-content{
-}
-
-
-html {
-    width: 100%;
-    height: 98%;
-    margin: 0;
 }
 
 /* le impostazioni per solo il campo username*/
@@ -36,20 +56,4 @@ html {
 /*le impostazioni per SOLO il pulsante login*/
 .field-wrap, #bottone-login{
 
-}
-
-/*le impostazioni per il titolo*/
-#titolo{
-    border-style: groove;
-    border-width: 15px;
-    border: black;
-    font-size: 70px;
-    color: red;
-    text-shadow: seagreen;
-    text-decoration: saddlebrown;
-    text-align: center; 
-    margin-top: -10px; 
-    margin-bottom: 30px;
-    background-color: rgb(19, 19, 34);
-    background-size: 25px;
 }

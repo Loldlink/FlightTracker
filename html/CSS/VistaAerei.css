@@ -1,3 +1,9 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
 #map{  /* le impostazioni base della mappa*/
     position:absolute; 
     height: 95%;
@@ -9,10 +15,8 @@
 
 /* #titoloRadar{} dobbiamo decidere degli attributi di stile da dare a tutti i titoli di tutte le schermate, così da avere un po' di coerenza */
 
-html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
+a{
+    text-decoration: none;
 }
 
 .pulsanteHomepage{ 

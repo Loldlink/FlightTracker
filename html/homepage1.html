@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 
-<!--Controllo dell'utente loggato-->
-
-<?php 
-	session_start();
-	if($_SESSION['userLogin'] != 'loggato'){
-		header("Location: ../html/login.html");
-	}
-?>
-
 <head>
     <title>FlightTracker</title>
     <meta charset = "utf-8"/>
@@ -17,19 +8,20 @@
     <link rel="icon" href="Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
+
 <body>
     <div class="pannelloSinistro">
-        <a href="../Php/logout.php" class="bottoneLogin">Logout</a>
+        <a href="../Php/logout.php" class="bottoneLogin">Login</a>
         <div class="creaPiano"> 
-            <a href="flightplan.html">
-                <button class="pulsanteCreaPiano">Crea un piano di volo</button>
-            </a>    
+            <h1 href="flightplan.html">
+                <button class="overlayPiano">Crea un piano di volo</button>
+            </h1>    
             <h5 class="testo">Non capisco come si fa per bene </h5> <!-- animazione in css allegata-->
         </div>
     </div>
     <div class="pannelloCentrale">
         <h1 class="homepage">Homepage</h1>  <!-- la homepage va qui che il css la riconosce da qua-->
-        <table class="table">
+        <table>
             <tbody>
                 <tr>
                     <th><img src="/sites/all/themes/vatsim/favicon.ico" height="16" width="16"> Total</th>
@@ -71,7 +63,7 @@
             <a href="vistaAerei.html">
                 <button class="pulsanteVistaAerei">Aerei in volo</button> 
             </a>  
-            <h5 class="testo1">Non capisco come si fa per bene </h5> <!-- animazione in css allegata-->
+            <h5 class="testo">Non capisco come si fa per bene </h5> <!-- animazione in css allegata-->
         </div>
     </div>
 
