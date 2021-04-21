@@ -17,9 +17,13 @@ $obj = json_decode($json,true);
     <!-- Non so come si chiami ma puoi mettere php in mezzo al javascript in questa maniera per riprendere
         il valore $obj che ho fatto nel php sopra, menomale aggiungerei-->
 
-    <script type="text/javascript"> 
+    <script type="text/javascript">
+    
+    
         var c = <?php echo json_encode($obj['pilots'][0]['cid']);?> 
         document.getElementById('m').innerHTML = c ;
     </script>
+
+    <!-- forse tutto questo codice (da riga 7 a 26) va nel file "vistaaerei.html" ?-->
 </body>
 </html>

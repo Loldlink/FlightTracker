@@ -32,9 +32,24 @@
           attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
         }).addTo(map);
     </script>
+<!-- qui finisce lo script di creazione della mappa-->
 
-    <!-- qui finisce lo script di creazione della mappa-->
-    <!-- lo so che odi tutti sti commenti ma io sono fanatico
-    hahaha tranquillo-->
+<!-- qui è per "aggiungere aerei sulla mappa" in teoria vai a prendere il file json e aggiungi un marcatore sulla mappa
+estrapolando i dati da i campi [dati.pilots.latitude]-->
+
+
+<!-- ho provato a seguire questa guida qui:  https://www.geeksread.com/how-to-extract-data-from-json-in-javascript/-->
+    
+    <script>
+        var dati= require("https://data.vatsim.net/v3/vatsim-data.json");
+        console.log("latitudine:"+ dati.pilots.latitude);
+        console.log("longitudine:"+ dati.pilots.longitude);
+
+
+   var contatore = L.marker([dati.pilots.latitude, dati.pilots.longitude]).addTo(map); 
+        contatore.bindPopup(dati.pilots.name);
+
+    </script>
+
 </body>
 </html>
