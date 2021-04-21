@@ -9,18 +9,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body>
+<body>        
+    <div id="titolo">
+        <a href="login.html" class="Login">Login</a>
+        <h1 class="homepage">Homepage</h1> 
+    </div>
     <div class="pannelloSinistro">
-        <a href="../Php/logout.php" class="bottoneLogin">Login</a>
         <div class="creaPiano"> 
             <h1 href="flightplan.html">
-                <button class="overlayPiano">Crea un piano di volo</button>
+                <button class="pulsanteCreaPiano">Crea un piano di volo</button>
             </h1>    
             <h5 class="testo">Non capisco come si fa per bene </h5> <!-- animazione in css allegata-->
         </div>
     </div>
     <div class="pannelloCentrale">
-        <h1 class="homepage">Homepage</h1>  <!-- la homepage va qui che il css la riconosce da qua-->
         <table>
             <tbody>
                 <tr>
@@ -58,7 +60,6 @@
         </table>
     </div>
     <div class="pannelloDestro">
-        <a href="" class="user">User</a>
         <div class="vistaAerei"> 
             <a href="vistaAerei.html">
                 <button class="pulsanteVistaAerei">Aerei in volo</button> 
@@ -77,12 +78,16 @@
         $('body').css('height', "100%");
         $('body').css('background-repeat', "no-repeat");
         $('body').css('background-size', "cover");
+        $('body').css("margin-top","auto");
+        $('body').css("margin-left","auto");
         setInterval(function() {
             $('body').css('background-image', 'url("' + urls[cout] + '")');
             $('body').css('width', "100%");
             $('body').css('height', "100%");
             $('body').css('background-repeat', "no-repeat");
             $('body').css('background-size', "cover");
+            $('body').css("margin-top","auto");
+            $('body').css("margin-left","auto");
             cout == urls.length-1 ? cout = 0 : cout++;
         }, 50000);
     });

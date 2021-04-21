@@ -11,13 +11,13 @@
 
 <body>
     <!--Riferimento per tornare alla homepage-->
-    <div id='titolo'> About us</div>
-    <br />
+    <div id='titolo'> 
+        <a href="login.html" class="login">Login</a>
+        <h1 class="aboutUs">About Us</h1>
+    </div>
     <!--Nostre informazioni-->
-    <div class="about">
-    <br />
-        <span>Musciaglia Marco</span>
-    <br />
+    <div class="nomi">
+    <h1 style="margin-left: 10px;">Musciaglia Marco</h1>
     <ul>
         <a href="mailto:musciaglia.1816864@studenti.uniroma1.it" target="_blank">musciaglia.1816864@studenti.uniroma1.it</a>
     </ul>
@@ -25,8 +25,7 @@
         <a href="https://github.com/Loldlink" target="_blank">Loldlink</a><br /><br />
     </ul>
     <br />
-        <span>Lorenzo Magni</span>
-    <br />
+        <h1 style="margin-left: -10px;">Lorenzo Magni</h1>
     <ul>
         <a href="mailto:magni.1872113@studenti.uniroma1.it" target="_blank">magni.1872113@studenti.uniroma1.it </a>
     </ul>
@@ -35,7 +34,6 @@
     </ul>
     <br />
     <br />
-    <a href="login.html">Ritorno alla login</a>
         <!--qui sotto lo script che cambia lo sfondo, funziona solo su un file HTML non su file js-->
     <script>
         $(document).ready(function() {
@@ -47,14 +45,17 @@
         $('body').css('background-repeat', "no-repeat");
         $('body').css('background-size', "cover");
         $('body').css('margin', "0");
+        $('body').css("margin-top","auto");
+        $('body').css("margin-left","auto");
         setInterval(function() {
             $('body').css('background-image', 'url("' + urls[cout] + '")');
             $('body').css('width', "100%");
             $('body').css('height', "100%");
             $('body').css('background-repeat', "no-repeat");
             $('body').css('background-size', "cover");
+            $('body').css("margin-top","auto");
+            $('body').css("margin-left","auto");
             cout == urls.length-1 ? cout = 0 : cout++;
-            console.log($('body').css("height"));
         }, 50000);
     });
     </script>

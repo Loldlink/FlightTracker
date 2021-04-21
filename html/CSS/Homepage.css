@@ -40,7 +40,9 @@ table{
     border-width: 20px;  
     color: rgb(238, 9, 9);
     top: 40%;
-    margin-left: 10px;
+    margin-left: -25px;
+    border-spacing: 7px;
+    font-size: 24px;
 }
 
 #titolo{
@@ -55,7 +57,12 @@ table{
     background-size: 20px;
 }
 
-.bottoneLogout{
+.Logout{
+    font-size: 35px;
+    color: red;
+}
+
+.Login{
     font-size: 35px;
     color: red;
 }
@@ -95,15 +102,14 @@ table{
 }
 
 .testo{
-    color: #701121;
+    color: #000000;
     margin-top: 420px;
-    margin-left: -300px;
-    width: 100%;
+    text-align: center;
+    margin-left: -1200px;
 }
 
 .creaPiano:hover .testo{
-    color: #000000;
-    margin-left: 130px;
+    margin-left: -100px;
     transition: 2s;
 }
 
@@ -126,14 +132,14 @@ table{
 }
 
 .testo1{
-    color: #701121;
+    color: black;
+    margin-top: 420px;
+    margin-left: 350px;
     width: 100%;
-    margin-top: 455px;
-    margin-left: 300px;
+    text-align: center;
 }
 
 .vistaAerei:hover .testo1{
-    color: #000000;
-    margin-left: 0px;
+    margin-left: -50px;
     transition: 2s;
 }

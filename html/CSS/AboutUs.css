@@ -4,22 +4,12 @@ html {
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
+    color: black;
 }
 
-.h1 {
-    text-decoration: blueviolet;
-    font-size: 40px;
-    width: 400px;
-    color: rgb(224, 49, 49);
-    text-align: center;
-    margin: 10px; 
-    margin-left: 400px;
-    border: 10px black
-}
-
-#titolo{
+#titolo {
     border-style: groove;
     border-width: 15px;
     border: black;
@@ -28,8 +18,26 @@ a{
     text-shadow: seagreen;
     text-decoration: saddlebrown;
     text-align: center; 
-    margin-top: -10px; 
-    margin-bottom: 30px;
     background-color: rgb(19, 19, 34);
     background-size: 25px;
+}
+
+.login {
+    text-decoration: none;
+    float: left;
+    font-size: 38px;
+    color: red;
+    margin-top: 10px;
+}
+
+.aboutUs {
+    color: red;
+    font-size: 70px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.nomi {
+    color: rgb(0, 0, 0);
+    text-align: center;
 }

@@ -59,12 +59,16 @@
         $('body').css('height', "100%");
         $('body').css('background-repeat', "no-repeat");
         $('body').css('background-size', "cover");
+        $('body').css("margin-top","auto");
+        $('body').css("margin-left","auto");
         setInterval(function() {
             $('body').css('background-image', 'url("' + urls[cout] + '")');
             $('body').css('width', "100%");
             $('body').css('height', "100%");
             $('body').css('background-repeat', "no-repeat");
             $('body').css('background-size', "cover");
+            $('body').css("margin-top","auto");
+            $('body').css("margin-left","auto");
             cout == urls.length-1 ? cout = 0 : cout++;
         }, 50000);
     });

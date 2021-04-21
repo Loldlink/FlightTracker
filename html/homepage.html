@@ -19,16 +19,18 @@
 </head>
 <body>
     <div id="titolo">
-        <a href="../Php/logout.php" class="bottoneLogout">Logout</a>
+        <a href="../Php/logout.php" class="Logout">Logout</a>
         <h1 class="homepage">Homepage</h1> 
         <a href="" class="user">User</a>
     </div>
     <div class="pannelloSinistro">
         <div class="creaPiano"> 
             <a href="flightplan.html">
-                <button class="pulsanteCreaPiano">Crea un piano di volo</button>
+                <button class="pulsanteCreaPiano">Piano di volo</button>
             </a>    
-            <h5 class="testo">Non capisco come si fa per bene </h5> <!-- animazione in css allegata-->
+            <h3 class="testo">
+                Permette la creazione di un piano di volo
+            </h3> <!-- animazione in css allegata-->
         </div>
     </div>
     <div class="pannelloCentrale">
@@ -64,7 +66,7 @@
                 </tr>
                 <tr>
                     <th><img src="//stats.vatsim.net/images/marker.png" height="16" width="16">View Map</th>
-                    <th><a href="https://map.vatsim.net/">map.vatsim.net</a></th>
+                    <th><a href="https://map.vatsim.net/" style="color: red;">map.vatsim.net</a></th>
                 </tr>
             </tbody>
         </table>
@@ -72,9 +74,11 @@
     <div class="pannelloDestro">
         <div class="vistaAerei"> 
             <a href="vistaAerei.html">
-                <button class="pulsanteVistaAerei">Aerei in volo</button> 
+                <button class="pulsanteVistaAerei">Mappa</button> 
             </a>  
-            <h5 class="testo1">Non capisco come si fa per bene </h5> <!-- animazione in css allegata-->
+            <h3 class="testo1">
+                Visione degli aerei attualmente in volo
+            </h3> <!-- animazione in css allegata-->
         </div>
     </div>
 
@@ -88,12 +92,16 @@
         $('body').css('height', "100%");
         $('body').css('background-repeat', "no-repeat");
         $('body').css('background-size', "cover");
+        $('body').css("margin-top","auto");
+        $('body').css("margin-left","auto");
         setInterval(function() {
             $('body').css('background-image', 'url("' + urls[cout] + '")');
             $('body').css('width', "100%");
             $('body').css('height', "100%");
             $('body').css('background-repeat', "no-repeat");
             $('body').css('background-size', "cover");
+            $('body').css("margin-top","auto");
+            $('body').css("margin-left","auto");
             cout == urls.length-1 ? cout = 0 : cout++;
         }, 50000);
     });
