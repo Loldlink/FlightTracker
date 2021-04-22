@@ -15,33 +15,31 @@
 <body>
   <!--Scritta di benvenuto-->
   <div class="form">
-    <div class="tab-content">
-        <h1 id="titolo">
-          Welcome to Flight Tracker
-        </h1>
+    <div>
+        <h1 id="titolo">Welcome to Flights Tracker</h1>
         <!--Form-->
         <div id="login">
-        <form action="php/login.php" method="post">
-          <div class="field-wrap" id="campo-username">
-            <label for="user"> </label>
-            <input type="text" name="username" placeholder="Username" required autocomplete="username" />
-          </div>
-          <div class="field-wrap">
-            <label for="password"> </label>
-            <input type="password" name="password" placeholder="Password" required autocomplete="current-password" />
-          </div>
-          <!--Bottone del form-->
-          <div class="field-wrap" id="bottone-login">
-          <input style="cursor: pointer;" type="submit" name="send" value="Log In" class="button button-block" />
+          <br>
+          <form action="../Php/login1.php method="post">
+            <div class="field-wrap" id="campo-username">
+              <label for="user"></label>
+              <input type="text" name="username" placeholder="Username" required autocomplete="username" />
+              <br/>
+              <label for="password"></label>
+              <input type="password" name="password" placeholder="Password" required autocomplete="current-password" />
+            <!--Bottone del form-->
+              <br/>              
+              <br/>
+              <input type="submit" name="send" value="Log In"/>
+            </div>
+          </form>
+          <br>
+          <br>
+          <a href="homepage1.html" class="saltaLogin">Salta il login</a> 
+          <br>
+          <a href="aboutUs.html" class="aboutUs">About us</a> 
         </div>
-        </form>
-        <br>
-        <div id="saltalogin">
-          <a href="homepage.html" style="text-align: center">salta il login</a> <!-- anche questo dovrebbe stare al centro-->
-        </div>
-        <a href="aboutUs.html" style="text-align: center">About us</a>  <!-- questi due pulsanti dovrebbero stare al centro secondo me-->
       </div>
-    </div>
   </div>
     <!--Funzione js che rimanda alla login quando chiudo l'overlay-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
@@ -55,7 +53,7 @@
           window.location.href = "login.html";
           return false;
         });
-        $(".x").click(function () {
+        $(".close").click(function () {
           window.location.href = "login.html";
           overlay.appendTo(document.body).remove();
           return false;
@@ -90,8 +88,7 @@
           Login errato
           <br />
           <br />
-          <br />
-          <a href="" class="close">CLOSE</a>
+          <a href="" class="close">X</a>
         </p>
         <br>
       </div>

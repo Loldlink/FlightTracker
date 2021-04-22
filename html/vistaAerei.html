@@ -11,16 +11,18 @@
     <link rel="stylesheet" href="../leaflet/leaflet.css" />
     <script src="../leaflet/leaflet.js"></script>
 
-    <title id="TitoloRadar">Flight Tracker- Map</title>  <!-- titolo-->
+    <title>Flight Tracker- Map</title>  <!-- titolo-->
 
     <link rel="icon" href="Immagini/favicon.png">  <!-- questa è l'iconcina che compare sulla scheda del browser-->
 
 </head>
 
 <body>
+    <div id="titolo">
+        <a class="pulsanteHomepage" href="homepage.html">Homepage</a>
+        <a class="pulsanteUser" href="">User</a>
+    </div>
 
-    <a class="pulsanteHomepage" href="homepage.html">Homepage</a>
-    <a class="pulsanteUser" href="">User</a>
 
     <!-- elemento div che prende la mappa dal sito   https://cloud.maptiler.com/maps/   -->
     <!-- poi crea una variabile map e ci mette dentro la mappa scaricata dai due link ref sotto-->
@@ -46,7 +48,7 @@ estrapolando i dati da i campi [dati.pilots.latitude]-->
         console.log("longitudine:"+ dati.pilots.longitude);
 
 
-   var contatore = L.marker([dati.pilots.latitude, dati.pilots.longitude]).addTo(map); 
+        var contatore = L.marker([dati.pilots.latitude, dati.pilots.longitude]).addTo(map); 
         contatore.bindPopup(dati.pilots.name);
 
     </script>

@@ -1,27 +1,25 @@
 html {
     width: 100%;
-    height: 98%;
+    height: 100%;
     margin: 0;
+    overflow: hidden;
 }
 
-/*le impostazioni per il titolo*/
 #titolo{
     border-style: groove;
     border-width: 15px;
     border: black;
-    font-size: 70px;
+    font-size: 80px;
     color: red;
     text-shadow: seagreen;
     text-decoration: saddlebrown;
-    text-align: center; 
-    margin-top: -10px; 
-    margin-bottom: 30px;
+    text-align: center;   
+    margin-top: auto;
     background-color: rgb(19, 19, 34);
     background-size: 25px;
 }
 
 #login{
-    align-content: center;
     margin-top: 100px;
     background-color: red;
     margin-left: 470px;
@@ -29,75 +27,53 @@ html {
 }
 
 #overlay {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: #000;
-filter: alpha(opacity=70);
--moz-opacity: 0.7;
--khtml-opacity: 0.7;
-opacity: 0.7;
-z-index: 100;
-display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 100;
+    display: none;
 }
 
 .popup {
-width: 100%;
-margin: 10% auto;
-display: none;
-position: auto;
+    width: 100%;
+    position: absolute;
+    top: 23%;
 }
 
 .overlay {
-min-width: 400px;
-width: 400px;
-min-height: 150px;
-margin: 100px auto;
-background: #121212;
-position: relative;
-z-index: 103;
-padding: 15px 35px;
-border-radius: 5px;
-box-shadow: 0 2px 5px #000;
+    min-width: 400px;
+    width: 400px;
+    height: 200px;
+    margin: 100px auto;
+    background: #121212;
+    position: relative;
+    z-index: 103;
+    box-shadow: 0 2px 5px #000;
 }
 
 .overlay p {
-clear: both;
-color: rgb(235, 235, 235);
-text-align: center;
-font-size: 25px;
-}
-
-.overlay .x {
-float: right;
-height: 35px;
-left: 22px;
-position: relative;
-top: -25px;
-width: 34px;
-}
-
-.overlay .x:hover {
-cursor: pointer;
+    position: absolute;
+    top: 32%;
+    right: 19%;
+    font-size: 45px;
 }
 
 .close {
-text-shadow: -0px -0px #690f0f;
-text-align: center;
+    position: absolute;
+    top: -43%;
+    right: -28%;
+    font-size: 27px;
 }
 
 .close:hover {
-color: #701121;
-}
-
-.tab-content{
-}
-
-/* le impostazioni per solo il campo username*/
-.field-wrap, #campo-username{
-    margin-top: 30px;   /* perchè il campo username non si riesce a centrare? Nella schermata rossa*/
+    color: #701121;
 }
 
 /*le impostazioni per il campo username, password e il pusalnte di login*/
@@ -109,8 +85,19 @@ color: #701121;
 
 }
 
-/*le impostazioni per SOLO il pulsante login*/
-.field-wrap, #bottone-login{
+.saltaLogin{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin-left: 5px;
+}
 
+.aboutUs{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    margin-top: -37px;
+    float: right;
+    margin-right: 5px;
 }
 
