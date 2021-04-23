@@ -5,6 +5,7 @@
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Log in</title>
   <link rel="stylesheet" type="text/css" href="CSS/LoginErrato.css">
+  <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap-grid.min.css"> <!--  link al css di bootstrap-->
   <link rel="icon" href="Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
@@ -15,15 +16,26 @@
 </head>
 
 <body>
+
+<!-- era bello usare una "navbar" di bootstrap ma boh non ci riesco -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Active</a>
+      </li>
+
+
+
   <!--Scritta di benvenuto-->
-  <div class="form">
-    <div>
-        <h1 id="titolo">Welcome to Flights Tracker</h1>
+  <div class="container-fluid" >
+    <div class="row">
+        <h1 class ="display-2" id="titolo">Welcome to Flights Tracker</h1>
         <!--Form-->
-        <div id="login">
+        <div class="jumbotron-default">
+        <div class="container-md" id="login">
           <br>
           <form action="../Php/login1.php method="post">
-            <div class="field-wrap" id="campo-username">
+            <div class="field-wrap" id="campo-username" class="form-control">
               <label for="user"></label>
               <input type="text" name="username" placeholder="Username" required autocomplete="username" />
               <br/>
@@ -37,7 +49,7 @@
           </form>
           <br>
           <br>
-          <a href="homepage1.html" class="saltaLogin">Salta il login</a> 
+          <a href="homepage1.html" class="saltaLogin"> <kbd>Salta il login </kbd></a> 
           <br>
           <a href="aboutUs.html" class="aboutUs">About us</a> 
         </div>
