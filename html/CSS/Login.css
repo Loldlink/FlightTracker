@@ -5,6 +5,11 @@ html {
     overflow: hidden;
 }
 
+a:visited{
+    text-decoration: none; 
+}
+
+/*le impostazioni per il titolo*/
 #titolo{
     border-style: groove;
     border-width: 15px;
@@ -48,4 +53,9 @@ html {
     margin-top: -28px;
     float: right;
     margin-right: 5px;
+}
+
+/*le impostazioni per SOLO il pulsante login*/
+.bottoneLogin{
+    font-size: 16px;
 }
