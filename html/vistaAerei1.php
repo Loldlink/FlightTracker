@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 
-<?php 
-	session_start();
-	if($_SESSION['userLogin'] != 'loggato'){
-		header("Location: login.html");
-	}
-?>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,8 +20,7 @@
 
 <body>
     <div id="titolo">
-        <a class="pulsanteHomepage" href="homepage.php">Homepage</a>
-        <a class="pulsanteUser" href="">User</a>
+        <a class="pulsanteHomepage" href="homepage1.php">Homepage</a>
     </div>
 
     <!-- elemento div che prende la mappa dal sito   https://cloud.maptiler.com/maps/   -->

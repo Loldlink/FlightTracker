@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 
 <?php 
-$json = file_get_contents('https://data.vatsim.net/v3/vatsim-data.json');
-$obj = json_decode($json,true);
+	session_start();
+	if($_SESSION['userLogin'] != 'loggato'){
+		header("Location: login.html");
+	}
+?>
+
+<?php 
+    $json = file_get_contents('https://data.vatsim.net/v3/vatsim-data.json');
+    $obj = json_decode($json,true);
 ?>
 
 <head>
