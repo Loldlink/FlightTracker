@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 
-<!--Controllo dell'utente loggato-->
-
-<?php 
-	session_start();
-	if($_SESSION['userLogin'] != 'loggato'){
-		header("Location: ../html/login.html");
-	}
-?>
-
 <head>
     <title class=>FlightTracker</title>
     <meta charset = "utf-8"/>

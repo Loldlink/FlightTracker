@@ -49,29 +49,34 @@ table{
     border-style: groove;
     border-width: 10px;
     border: black;
-    color: red;
     text-shadow: seagreen;
     text-decoration: saddlebrown;
-    margin-top: -5px; 
     background-color: rgb(19, 19, 34);
     background-size: 20px;
+    height: 100px;
+    overflow: hidden;
 }
 
 .Logout{
     font-size: 35px;
     color: red;
+    position: absolute;
+    top: 0%;
+    left: 0.4%;
 }
 
 .Login{
     font-size: 35px;
     color: red;
+    position: absolute;
+    top: 0%;
 }
 
 .homepage {
     color: red;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
-    margin-top: -20px;
+    margin-top: 20px;
 }
 
 .user {
@@ -79,7 +84,8 @@ table{
     color: red;
     margin-right: 15px;
     float: right;
-    margin-top: -108px;
+    margin-top: -129px;
+    margin-right: 10px;
 }
 
 .pulsanteCreaPiano{
