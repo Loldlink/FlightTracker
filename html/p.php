@@ -19,11 +19,14 @@ $obj = json_decode($json,true);
 
     <script type="text/javascript">
     
-    
+    /*faccio una funzione encode che mette il json in formato leggibile in $obj, da li come si accede normalmente come nei dizionari
+    mettendo la chiave di interesse e prendendo i dati*/
+
         var c = <?php echo json_encode($obj['pilots'][0]['cid']);?> 
         document.getElementById('m').innerHTML = c ;
     </script>
 
-    <!-- forse tutto questo codice (da riga 7 a 26) va nel file "vistaaerei.html" ?-->
+    <!-- forse tutto questo codice (da riga 7 a 26) va nel file "vistaaerei.html" ?, si ma queste sono delle prove quindi 
+    ancora non lo metto li dentro.-->
 </body>
 </html>
