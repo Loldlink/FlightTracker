@@ -33,7 +33,7 @@ a{
 
 table{
     position: absolute;
-    opacity: 0.7;        /*bisogna capire come fare un opacità allo sfondo senza opacizzare il contenuto*/
+    opacity: 0.9;        /*bisogna capire come fare un opacità allo sfondo senza opacizzare il contenuto*/
     background-color: whitesmoke;
     border-radius: 3px; 
     border-color: black;
@@ -138,7 +138,9 @@ table{
 }
 
 .testo1{
+    /*size: 70px;*/ /* io cambierei le dimensioni di questo testo (evidentemente non è qui che si fa)*/
     color: black;
+    margin-bottom: 600;
     margin-top: 420px;
     margin-left: 350px;
     width: 100%;
@@ -148,4 +150,6 @@ table{
 .vistaAerei:hover .testo1{
     margin-left: -50px;
     transition: 2s;
+    /*margin-bottom: 600px;*/ /*e cambierei anche la distanza dal pulsante. E lo renderei anche più visibile*/
 }
+
