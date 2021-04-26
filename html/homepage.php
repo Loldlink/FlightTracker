@@ -7,6 +7,7 @@
 	}
 ?>
 
+<!-- Secondo me bisognerebbe prendere i dati per la tabella da questo link, ci sono anche i campi che mancano https://stats.vatsim.net/user_count_json -->
 <?php 
     $json = file_get_contents('https://data.vatsim.net/v3/vatsim-data.json');
     $obj = json_decode($json,true);
@@ -41,7 +42,7 @@
         <table class="table">
             <tbody>
                 <tr>
-                    <th><img src="//stats.vatsim.net/images/connection_atc.png" height="16" width="16"> Piloti conessi </th>
+                    <th><img src="//stats.vatsim.net/images/connection_atc.png" height="16" width="16"> Utenti Totali  </th>
                     <th id='connected'></th>
                 </tr>
                 <tr>
@@ -67,10 +68,6 @@
                 <tr>
                     <th> ? </th>
                     <th>6531</th>
-                </tr>
-                <tr>
-                    <th><img src="//stats.vatsim.net/images/marker.png" height="16" width="16">View Map</th>
-                    <th><a href="https://map.vatsim.net/" style="color: red;">map.vatsim.net</a></th>
                 </tr>
             </tbody>
         </table>

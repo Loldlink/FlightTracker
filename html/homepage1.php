@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+
+<!-- Secondo me bisognerebbe prendere i dati per la tabella da questo link, ci sono anche i campi che mancano https://stats.vatsim.net/user_count_json -->
 <?php 
 $json = file_get_contents('https://data.vatsim.net/v3/vatsim-data.json');
 $obj = json_decode($json,true);
@@ -15,7 +17,7 @@ $obj = json_decode($json,true);
 </head>
 <body>
     <div id="titolo">
-        <a href="login.html" class="Login">Login</a>
+        <a href="login.php" class="Login">Login</a>
         <h1 class="homepage">Homepage</h1> 
     </div>
     <div class="pannelloSinistro">
@@ -57,10 +59,6 @@ $obj = json_decode($json,true);
                 <tr>
                     <th> ? </th>
                     <th>6531</th>
-                </tr>
-                <tr>
-                    <th><img src="//stats.vatsim.net/images/marker.png" height="16" width="16">View Map</th>
-                    <th><a href="https://map.vatsim.net/" style="color: red;">map.vatsim.net</a></th>
                 </tr>
             </tbody>
         </table>

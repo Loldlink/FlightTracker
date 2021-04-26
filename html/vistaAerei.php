@@ -16,8 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- gli script servono per jquery-->
 
     <!-- la referenziazione a LEAFLET, ci stà il css e il javascript di leaflet-->
-    <link rel="stylesheet" href="../leaflet/leaflet.css" />
-    <script src="../leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 
     <title id="TitoloRadar">Flight Tracker- Map</title>  <!-- titolo-->
 
@@ -40,6 +40,7 @@
         L.tileLayer('https://api.maptiler.com/maps/outdoor/{z}/{x}/{y}.png?key=9SAhLgukQT30FwYja7II', {
           attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
         }).addTo(map);
+        map.setZoom(60);
     </script>
 <!-- qui finisce lo script di creazione della mappa-->
 
@@ -51,12 +52,11 @@ estrapolando i dati da i campi [dati.pilots.latitude]-->
     
     <script>
         var dati= require("https://data.vatsim.net/v3/vatsim-data.json");
-        console.log("latitudine:"+ dati.pilots.latitude);
-        console.log("longitudine:"+ dati.pilots.longitude);
+        
 
 
-   var contatore = L.marker([dati.pilots.latitude, dati.pilots.longitude]).addTo(map); 
-        contatore.bindPopup(dati.pilots.name);
+   var contatore = L.marker([LATITUDINE, LONGITUDINE]).addTo(map); 
+        contatore.bindPopup(NOMEPILOTA);
 
     </script>
 

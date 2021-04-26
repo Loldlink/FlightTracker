@@ -32,6 +32,7 @@
         L.tileLayer('https://api.maptiler.com/maps/outdoor/{z}/{x}/{y}.png?key=9SAhLgukQT30FwYja7II', {
           attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
         }).addTo(map);
+        map.setZoom(70);
     </script>
 <!-- qui finisce lo script di creazione della mappa-->
 
@@ -43,12 +44,10 @@ estrapolando i dati da i campi [dati.pilots.latitude]-->
     
     <script>
         var dati= require("https://data.vatsim.net/v3/vatsim-data.json");
-        console.log("latitudine:"+ dati.pilots.latitude);
-        console.log("longitudine:"+ dati.pilots.longitude);
 
 
-   var contatore = L.marker([dati.pilots.latitude, dati.pilots.longitude]).addTo(map); 
-        contatore.bindPopup(dati.pilots.name);
+   var contatore = L.marker([LATITUDINE, LONGITUDINE]).addTo(map); 
+        contatore.bindPopup(NOME);
 
     </script>
 
