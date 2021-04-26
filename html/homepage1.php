@@ -15,7 +15,7 @@ $obj = json_decode($json,true);
 </head>
 <body>
     <div id="titolo">
-        <a href="../Php/logout.php" class="Logout">Logout</a>
+        <a href="login.html" class="Login">Login</a>
         <h1 class="homepage">Homepage</h1> 
     </div>
     <div class="pannelloSinistro">

@@ -24,11 +24,11 @@
     <div id="titolo">
         <a href="../Php/logout.php" class="Logout">Logout</a>
         <h1 class="homepage">Homepage</h1> 
-        <a href="" class="user">User</a>
+        <a href="userpage.html" class="user">User</a>
     </div>
     <div class="pannelloSinistro">
         <div class="creaPiano"> 
-            <a href="flightplan.html">
+            <a href="flightplan.php">
                 <button class="pulsanteCreaPiano">Piano di volo</button>
             </a>    
             <h3 class="testo">
