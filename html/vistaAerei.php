@@ -40,7 +40,7 @@
         L.tileLayer('https://api.maptiler.com/maps/outdoor/{z}/{x}/{y}.png?key=9SAhLgukQT30FwYja7II', {
           attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
         }).addTo(map);
-        map.setZoom(60);
+        /* ho tolto lo zoom perché era troppo forte
     </script>
 <!-- qui finisce lo script di creazione della mappa-->
 

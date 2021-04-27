@@ -7,10 +7,14 @@
 	}
 ?>
 
-<!-- Secondo me bisognerebbe prendere i dati per la tabella da questo link, ci sono anche i campi che mancano https://stats.vatsim.net/user_count_json -->
+<!-- Secondo me bisognerebbe prendere i dati per la tabella da questo link, ci sono anche i campi che mancano https://stats.vatsim.net/user_count_json
+    va benissimo, l'ho messo -->
+
 <?php 
     $json = file_get_contents('https://data.vatsim.net/v3/vatsim-data.json');
     $obj = json_decode($json,true);
+    $json1 = file_get_contents('https://stats.vatsim.net/user_count_json');
+    $obj1 = json_decode($json1,true);
 ?>
 
 <head>
@@ -54,20 +58,24 @@
                     <th id='fly'></th>
                 </tr>
                 <tr>
-                    <th><img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16"> ? </th>
-                    <th>65</th>
+                    <th><img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16"> ? Controllori ? </th>
+                    <th id='controllers'></th>
                 </tr>
                 <tr>
-                    <th><img src="//stats.vatsim.net/images/connection_sup.png" height="16" width="16"> ? </th>
-                    <th>3</th>
+                    <th><img src="//stats.vatsim.net/images/connection_sup.png" height="16" width="16"> ? Supervisori ? </th>
+                    <th id='supervisors'></th>
                 </tr>
                 <tr>
-                    <th><img src="//stats.vatsim.net/images/connection_obs.png" height="16" width="16"> ? </th>
-                    <th>51</th>
+                    <th><img src="//stats.vatsim.net/images/connection_obs.png" height="16" width="16"> ? Atis ? </th>
+                    <th id='atis'></th>
                 </tr>
                 <tr>
-                    <th> ? </th>
-                    <th>6531</th>
+                    <th> ? Osservatori ? </th>
+                    <th id='observers'></th>
+                </tr>
+                <tr>
+                    <th> ? Ultime 24 ore ? </th>
+                    <th id='twentyfour'></th>
                 </tr>
             </tbody>
         </table>
@@ -84,19 +92,39 @@
     </div>
     <script src="../Javascript/cambiaSfondo.js"></script>
     <script type="text/javascript">
-        var connected = <?php echo json_encode($obj['general']['connected_clients']);?> 
-        var unique = <?php echo json_encode($obj['general']['unique_users']);?> 
-        var fly = <?php echo json_encode($obj['pilots']);?>.length;
+        var connected = <?php echo json_encode($obj['general']['connected_clients']);?>;
+        var unique = <?php echo json_encode($obj['general']['unique_users']);?>;
+        var fly = <?php echo json_encode($obj1['pilots']);?>;
+        var controllers = <?php echo json_encode($obj1['controllers']);?>;
+        var supervisors = <?php echo json_encode($obj1['supervisors']);?>;
+        var atis = <?php echo json_encode($obj1['atis']);?>;
+        var observers = <?php echo json_encode($obj1['observers']);?>;
+        var twentyfour = <?php echo json_encode($obj1['twentyfour']);?>;
         document.getElementById('connected').innerHTML = connected ;
-        document.getElementById('unique').innerHTML = unique ;
         document.getElementById('fly').innerHTML = fly ;
+        document.getElementById('unique').innerHTML = unique ;
+        document.getElementById('controllers').innerHTML = controllers ;
+        document.getElementById('supervisors').innerHTML = supervisors ;
+        document.getElementById('atis').innerHTML = atis ;
+        document.getElementById('observers').innerHTML = observers ;
+        document.getElementById('twentyfour').innerHTML = twentyfour ;
         setInterval(function() {
-            var connected = <?php echo json_encode($obj['general']['connected_clients']);?> 
-            var unique = <?php echo json_encode($obj['general']['unique_users']);?> 
-            var fly = <?php echo json_encode($obj['pilots']);?>.length;
+            var connected = <?php echo json_encode($obj['general']['connected_clients']);?>; 
+            var unique = <?php echo json_encode($obj['general']['unique_users']);?>; 
+            var fly = <?php echo json_encode($obj1['pilots']);?>;
+            var controllers = <?php echo json_encode($obj1['controllers']);?>;
+            var supervisors = <?php echo json_encode($obj1['supervisors']);?>;
+            var atis = <?php echo json_encode($obj1['atis']);?>;
+            var observers = <?php echo json_encode($obj1['observers']);?>;
+            var twentyfour = <?php echo json_encode($obj1['twentyfour']);?>;
             document.getElementById('connected').innerHTML = connected ;
             document.getElementById('unique').innerHTML = unique ;
             document.getElementById('fly').innerHTML = fly ;
+            document.getElementById('controllers').innerHTML = controllers ;
+            document.getElementById('supervisors').innerHTML = supervisors ;
+            document.getElementById('atis').innerHTML = atis ;
+            document.getElementById('observers').innerHTML = observers ;
+            document.getElementById('twentyfour').innerHTML = twentyfour ;
         }, 60000);
     </script>
 

@@ -10,7 +10,7 @@ if (isset($_POST['send'])) {
 
     if($username == 'ltw' && $password == 'ltw'){
         $_SESSION['userLogin'] = 'loggato';
-        header("location: ../html/homepage.html");
+        header("location: ../html/homepage.php");
         /*redirect alla homepage e setto la sessione*/
     }
     else {
