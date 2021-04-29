@@ -9,14 +9,12 @@ html {
     border-style: groove;
     border-width: 15px;
     border: black;
-    font-size: 80px;
-    color: red;
     text-shadow: seagreen;
     text-decoration: saddlebrown;
-    text-align: center;   
-    margin-top: auto;
     background-color: rgb(19, 19, 34);
     background-size: 25px;
+    overflow: hidden;
+    height: 120px;
 }
 
 #login{
@@ -37,15 +35,25 @@ html {
 .saltaLogin{
     text-decoration: none;
     color: black;
-    font-size: 25px;
-    margin-left: 5px;
+    font-size: 35px;
+    color: red;
+    position: absolute;
+    top: 1%;
 }
 
 .aboutUs{
     text-decoration: none;
     color: black;
-    font-size: 25px;
-    margin-top: -28px;
-    float: right;
-    margin-right: 5px;
+    font-size: 35px;
+    color: red;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+.homepage {
+    color: red;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
 }
