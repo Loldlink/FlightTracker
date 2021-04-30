@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="row mt-2">
-                        <div class="col-md-6"><label class="labels" >Nome</label><input type="text" class="form-control" placeholder="Nome" value="" id="casellanome" onload="campiuser()"></div>
+                        <div class="col-md-6"><label class="labels" >Nome</label><input type="text" class="form-control" placeholder="Nome" id="casellanome"></div>
                         <div class="col-md-6"><label class="labels">Cognome</label><input type="text" class="form-control" value="" id="casellacognome" placeholder="Cognome"></div>
                     </div>
 
@@ -69,7 +69,7 @@
                         <div class="col-md-6"><label class="labels">Regione</label><input type="text" class="form-control" placeholder="Regione" value=""></div>
                         <div class="col-md-6"><label class="labels">Paese</label><input type="text" class="form-control" value="" placeholder="Paese"></div>
                     </div>
-                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" onclick="campiuser()">Salva</button></div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" onclick="campiUser()">Salva</button></div>
                 </div>
             </div>
             <div class="col-md-4">
@@ -82,5 +82,5 @@
     </div>
     </div>
     </div>
-    <script src="../Javascript/campiuser.js"> </script> <!-- link allo script per autocompilare i campi qualora fossero vuoti-->
+    <script src="../Javascript/campiUser.js"> </script> <!-- link allo script per autocompilare i campi qualora fossero vuoti-->
     </body>

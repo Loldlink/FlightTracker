@@ -18,7 +18,7 @@
 </head>
 <body>
     <div id="titolo">
-        <a href="login.php" class="Login">Login</a>
+        <a href="login.html" class="Login">Login</a>
         <h1 class="homepage">Homepage</h1> 
     </div>
     <div class="pannelloSinistro">
@@ -46,23 +46,23 @@
                     <th id='fly'></th>
                 </tr>
                 <tr>
-                    <th><img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16"> ? Controllori ? </th>
+                    <th><img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16"> Controllori </th>
                     <th id='controllers'></th>
                 </tr>
                 <tr>
-                    <th><img src="//stats.vatsim.net/images/connection_sup.png" height="16" width="16"> ? Supervisori ? </th>
+                    <th><img src="//stats.vatsim.net/images/connection_sup.png" height="16" width="16"> Supervisori </th>
                     <th id='supervisors'></th>
                 </tr>
                 <tr>
-                    <th><img src="//stats.vatsim.net/images/connection_obs.png" height="16" width="16"> ? Atis ? </th>
+                    <th><img src="//stats.vatsim.net/images/connection_obs.png" height="16" width="16"> Atis </th>
                     <th id='atis'></th>
                 </tr>
                 <tr>
-                    <th> ? Osservatori ? </th>
+                    <th> Osservatori </th>
                     <th id='observers'></th>
                 </tr>
                 <tr>
-                    <th> ? Ultime 24 ore ? </th>
+                    <th> Ultime 24 ore </th>
                     <th id='twentyfour'></th>
                 </tr>
             </tbody>
