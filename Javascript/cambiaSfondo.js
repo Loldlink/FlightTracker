@@ -1,10 +1,12 @@
 $(document).ready(function() {   //i link sono del mio drive personale e sono accessibili a tutti
-    var urls = ["https://virtualu-my.sharepoint.com/personal/lorma-5158_chancellorhs_com/Documents/Flight%20Tracker/a320%20(1).png", 
-    'https://am3pap002files.storage.live.com/y4pzL5e91B3xcSzH1wrcSUmkkuvcGR33kYKTw8cyTF-Gw-u7v0EB9qeQAxYtuyZ6x0PiPzMNifBXyRLuKTy9SXYtnCgdjo7f8XkPRImj5ApLxDJRQV-yKbupG6rnci8UXYbztLN044jUZB-NBUHKZbxX-zhftN_WPXRjqsQuB-SJgdDx_UqbiiFBLYXXQlV1dw7KxOp4lNjFO5PTwFLLCB-VVlFlpD4hOem2KLIc-AefgI/a320%20%284%29.png?psid=1&width=1652&height=929',
-"https://am3pap002files.storage.live.com/y4pY6bZn4Su3SkG_oi7BCLZ_IJ-f7P_Vr_ma3fjvxJgH1UPJK3qX6Tnos9j42_2GOtnTy-IHZSo4zrccioQslYmvJPlwFoDf_NtlBsf7qPIbWOP2TlB7tVv7dS3VaPz2GwfY6cfrR_6SHAlWlgHAVwWV7vkncQRA2-Vlf12vW91H8Q4iBjG5dO3EpRVN0pJjrn-Hc2zPvPktADOtjEGKigOHWgPmm92puzd8cJBfiVX0Hk/a320%20%286%29.png?psid=1&width=1652&height=929",
-"https://am3pap002files.storage.live.com/y4pI2Oe611oaL34JOZARKSd1a5oBFhbpuHlD8okB42FaQAHaxvOnYyuCea16ijxg7qtoYdRaOl2u9R_qC9pTZfx5xUJDF04DweVOzUNtpOYtmoGxt37K3QvEKar0tqH7cb_2rC7esJi8FdIJtBIw-sTDj5RGrEHsoWMQkteuxZbgv4GEiGuctOpW710lA4kACwvSqXjFRv0NccCZ6apT6hRUTyjDNIrHEQgPSkb2nuLK7w/a320%20%288%29.png?psid=1&width=413&height=233",
-"https://am3pap002files.storage.live.com/y4pWI5HElXl4LU9YhOR2mZALhnV0Dqd6YATTkxnNbHfJsTkNKus1XUdtMg1J8yiWCGMbmA3pD-pXP4U5MMQcjTI03WUihC9P5IYr8LHIffTVotYLkRMp_wnYgm1Is0sl05r1BafUwKfaol-zP5CjBC-WQwbhehvLASUnH0rTf2nwTE4L9yfE95d-gWG47zxiXXsCqepklpSkT6Mb3sCEgzlcheiraw0Hlz2zGtcsDXgnyc/Screenshot%20%28196%29.png?psid=1&width=413&height=233",
-"https://am3pap002files.storage.live.com/y4pC6tCk6OwZx9TFyNJq6V3UvBxmzUHBhPRD-SnFKod_UdniSM58jLNv9byZyEG5TzPF4TJkucsu7qlW1zfLiQCpudUlurulBojemGWh7KQMWbFabuekf0C9qwqxcehQJfUF0mR5p87NgWxktnfNqhwGpaiNM6e4SUVCLNxtZrzZn0w5lnas_NZrMqDE8ZefOVH3fDA6Ijk9aCcD8lv7WfrejnO1u40E1HLHvygDzylfPc/Screenshot%20%28230%29.png?psid=1&width=413&height=233"];
+    var urls = ["https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180761060_3978459705565565_2400364785146805585_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=0debeb&_nc_ohc=gbe8J5bo8WgAX9FIr7c&_nc_ht=scontent.ffco3-1.fna&oh=fd8ac15cfa3b370f4301ecc6a7ed05c6&oe=60B33695",
+    "https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180074962_3978459668898902_3718633132343724379_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=0debeb&_nc_ohc=Xs5PDyXvMq8AX8sP9UQ&_nc_ht=scontent.ffco3-1.fna&oh=82cc6f84e9a049d9f57c86bf0665d598&oe=60AFBA1B",
+    "https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180611553_3978459878898881_8476653576458065525_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=0debeb&_nc_ohc=1QbFRbpeuWoAX9Gip-Q&_nc_ht=scontent.ffco3-1.fna&oh=0cda40ed99895c5ab0ea991c219ca290&oe=60B358EF",
+    "https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180593768_3978459898898879_1330276743207604754_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=0debeb&_nc_ohc=ossI3VGP0ZoAX8MTUOh&_nc_ht=scontent.ffco3-1.fna&oh=26f087beceb7659eb0de8667b924e121&oe=60B28C1D",
+    "https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/179083652_3978459865565549_3133063238286585298_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=0debeb&_nc_ohc=xe13WFPyCowAX-1kS5w&_nc_ht=scontent.ffco3-1.fna&oh=37ae4b99941a385abb7387581edb1cbf&oe=60B2E5BF",
+    "https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180269491_3978459765565559_7026819055658952044_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=0debeb&_nc_ohc=j1Xa9YpVBlQAX_szykb&_nc_ht=scontent.ffco3-1.fna&oh=2f84fd4c584e4959c52d62c09587658b&oe=60B04EE1"
+    ];
+
     var cout = 1; 
     $('body').css('background-image', 'url("' + urls[0] + '")');
     $('body').css('width', "100%");

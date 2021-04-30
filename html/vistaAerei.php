@@ -37,10 +37,10 @@
 
     <script>
         var map = L.map('map').setView([0, 0], 1); 
-        L.tileLayer('https://api.maptiler.com/maps/outdoor/{z}/{x}/{y}.png?key=9SAhLgukQT30FwYja7II', {
+        L.tileLayer('https://api.maptiler.com/maps/outdoor/{z}/{x}/{y}.png?key=9SAhLgukQT30FwYja7II'), {
           attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
         }).addTo(map);
-        /* ho tolto lo zoom perché era troppo forte
+        /* alla riga 41 secondo me hai fatto qualche casino con le parentesi perchè la mappa non si vede più
     </script>
 <!-- qui finisce lo script di creazione della mappa-->
 

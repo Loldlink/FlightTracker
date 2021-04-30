@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/Homepage.css">
     <link rel="icon" href="Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="descriptor" content="sito per progetto LTW di simulazione e gestione del traffico aereo virtuale">
 </head>
 <body>
     <div id="titolo">
