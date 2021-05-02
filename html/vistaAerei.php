@@ -28,7 +28,7 @@
 <body>
     <div id="titolo">
         <a class="pulsanteHomepage" href="homepage.php">Homepage</a>
-        <a class="pulsanteUser" href="">User</a>
+        <a class="pulsanteUser" href="userpage.php">User</a>
     </div>
 
     <!-- elemento div che prende la mappa dal sito   https://cloud.maptiler.com/maps/   -->
@@ -37,28 +37,11 @@
 
     <script>
         var map = L.map('map').setView([0, 0], 1); 
-        L.tileLayer('https://api.maptiler.com/maps/outdoor/{z}/{x}/{y}.png?key=9SAhLgukQT30FwYja7II'), {
+        L.tileLayer('https://api.maptiler.com/maps/outdoor/{z}/{x}/{y}.png?key=9SAhLgukQT30FwYja7II', {
           attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
         }).addTo(map);
-        /* alla riga 41 secondo me hai fatto qualche casino con le parentesi perchè la mappa non si vede più
     </script>
 <!-- qui finisce lo script di creazione della mappa-->
-
-<!-- qui è per "aggiungere aerei sulla mappa" in teoria vai a prendere il file json e aggiungi un marcatore sulla mappa
-estrapolando i dati da i campi [dati.pilots.latitude]-->
-
-
-<!-- ho provato a seguire questa guida qui:  https://www.geeksread.com/how-to-extract-data-from-json-in-javascript/-->
-    
-    <script>
-        var dati= require("https://data.vatsim.net/v3/vatsim-data.json");
-        
-
-
-   var contatore = L.marker([LATITUDINE, LONGITUDINE]).addTo(map); 
-        contatore.bindPopup(NOMEPILOTA);
-
-    </script>
 
 </body>
 </html>
