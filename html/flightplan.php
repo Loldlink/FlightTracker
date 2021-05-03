@@ -27,6 +27,9 @@
     <br />
     <br />
     <br />
+
+    <!-- da qui in poi cominciano i vari campi da compilare, BISOGNA AGGIUNGERE UNA SORTA DI CORNICE/SFONDO SOTTO -->
+    <div class="piano1">
     <form class="pianodivolo">
 
         <label for="nome"> Nome:</label>
@@ -44,18 +47,54 @@
         <label for="female">IFR</label><br>
 
         <label for="partenza"> Aeroporto di partenza:</label>
-        <input type="text" id="aeroportopartenza"><br>
+        <input type="text" id="aeroportopartenza" size="5"><br>
 
         <input type="button" id="invertiCampi" value="INVERTI" style="margin-left: 450px;" onclick="invertiCasellaTesto()"> <!-- il pulsante per invertire i due campi-->
         <br>
+
         <label for="destinazione"> Aeroporto di destinazione:</label>
-        <input type="text" id="aeroportodestinazione">
+        <input type="text" id="aeroportodestinazione" size="5">
+        <br>
+
+        <label for="aeroportoAlternativo">Aeroporto Alternativo</label>
+        <input type="text" id="aeroportoAlternativo" style="width: 60px">
+        <br>
+
+        <label for="orariopartenza">Orario di Partenza</label> 
+        <input type="number" id="orariopartenza" style="width: 40px">
+        <span>HH.MM</span>
+        <br>
+
+        <label for="TempoInVolo">Tempo in volo</label>
+        <input type="number" style="width: 40px;"><span>hh</span>
+        <input type="number" style="width: 40px;"><span>mm</span>
+        <br>
+
+        <label for="CarburanteABordo">Carburante a Bordo</label>
+        <input type="number" style="width: 40px"><span>hh</span>
+        
+        <input type="number" style="width: 40px"><span>mm</span>
+        <br>
+
+        <label for="VelocitaCrociera">Velocità di Crociera</label>
+        <input type="number" style="width: 45px"><span>TAS</span>
+        <br>
+
+        <label for="AltitudineCrociera">Quota di crociera</label>
+        <input type="number" style="width: 45px">
+        <br>
+
+
+        <!--tasto reset-->
+        <label for="reset">
+        <input type="reset">
+
 
     </form>
+</div>
+
 
     <script src = "../Javascript/inverti.js"></script>   <!-- il link allo script per invertire il contenuto delle due caselle di testo partenza/arrivo-->
-
-
     <script src="../Javascript/cambiaSfondo.js"></script>
 </body>
 </html>

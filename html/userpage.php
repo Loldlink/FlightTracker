@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="row mt-2">
-                        <div class="col-md-6"><label class="labels" >Nome</label><input type="text" class="form-control" placeholder="Nome" id="casellanome"></div>
+                        <div class="col-md-6"><label class="labels" >Nome</label><input type="text" class="form-control" placeholder="Nome" id="casellanome" onload="campiuser()"></div>
                         <div class="col-md-6"><label class="labels">Cognome</label><input type="text" class="form-control" value="" id="casellacognome" placeholder="Cognome"></div>
                     </div>
 

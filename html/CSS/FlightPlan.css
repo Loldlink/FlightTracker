@@ -16,8 +16,14 @@ html {
     height: 100px;
 }
 
+/* O questo */
 .pianodivolo {
     text-align: center;
+}
+/* o questo dovrebbe contenere lo sfondo della cornice*/
+.piano1{
+    background-color: teal;
+    opacity: 0.9;
 }
 
 .homepage {
