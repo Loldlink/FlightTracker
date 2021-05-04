@@ -78,39 +78,23 @@
     <script src="../Javascript/cambiaSfondo.js"></script>
 
     <script type="text/javascript">
-        var connected = <?php echo json_encode($obj['general']['connected_clients']);?>;
-        var unique = <?php echo json_encode($obj['general']['unique_users']);?>;
-        var fly = <?php echo json_encode($obj1['pilots']);?>;
-        var controllers = <?php echo json_encode($obj1['controllers']);?>;
-        var supervisors = <?php echo json_encode($obj1['supervisors']);?>;
-        var atis = <?php echo json_encode($obj1['atis']);?>;
-        var observers = <?php echo json_encode($obj1['observers']);?>;
-        var twentyfour = <?php echo json_encode($obj1['twentyfour']);?>;
-        document.getElementById('connected').innerHTML = connected ;
-        document.getElementById('fly').innerHTML = fly ;
-        document.getElementById('unique').innerHTML = unique ;
-        document.getElementById('controllers').innerHTML = controllers ;
-        document.getElementById('supervisors').innerHTML = supervisors ;
-        document.getElementById('atis').innerHTML = atis ;
-        document.getElementById('observers').innerHTML = observers ;
-        document.getElementById('twentyfour').innerHTML = twentyfour ;
+        document.getElementById('connected').innerHTML = <?php echo json_encode($obj['general']['connected_clients']);?> ;
+        document.getElementById('fly').innerHTML = <?php echo json_encode($obj['general']['unique_users']);?>;
+        document.getElementById('unique').innerHTML = <?php echo json_encode($obj1['pilots']);?>;
+        document.getElementById('controllers').innerHTML = <?php echo json_encode($obj1['controllers']);?>;
+        document.getElementById('supervisors').innerHTML = <?php echo json_encode($obj1['supervisors']);?>;
+        document.getElementById('atis').innerHTML = <?php echo json_encode($obj1['atis']);?>;
+        document.getElementById('observers').innerHTML = <?php echo json_encode($obj1['observers']);?>;
+        document.getElementById('twentyfour').innerHTML = <?php echo json_encode($obj1['twentyfour']);?>;
         setInterval(function() {
-            var connected = <?php echo json_encode($obj['general']['connected_clients']);?>; 
-            var unique = <?php echo json_encode($obj['general']['unique_users']);?>; 
-            var fly = <?php echo json_encode($obj1['pilots']);?>;
-            var controllers = <?php echo json_encode($obj1['controllers']);?>;
-            var supervisors = <?php echo json_encode($obj1['supervisors']);?>;
-            var atis = <?php echo json_encode($obj1['atis']);?>;
-            var observers = <?php echo json_encode($obj1['observers']);?>;
-            var twentyfour = <?php echo json_encode($obj1['twentyfour']);?>;
-            document.getElementById('connected').innerHTML = connected ;
-            document.getElementById('unique').innerHTML = unique ;
-            document.getElementById('fly').innerHTML = fly ;
-            document.getElementById('controllers').innerHTML = controllers ;
-            document.getElementById('supervisors').innerHTML = supervisors ;
-            document.getElementById('atis').innerHTML = atis ;
-            document.getElementById('observers').innerHTML = observers ;
-            document.getElementById('twentyfour').innerHTML = twentyfour ;
+            document.getElementById('connected').innerHTML = <?php echo json_encode($obj['general']['connected_clients']);?> ;
+            document.getElementById('fly').innerHTML = <?php echo json_encode($obj['general']['unique_users']);?>;
+            document.getElementById('unique').innerHTML = <?php echo json_encode($obj1['pilots']);?>;
+            document.getElementById('controllers').innerHTML = <?php echo json_encode($obj1['controllers']);?>;
+            document.getElementById('supervisors').innerHTML = <?php echo json_encode($obj1['supervisors']);?>;
+            document.getElementById('atis').innerHTML = <?php echo json_encode($obj1['atis']);?>;
+            document.getElementById('observers').innerHTML = <?php echo json_encode($obj1['observers']);?>;
+            document.getElementById('twentyfour').innerHTML = <?php echo json_encode($obj1['twentyfour']);?>;
         }, 60000);
     </script>
 
