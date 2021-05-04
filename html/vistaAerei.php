@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 
-<?php 
-	session_start();
-	if($_SESSION['userLogin'] != 'loggato'){
-		header("Location: login.html");
-	}
-?>
+<?php require '../Php/active.php'?>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
