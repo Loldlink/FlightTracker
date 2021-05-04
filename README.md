@@ -12,12 +12,12 @@ Tutti i dati vengono presi e decodificati da [Vatsim](https://www.vatsim.net/) p
 * Per avere il corretto funzionamento del sito è necessario aver installato nel sistema XAMPP, scaricabile qui [Download](https://www.apachefriends.org/it/download.html),
 esso garantirà il corretto funzionamento del server Apache e del database MySQL.
 
-* Una volta installato e fatto partire server e database bisognerà andare tramite browser nel seguente link : 
+* Una volta installato e fatto partire sia il server Apache che il database mySQL bisognerà andare tramite browser nel seguente link : 
     http://localhost/phpmyadmin/
 
 * Nella barra superiore scegliere in sequenza :
     'Import', 'Choose File', '[tracker.sql](tracker.sql)'.
-  file che sti troverà all'interno del progetto.
+  file che si troverà all'interno del progetto.
 
 * Una volta fatto basterà andare nel seguente link di accesso al sito http://localhost/FlightsTracker/login.html
 e mettere le seguenti credenziali per avere il totale accesso alle funzionalità :
