@@ -7,9 +7,6 @@
 	}
 ?>
 
-<!-- Secondo me bisognerebbe prendere i dati per la tabella da questo link, ci sono anche i campi che mancano https://stats.vatsim.net/user_count_json
-    va benissimo, l'ho messo -->
-
 <?php 
     $json = file_get_contents('https://data.vatsim.net/v3/vatsim-data.json');
     $obj = json_decode($json,true);

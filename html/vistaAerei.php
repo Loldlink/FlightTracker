@@ -42,6 +42,5 @@
         }).addTo(map);
     </script>
 <!-- qui finisce lo script di creazione della mappa-->
-
 </body>
 </html>
