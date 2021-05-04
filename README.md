@@ -1,7 +1,7 @@
 # FlightTracker
 
 ## Nota
-Il progetto è ancora in fase di sviluppo e lontano dalla sua conlcusione.
+Il progetto è ancora in fase di sviluppo e lontano dalla sua conclusione.
 
 ## Descrizione
 FlightsTracker è un progetto per il corso di "Linguaggi e Tecnologie per il Web" ideato e creato da Musciaglia Marco e Lorenzo Magni.
@@ -16,7 +16,8 @@ esso garantirà il corretto funzionamento del server Apache e del database MySQL
     http://localhost/phpmyadmin/
 
 * Nella barra superiore scegliere in sequenza :
-    'Import', 'Choose File', '[db.sql](db.sql)'.
+    'Import', 'Choose File', '[tracker.sql](tracker.sql)'.
+  file che sti troverà all'interno del progetto.
 
 * Una volta fatto basterà andare nel seguente link di accesso al sito http://localhost/FlightsTracker/login.html
 e mettere le seguenti credenziali per avere il totale accesso alle funzionalità :

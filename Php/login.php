@@ -3,31 +3,31 @@
 session_start();
 /*Si attiva quando il bottone del form viene premuto*/
 if (isset($_POST['send'])) {
-	$connection = mysqli_connect("localhost", "root", "") or die(mysqli_error($connection)); /*try to connect to localhost*/
-	mysqli_select_db($connection, "sasa") or die(mysqli_error($connection)); /*select the db of sasa*/
+	$connection = mysqli_connect("localhost", "root", "") or die(mysqli_error($connection)); /*connessione all'host di phpadmin*/
+	mysqli_select_db($connection, "tracker") or die(mysqli_error($connection)); /*selezione del db*/
 
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	
-	/*save username and password from input*/
+	/*salvataggio delle credenziali*/
 	
-	$query = "SELECT * from users WHERE username = '$username' and password = '$password'";
+	$query = "SELECT * from user WHERE username = '$username' and password = '$password'";
 	$result = mysqli_query($connection, $query);
 	
-	/*start the query, select all columns where username = '$username' and password = '$password'*/
+	/*inizializzazione della query per prendere la colonna corrispondente*/
 	
 	$row = mysqli_num_rows($result);
-	/*count the rows of result*/
+	/*controllo del risultato esatto*/
 	
 	if ($row == 1) {
-		header("location: ../index.html");
+		header("location: ../html/homepage.php");
 		$_SESSION['userLogin'] = 'loggato';
 		
-	/*if = 1, the user is in the db -> Login. The php save the session variable 'userLogin', so the user can login in the other pages*/
+	/*se il controllo è andato a buon fine si viene rimandati nella homepage*/
 	
 	} else {
-		header("location: ../loginError.html");
-	/*Login Error*/
+		header("location: ../html/loginErrato.html");
+	/*altrimenti errore*/
 	}
 	mysqli_close($connection);
 }
