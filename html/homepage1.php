@@ -19,7 +19,7 @@
     </div>
     <div class="pannelloSinistro">
         <div class="creaPiano"> 
-            <button class="pulsanteCreaPiano">Piano di volo</button>
+            <button class="pulsanteCreaPiano" onclick="logAlert()">Piano di volo</button>
             <h3 class="testo">
                 Permette la creazione di un piano di volo
             </h3> <!-- animazione in css allegata-->
@@ -76,6 +76,8 @@
     </div>
 
     <script src="../Javascript/cambiaSfondo.js"></script>
+    <script src="../Javascript/logAlert.js"></script>
+
 
     <?php require '../Php/settingData.php'?>
 
