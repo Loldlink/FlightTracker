@@ -20,7 +20,7 @@ if (isset($_POST['send'])) {
 	/*controllo del risultato esatto*/
 	
 	if ($row == 1) {
-		header("location: ../html/homepage.php");
+		header("location: ../html/homepage.html");
 		$_SESSION['userLogin'] = 'loggato';
 		
 	/*se il controllo è andato a buon fine si viene rimandati nella homepage*/
