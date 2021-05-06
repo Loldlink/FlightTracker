@@ -2,51 +2,52 @@
 <html lang="en">
   
 <head>
-  <title>Flights Tracker</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Flights Tracker</title>
   <link rel="icon" href="Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="CSS/LoginErrato.css"/>
   <script src="https://kit.fontawesome.com/d21c2ccf9a.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- gli script servono per jquery-->
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
   <!--Scritta di benvenuto-->
-  <div class="form">
     <div id="titolo">
-      <a href="homepage1.php" class="saltaLogin">Salta il login</a>
+      <a href="homepage1.html" class="saltaLogin">Salta il login</a>
       <h1 class="homepage">Welcome to Flights Tracker</h1>
       <a href="aboutUs.html" class="aboutUs">About us</a>
+    </div>
       <!--Form-->
-    </div>
-      <div id="login">
-        <br>
-        <form action="../Php/login1.php" method="post">
-          <div class="field-wrap" id="campo-username" class="form-control">
-            <label for="user"></label>
-            <input type="text" name="username" placeholder="Username" required autocomplete="username" />
-            <br/>
-            <label for="password"></label>
-            <input type="password" name="password" placeholder="Password" required autocomplete="current-password" />
-          <!--Bottone del form-->
-            <br/>              
-            <br/>
-            <input class="bottoneLogin" type="submit" name="send" value="Log In"/>
+      <div class="container">
+        <div class="d-flex justify-content-center h-100">
+          <div class="card">
+            <div class="card-body">
+              <form action="../Php/login.php" method="post">
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-user"></i></span>
+                  </div>
+                  <input type="text" name="username" class="form-control" placeholder="Username" required autocomplete="username" />   
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-key"></i></span>
+                  </div>
+                  <input type="password" name="password" class="form-control" placeholder="Password" required autocomplete="current-password" />
+                </div>
+                <div class="form-group">
+                <input type="submit" name="send" value="Log In" class="btn float-right login_btn">
+                </div>
+              </form>
+            </div>
           </div>
-        </form>
-        <br>
-        <br>
-        <!-- <a href="homepage1.php" class="saltaLogin">Salta il login</a> 
-        <br>
-        <a href="aboutUs.html" class="aboutUs">About us</a> -->
+        </div>
       </div>
-    </div>
-  </div>
-    <!--Funzione js che rimanda alla login quando chiudo l'overlay-->
+    <script type="text/javascript" src="../Javascript/loginErrato.js"></script>   <!--Funzione js che rimanda alla login quando chiudo l'overlay-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
-    <script type="text/javascript" src="../Javascript/loginErrato.js"></script>
     <script src="../Javascript/cambiaSfondo.js"></script>
     <!--termine del blocco di codice dello script-->
     <!--Overlay dell'errore-->
