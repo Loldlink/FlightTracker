@@ -30,6 +30,11 @@ a {
     margin-top: 10px;
 }
 
+.login:hover{
+    text-decoration: none;
+    color: black;
+}
+
 .aboutUs {
     color: red;
     font-size: 70px;

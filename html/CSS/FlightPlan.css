@@ -35,6 +35,11 @@ html {
     text-decoration: none;
 }
 
+.homepage:hover{
+    text-decoration: none;
+    color: black;
+}
+
 .registra{
     color: red;
     font-size: 50px;

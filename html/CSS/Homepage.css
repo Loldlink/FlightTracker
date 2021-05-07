@@ -65,11 +65,21 @@ table{
     left: 0.4%;
 }
 
+.Logout:hover{
+    text-decoration: none;
+    color: black;
+}
+
 .Login{
     font-size: 35px;
     color: red;
     position: absolute;
     top: 0%;
+}
+
+.login:hover{
+    text-decoration: none;
+    color: black;
 }
 
 .homepage {
@@ -86,6 +96,11 @@ table{
     float: right;
     margin-top: -129px;
     margin-right: 10px;
+}
+
+.user:hover{
+    text-decoration: none;
+    color: black;
 }
 
 .pulsanteCreaPiano{

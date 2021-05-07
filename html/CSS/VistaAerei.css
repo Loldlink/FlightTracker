@@ -34,10 +34,20 @@ html {
     left: 1%;
 }
 
+.pulsanteHomepage:hover{
+    text-decoration: none;
+    color: black;
+}
+
 .pulsanteUser {
     font-size: 40px;
     position: relative;
     right: -81.4%;
     color: red;
     text-decoration: none;
+}
+
+.pulsanteUser:hover{
+    text-decoration: none;
+    color: black;
 }
