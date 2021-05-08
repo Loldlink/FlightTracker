@@ -1,5 +1,4 @@
 <?php require '../Php/gettingData.php'?>
-echo 
 <script type="text/javascript">
 document.getElementById('connected').innerHTML = <?php echo json_encode($obj['general']['connected_clients']);?> ;
 document.getElementById('fly').innerHTML = <?php echo json_encode($obj['general']['unique_users']);?>;

@@ -6,24 +6,27 @@ html {
 }
 
 .pannelloSinistro {
-    width: 40%;
+    position: absolute;
+    width: 100%;
     height: 100%;
-    float: left;
     border-collapse: collapse;
     text-indent: 50px;
 }
 
 .pannelloCentrale {   
-    width: 20%;
+    position: absolute;
+    left: 38%;
+    top: -5%;
+    width: 100%;
     height: 100%;
-    float: left;
     border-collapse: collapse; 
 }
 
 .pannelloDestro {
-    width: 20%;
+    position: absolute;
+    left: 80%;
     height: 100%;
-    float: right;
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -33,16 +36,13 @@ a{
 
 table{
     position: absolute;
-    opacity: 0.9;        /*bisogna capire come fare un opacità allo sfondo senza opacizzare il contenuto*/
+    opacity: 0.9;
     background-color: whitesmoke;
-    border-radius: 3px; 
-    border-color: black;
-    border-width: 20px;  
     color: rgb(238, 9, 9);
-    top: 40%;
-    margin-left: -25px;
-    border-spacing: 7px;
-    font-size: 24px;
+    top: 35%;
+    font-size: 28px;
+    width: 25%;
+    height: 45%;
 }
 
 #titolo{
@@ -112,8 +112,8 @@ table{
     border-radius: 4px;
     font-size: 20px;
     color: rgb(255, 255, 255);
-    top: 50%;
-    margin-left: 60px
+    top: 35%;
+    left: 5%;
 }
 
 .pulsanteCreaPiano:hover{
@@ -123,48 +123,45 @@ table{
 }
 
 .testo{
-    color: #000000;
-    margin-top: 420px;
+    color: #810b0b;
     text-align: center;
-    margin-left: -1200px;
+    position: absolute;
+    left: -30%;
+    top: 45%;
 }
 
 .creaPiano:hover .testo{
-    margin-left: -100px;
+    left: 0%;
     transition: 2s;
 }
 
 .pulsanteVistaAerei{
     position: absolute;
     height: 42px;
-    width: 200px;
+    width: 260px;
     background-image: url(../Immagini/vistaradar.png);
     background-size:cover;
     border-radius: 4px;
     font-size: 20px;
     color: rgb(255, 255, 255);
-    top: 50%
+    top: 35%;
 }
 
 .pulsanteVistaAerei:hover{
-    color: #701121;
+    color: #800015;
     font-size: 25px;
     transition: 1s;
 }
 
 .testo1{
-    /*size: 70px;*/ /* io cambierei le dimensioni di questo testo (evidentemente non è qui che si fa)*/
-    color: black;
-    margin-bottom: 600;
-    margin-top: 420px;
-    margin-left: 350px;
-    width: 100%;
+    color: #810b0b;
     text-align: center;
+    position: absolute;
+    left: 30%;
+    top: 45%;
 }
 
 .vistaAerei:hover .testo1{
-    margin-left: -50px;
+    left: -1%;
     transition: 2s;
-    /*margin-bottom: 600px;*/ /*e cambierei anche la distanza dal pulsante. E lo renderei anche più visibile*/
 }
-

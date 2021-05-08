@@ -1,4 +1,3 @@
-
 function invertiCasellaTesto() { //funzione per invertire partenza/arrivo
     var partenza = document.getElementById("aeroportopartenza");
     var arrivo = document.getElementById("aeroportodestinazione");
