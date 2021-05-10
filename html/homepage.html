@@ -2,8 +2,6 @@
 
 <?php require '../Php/active.php'?>
 
-<?php require '../Php/gettingData.php'?>
-
 <head>
     <title class=>FlightTracker</title>
     <link rel="stylesheet" type="text/css" href="CSS/Homepage.css">
@@ -35,12 +33,12 @@
                     <th id='connected'></th>
                 </tr>
                 <tr>
-                    <th> Piloti unici </th>
-                    <th id='unique'></th>
-                </tr>
-                <tr>
                     <th><img src="//stats.vatsim.net/images/connection_pilot.png" height="16" width="16"> Piloti in volo </th>
                     <th id='fly'></th>
+                </tr>
+                <tr>
+                    <th> Piloti unici </th>
+                    <th id='unique'></th>
                 </tr>
                 <tr>
                     <th><img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16"> Controllori  </th>
@@ -76,6 +74,6 @@
         </div>
     </div>
     <script src="../Javascript/cambiaSfondo.js"></script>
-    <?php require '../Php/settingData.php'?>
+    <script src="../Javascript/settingData.js"></script>
 </body>
 </html>
