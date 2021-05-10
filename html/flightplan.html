@@ -3,6 +3,10 @@
 <?php require '../Php/active.php'?>
 
 <head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/d21c2ccf9a.js" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <title>FT-crea piano di Volo</title>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="CSS/FlightPlan.css">
@@ -15,11 +19,34 @@
         <a class="homepage" href="homepage.html">Homepage</a>
         <h1 class='registra'> Registra piano di volo</h1>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+          <div class="card">
+            <div class="card-body">
+              <form>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                  </div>
+                  <input type="text" name="username" class="form-control" placeholder="Aeroporto di partenza" required autocomplete="username" />   
+                </div>
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                  </div>
+                  <input type="password" name="password" class="form-control" placeholder="Aeroporto di destinazione" required autocomplete="current-password" />
+                </div>
+                <div class="input-group form-group">
+                    <div class="input-group-prepend">
+                    </div>
+                    <input type="text" name="username" class="form-control" placeholder="Orario di Partenza (HH:MM)" required autocomplete="username" />   
+                </div>
+                <div class="form-group">
+                <input type="submit" name="send" value="Crea piano" class="btn float-right login_btn">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     <!-- da qui in poi cominciano i vari campi da compilare, BISOGNA AGGIUNGERE UNA SORTA DI CORNICE/SFONDO SOTTO -->
     <div class="piano1">
     <form class="pianodivolo">

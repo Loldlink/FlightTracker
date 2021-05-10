@@ -12,7 +12,7 @@ Tutti i dati vengono presi e decodificati da [Vatsim](https://www.vatsim.net/) p
 * Per avere il corretto funzionamento del sito è necessario aver installato nel sistema XAMPP, scaricabile qui [Download](https://www.apachefriends.org/it/download.html),
 esso garantirà il corretto funzionamento del server Apache e del database MySQL.
 
-* Una volta installato e fatto partire sia il server Apache che il database mySQL bisognerà andare tramite browser nel seguente link : 
+* Una volta installato e fatto partire sia il server Apache che il database mySQL, tramite l'apposito pannello di controllo di XAMPP, bisognerà andare tramite browser nel seguente link : 
     http://localhost/phpmyadmin/
 
 * Nella barra superiore scegliere in sequenza :
