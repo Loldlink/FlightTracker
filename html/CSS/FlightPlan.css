@@ -83,3 +83,7 @@ input:focus{
     color: black;
     background-color: white;
 }
+
+#pulsanteinverti{
+    margin-left: 50%;
+}

@@ -27,27 +27,79 @@
                 <div class="input-group form-group">
                   <div class="input-group-prepend">
                   </div>
-                  <input type="text" name="username" class="form-control" placeholder="Aeroporto di partenza" required autocomplete="username" />   
+                  <input type="text"  class="form-control" id="aeroportopartenza" placeholder="Aeroporto di partenza" required autocomplete="username" />   
                 </div>
+
+
                 <div class="input-group form-group">
                   <div class="input-group-prepend">
                   </div>
-                  <input type="password" name="password" class="form-control" placeholder="Aeroporto di destinazione" required autocomplete="current-password" />
+                  <input type="text"  id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione" required autocomplete="current-password" />
                 </div>
+                
+
+                <!-- il pulsante per invertire i due campi, SEMBRA ROMPERE ALCUNE COSE DEL FORM!?!?!-->
+                <div class="input-group form-group">
+                  <div class="input-group-prepend text-center">
+                  </div>
+                <button type="button" class="btn btn-outline-primary" id="pulsanteinverti" value="inverti" onclick="invertiCasellaTesto()">Inverti<br> 
+                </div>
+                <!-- non si riesce a centrare sto bastardo?-->
+ 
+                
+                <!-- Orario di partenza-->
+                <label for="orariopartenza">Orario di Partenza</label> 
+                <input type="number" id="orariopartenza" style="width: 25%" placeholder="HH.MM">
+                <br>
+
+                
+                
+                <!-- bottone VFR IFR-->
+                <div class="form-check">
+                  <label for="tipovolo"> Tipo volo:</label>
+                  <input name="gruppo1" type="radio" id="VFR" checked>
+                  <label for="VFR">VFR</label>
+
+                  <input name="gruppo1" type="radio" id="IFR">
+                  <label for="IFR">IFR</label>
+                </div>
+
+
+                <!-- tempo di volo-->
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                  </div>
+                  <input type="number" class="form-control" placeholder="Tempo di volo" required autocomplete="" style="width: 15px"/><!-- mi piaceva l'idea di ridimensionarli in campi più piccoli ma mi sa che la classe di bootstrap lo previene-->
+                </div>
+
+
+                <!-- carburante a bordo -->
                 <div class="input-group form-group">
                     <div class="input-group-prepend">
                     </div>
-                    <input type="text" name="username" class="form-control" placeholder="Orario di Partenza (HH:MM)" required autocomplete="username" />   
+                    <input type="text" class="form-control" placeholder="Carburante a bordo" required autocomplete="" />   
                 </div>
+                
+                <!-- Quota di crociera -->
+                <div class="input-group form-group">
+                  <div class="input-group-prepend">
+                  </div>
+                  <input type="numeber" class="form-control" placeholder="Quota"/>
+                </div>
+
+
                 <div class="form-group">
-                <input type="submit" name="send" value="Crea piano" class="btn float-right login_btn">
+                <input type="submit" name="send" value="Crea piano" class="btn float login_btn">
                 </div>
               </form>
             </div>
           </div>
         </div>
       </div>
-    <!-- da qui in poi cominciano i vari campi da compilare, BISOGNA AGGIUNGERE UNA SORTA DI CORNICE/SFONDO SOTTO -->
+
+
+    <!-- NON CANCELLARE QUESTO CODICE, MI SERVE ANCORA PER I PROSSIMI GIORNI, LO FACCIO IO-->
+    <!--
     <div class="piano1">
     <form class="pianodivolo">
 
@@ -68,11 +120,11 @@
         <label for="partenza"> Aeroporto di partenza:</label>
         <input type="text" id="aeroportopartenza" size="5"><br>
 
-        <input type="button" id="invertiCampi" value="INVERTI" style="margin-left: 450px;" onclick="invertiCasellaTesto()"> <!-- il pulsante per invertire i due campi-->
+        <input type="button" id="invertiCampi" value="INVERTI" style="margin-left: 450px;" onclick="invertiCasellaTesto()"> 
         <br>
 
         <label for="destinazione"> Aeroporto di destinazione:</label>
-        <input type="text" id="aeroportodestinazione" size="5">
+        <input type="text" id="aeroportodestinazione" >
         <br>
 
         <label for="aeroportoAlternativo">Aeroporto Alternativo</label>
@@ -105,6 +157,10 @@
         <label for="reset">
         <input type="reset">
     </form>
+  -->
+  <!-- non cancellare ti prego ahaha-->
+
+
 </div>
     <script src = "../Javascript/inverti.js"></script>
     <script src="../Javascript/cambiaSfondo.js"></script>
