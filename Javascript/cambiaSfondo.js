@@ -1,4 +1,4 @@
-$(document).ready(function() {   //i link sono del mio drive personale e sono accessibili a tutti
+$(document).ready(function() {   //i link sono del mio facebook personale e sono accessibili a tutti
     var urls = ["https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180761060_3978459705565565_2400364785146805585_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=0debeb&_nc_ohc=gbe8J5bo8WgAX9FIr7c&_nc_ht=scontent.ffco3-1.fna&oh=fd8ac15cfa3b370f4301ecc6a7ed05c6&oe=60B33695",
     "https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180074962_3978459668898902_3718633132343724379_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=0debeb&_nc_ohc=Xs5PDyXvMq8AX8sP9UQ&_nc_ht=scontent.ffco3-1.fna&oh=82cc6f84e9a049d9f57c86bf0665d598&oe=60AFBA1B",
     "https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180611553_3978459878898881_8476653576458065525_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=0debeb&_nc_ohc=1QbFRbpeuWoAX9Gip-Q&_nc_ht=scontent.ffco3-1.fna&oh=0cda40ed99895c5ab0ea991c219ca290&oe=60B358EF",
