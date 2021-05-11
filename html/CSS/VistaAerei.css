@@ -39,15 +39,15 @@ html {
     color: black;
 }
 
-.pulsanteUser {
+.pulsanteVoli {
     font-size: 40px;
     position: relative;
-    right: -81.4%;
+    left: 81%;
     color: red;
     text-decoration: none;
 }
 
-.pulsanteUser:hover{
+.pulsanteVoli:hover{
     text-decoration: none;
     color: black;
 }

@@ -18,6 +18,7 @@
     <div id='titolo'>
         <a class="homepage" href="homepage.html">Homepage</a>
         <h1 class='registra'> Registra piano di volo</h1>
+        <a href="mieivoli.html" class="voli">I Miei Voli</a>
     </div>
     <div class="container">
         <div class="d-flex justify-content-center h-100">
@@ -25,28 +26,22 @@
             <div class="card-body">
               <form>
                 <div class="input-group form-group">
-                  <div class="input-group-prepend">
-                  </div>
-                  <input type="text"  class="form-control" id="aeroportopartenza" placeholder="Aeroporto di partenza" required autocomplete="username" />   
+                  <input type="text"  class="form-control" id="aeroportopartenza" placeholder="Aeroporto di partenza" required autocomplete=""/>   
                 </div>
 
 
                 <div class="input-group form-group">
-                  <div class="input-group-prepend">
-                  </div>
-                  <input type="text"  id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione" required autocomplete="current-password" />
+                  <input type="text"  id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione" required autocomplete=""/>
                 </div>
                 
 
-                <!-- il pulsante per invertire i due campi, SEMBRA ROMPERE ALCUNE COSE DEL FORM!?!?!-->
-                <div class="input-group form-group">
-                  <div class="input-group-prepend text-center">
-                  </div>
-                <button type="button" class="btn btn-outline-primary" id="pulsanteinverti" value="inverti" onclick="invertiCasellaTesto()">Inverti<br> 
+                <!-- il pulsante per invertire i due campi, avevi fatto casino col css relativo all'id pulsanteinverti, togliendolo il bottone va al centro-->
+                <div class="form-group">
+                  <button type="button" class="btn float inverti_btn" id="pulsanteinverti" onclick="invertiCasellaTesto()">Inverti aereoporti</button>
                 </div>
-                <!-- non si riesce a centrare sto bastardo?-->
- 
-                
+
+                <br/>
+
                 <!-- Orario di partenza-->
                 <label for="orariopartenza">Orario di Partenza</label> 
                 <input type="number" id="orariopartenza" style="width: 25%" placeholder="HH.MM">
@@ -57,7 +52,7 @@
                 <!-- bottone VFR IFR-->
                 <div class="form-check">
                   <label for="tipovolo"> Tipo volo:</label>
-                  <input name="gruppo1" type="radio" id="VFR" checked>
+                  <input name="gruppo1" type="radio" id="VFR">
                   <label for="VFR">VFR</label>
 
                   <input name="gruppo1" type="radio" id="IFR">
@@ -67,24 +62,18 @@
 
                 <!-- tempo di volo-->
                 <div class="input-group form-group">
-                  <div class="input-group-prepend">
-                  </div>
                   <input type="number" class="form-control" placeholder="Tempo di volo" required autocomplete="" style="width: 15px"/><!-- mi piaceva l'idea di ridimensionarli in campi più piccoli ma mi sa che la classe di bootstrap lo previene-->
                 </div>
 
 
                 <!-- carburante a bordo -->
                 <div class="input-group form-group">
-                    <div class="input-group-prepend">
-                    </div>
-                    <input type="text" class="form-control" placeholder="Carburante a bordo" required autocomplete="" />   
+                    <input type="text" class="form-control" placeholder="Carburante a bordo" required autocomplete=""/>   
                 </div>
                 
                 <!-- Quota di crociera -->
                 <div class="input-group form-group">
-                  <div class="input-group-prepend">
-                  </div>
-                  <input type="numeber" class="form-control" placeholder="Quota"/>
+                  <input type="numeber" class="form-control" placeholder="Quota" required autocomplete=""/>
                 </div>
 
 

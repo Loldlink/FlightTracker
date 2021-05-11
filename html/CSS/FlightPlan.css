@@ -47,6 +47,19 @@ html {
     margin-top: 20px;
 }
 
+.voli {
+    font-size: 35px;
+    color: red;
+    position: absolute;
+    top: 0%;
+    right: 1%;
+}
+
+.voli:hover{
+    color: black;
+    text-decoration: none;
+}
+
 .container{
     height: 88%;
     align-content: center;
@@ -73,10 +86,11 @@ input:focus{
 }
 
 .login_btn{
-    color: black;
-    background-color: #FFC312;
-    width: 25%;
-    margin-top: 20%;
+    background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    font-size: 20px;
 }
 
 .login_btn:hover{
@@ -84,6 +98,15 @@ input:focus{
     background-color: white;
 }
 
-#pulsanteinverti{
-    margin-left: 50%;
+.inverti_btn {
+    background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
+    border-color: rgb(0, 45, 248);
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px;
+}
+
+.inverti_btn:hover{
+    color: black;
+    background-color: white;
 }

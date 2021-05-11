@@ -17,20 +17,6 @@ html {
     height: 120px;
 }
 
-#login{
-    margin-top: 100px;
-    background-color: red;
-    margin-left: 470px;
-    margin-right: 470px;
-}
-
-.field-wrap{
-    margin-top: 70px;
-    text-align: center;
-    margin-top:  5px;
-    size: 25px;
-}
-
 .saltaLogin{
     text-decoration: none;
     color: black;
@@ -83,7 +69,7 @@ html {
 
 .input-group-prepend span{
     width: 50px;
-    background-color: #FFC312;
+    background-color: rgba(0,0,0,0); /*il quarto parametro gestisce l'opacità del background*/
     color: black;
     border:0;
 }
@@ -94,10 +80,10 @@ input:focus{
 }
 
 .login_btn{
-    color: black;
-    background-color: #FFC312;
+    background-color: rgba(0,0,0,0.4); /*il quarto parametro gestisce l'opacità del background*/
     width: 25%;
     margin-top: 20%;
+    font-size: 20px;
 }
 
 .login_btn:hover{

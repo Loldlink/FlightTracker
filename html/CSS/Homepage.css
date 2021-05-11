@@ -53,7 +53,7 @@ table{
     height: 45%;
 }
 
-.Logout{
+.logout{
     font-size: 35px;
     color: red;
     position: absolute;
@@ -62,11 +62,11 @@ table{
     text-decoration: none;
 }
 
-.Logout:hover{
+.logout:hover{
     color: black;
 }
 
-.Login{
+.login{
     font-size: 35px;
     color: red;
     position: absolute;
@@ -86,7 +86,7 @@ table{
     top: -2.5%;
 }
 
-.user {
+.voli {
     font-size: 35px;
     color: red;
     position: absolute;
@@ -94,7 +94,7 @@ table{
     text-decoration: none;
 }
 
-.user:hover{
+.voli:hover{
     color: black;
 }
 
@@ -166,36 +166,3 @@ table{
     font-size: 25px;
     left: 13%;
 }
-
-        body {
-          font-family: Arial;
-          color: white;
-        }
-        
-        .split {
-          height: 100%;
-          width: 50%;
-          position: fixed;
-          z-index: 1;
-          top: 0;
-          overflow-x: hidden;
-          padding-top: 20px;
-        }
-        
-        .left {
-          left: 0;
-          background-color: #111;
-        }
-        
-        .right {
-          right: 0;
-          background-color: red;
-        }
-        
-        .centered {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-        }
