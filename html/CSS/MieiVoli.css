@@ -73,3 +73,20 @@ html{
     color: black;
     border:0;
 }
+
+.volo_btn{
+    background-color: rgba(0,0,0,0); /*il quarto parametro gestisce l'opacità del background*/
+    border: none;
+    background: none;
+    font-size: 30px;
+    width: 15%;
+}
+
+.volo_btn:hover{
+    color: red;
+    transition: 1s;
+}
+
+#div{
+    width: 15%;
+}

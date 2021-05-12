@@ -12,7 +12,7 @@ if (isset($_POST['send'])) {
 	/*salvataggio delle credenziali*/
 	
 	$query = "SELECT * from user WHERE username = '$username' and password = '$password'";
-	$result = mysqli_query($connection, $query);
+	$result = $connection->query($query);
 	
 	/*inizializzazione della query per prendere la colonna corrispondente*/
 	

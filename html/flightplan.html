@@ -43,38 +43,29 @@
                 <br/>
 
                 <!-- Orario di partenza-->
-                <input type="number" name="orariopartenza" class="form-control" placeholder=" Orario di Partenza (HH:MM)">
-                <br>
-
-                
-                
-                <!-- bottone VFR IFR-->
-                <div class="form-check">
-                  <label for="tipovolo"> Tipo volo:</label>
-                  <input name="gruppo1" type="radio" id="VFR">
-                  <label for="VFR">VFR</label>
-
-                  <input name="gruppo1" type="radio" id="IFR">
-                  <label for="IFR">IFR</label>
+                <div class="input-group form-group">
+                  <input type="text" name="orariopartenza" class="form-control" placeholder="Orario di Partenza (HH:MM)">
                 </div>
 
+                <!-- scelta VFR IFR-->
+                <div class="input-group form-group">
+                  <input type="text" name="tipovolo" class="form-control" placeholder="Tipo di Volo (VFR/IFR)">
+                </div>
 
                 <!-- tempo di volo-->
                 <div class="input-group form-group">
-                  <input type="number" class="form-control" name="tempovolo" placeholder="Tempo di volo" required autocomplete="" style="width: 15px"/><!-- mi piaceva l'idea di ridimensionarli in campi più piccoli ma mi sa che la classe di bootstrap lo previene-->
+                  <input type="text" class="form-control" name="tempovolo" placeholder="Tempo di volo" required autocomplete=""/><!-- mi piaceva l'idea di ridimensionarli in campi più piccoli ma mi sa che la classe di bootstrap lo previene-->
                 </div>
-
 
                 <!-- carburante a bordo -->
                 <div class="input-group form-group">
                     <input type="text" class="form-control" name='carburantevolo' placeholder="Carburante a bordo" required autocomplete=""/>   
                 </div>
-                
+
                 <!-- Quota di crociera -->
                 <div class="input-group form-group">
-                  <input type="numeber" class="form-control" name="quota" placeholder="Quota" required autocomplete=""/>
+                  <input type="text" class="form-control" name="quota" placeholder="Quota" required autocomplete=""/>
                 </div>
-
 
                 <div class="form-group">
                 <input type="submit" name="send" value="Crea piano" class="btn float crea_btn">
