@@ -68,7 +68,7 @@ html {
 .card{
     position: absolute;
     top: 21%;
-    height: 60%;
+    height: 65%;
     width: 25%;
     background-color: rgba(0,0,0,0.5);
 }
@@ -85,7 +85,7 @@ input:focus{
     box-shadow: 0 0 0 0 !important;
 }
 
-.login_btn{
+.crea_btn{
     background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
     width: 50%;
     margin-top: 5%;
@@ -93,7 +93,7 @@ input:focus{
     font-size: 20px;
 }
 
-.login_btn:hover{
+.crea_btn:hover{
     color: black;
     background-color: white;
 }

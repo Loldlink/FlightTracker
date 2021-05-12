@@ -31,3 +31,5 @@ if (isset($_POST['send'])) {
 	}
 	mysqli_close($connection);
 }
+
+?>

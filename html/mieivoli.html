@@ -25,7 +25,7 @@
     
 
 <!--Panello sinistro -->
-      <div class="pannelloSinistro">
+      <div id='div' class="pannelloSinistro">
         <h1 style="text-align: center;">Lista dei voli</h1> 
       </div>
 <!-- Fine-->
@@ -54,7 +54,7 @@
                 <br/>
                 
                 <div class="input-group form-group">
-                  <input type="text"  id="orariopartenza" class="form-control" placeholder="Tipo di Volo (VFR/IFR)" readonly="readonly"/>
+                  <input type="text"  id="tipovolo" class="form-control" placeholder="Tipo di Volo (VFR/IFR)" readonly="readonly"/>
                 </div>
 
                 <br/>
@@ -82,5 +82,7 @@
 </div>
 
 <script src="../Javascript/cambiaSfondo.js"></script>
+<script src="../Javascript/ajaxFlights.js"></script>
+<script src="../Javascript/ajaxTable.js"></script>
 </body>
 </html>

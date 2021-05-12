@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2021 at 04:05 PM
+-- Generation Time: May 12, 2021 at 08:00 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -20,6 +20,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `tracker`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `flights`
+--
+
+CREATE TABLE `flights` (
+  `aeroportopartenza` varchar(255) NOT NULL,
+  `aeroportodestinazione` varchar(255) NOT NULL,
+  `orariopartenza` int(255) NOT NULL,
+  `tipovolo` varchar(255) NOT NULL,
+  `tempovolo` int(255) NOT NULL,
+  `carburantevolo` varchar(255) NOT NULL,
+  `quota` int(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `flights`
+--
+
+INSERT INTO `flights` (`aeroportopartenza`, `aeroportodestinazione`, `orariopartenza`, `tipovolo`, `tempovolo`, `carburantevolo`, `quota`) VALUES
+('12', '21', 32, '', 43, '55', 1);
 
 -- --------------------------------------------------------
 

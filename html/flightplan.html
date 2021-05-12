@@ -24,14 +24,14 @@
         <div class="d-flex justify-content-center h-100">
           <div class="card">
             <div class="card-body">
-              <form>
+              <form action="../Php/flightsData.php" method="post">
                 <div class="input-group form-group">
-                  <input type="text"  class="form-control" id="aeroportopartenza" placeholder="Aeroporto di partenza" required autocomplete=""/>   
+                  <input type="text"  class="form-control" name="aeroportopartenza" id="aeroportopartenza" placeholder="Aeroporto di partenza" required autocomplete=""/>   
                 </div>
 
 
                 <div class="input-group form-group">
-                  <input type="text"  id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione" required autocomplete=""/>
+                  <input type="text" name="aeroportodestinazione" id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione" required autocomplete=""/>
                 </div>
                 
 
@@ -43,8 +43,7 @@
                 <br/>
 
                 <!-- Orario di partenza-->
-                <label for="orariopartenza">Orario di Partenza</label> 
-                <input type="number" id="orariopartenza" style="width: 25%" placeholder="HH.MM">
+                <input type="number" name="orariopartenza" class="form-control" placeholder=" Orario di Partenza (HH:MM)">
                 <br>
 
                 
@@ -62,23 +61,23 @@
 
                 <!-- tempo di volo-->
                 <div class="input-group form-group">
-                  <input type="number" class="form-control" placeholder="Tempo di volo" required autocomplete="" style="width: 15px"/><!-- mi piaceva l'idea di ridimensionarli in campi più piccoli ma mi sa che la classe di bootstrap lo previene-->
+                  <input type="number" class="form-control" name="tempovolo" placeholder="Tempo di volo" required autocomplete="" style="width: 15px"/><!-- mi piaceva l'idea di ridimensionarli in campi più piccoli ma mi sa che la classe di bootstrap lo previene-->
                 </div>
 
 
                 <!-- carburante a bordo -->
                 <div class="input-group form-group">
-                    <input type="text" class="form-control" placeholder="Carburante a bordo" required autocomplete=""/>   
+                    <input type="text" class="form-control" name='carburantevolo' placeholder="Carburante a bordo" required autocomplete=""/>   
                 </div>
                 
                 <!-- Quota di crociera -->
                 <div class="input-group form-group">
-                  <input type="numeber" class="form-control" placeholder="Quota" required autocomplete=""/>
+                  <input type="numeber" class="form-control" name="quota" placeholder="Quota" required autocomplete=""/>
                 </div>
 
 
                 <div class="form-group">
-                <input type="submit" name="send" value="Crea piano" class="btn float login_btn">
+                <input type="submit" name="send" value="Crea piano" class="btn float crea_btn">
                 </div>
               </form>
             </div>
