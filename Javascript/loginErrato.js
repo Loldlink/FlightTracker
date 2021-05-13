@@ -4,11 +4,11 @@ $(function () {
     overlay.appendTo(document.body);
     $(".popup").show();
     $(".close").click(function () {
-      window.location.href = "login.html";
+      window.location.href = "../Html/login.html";
       return false;
     });
     $(".close").click(function () {
-      window.location.href = "login.html";
+      window.location.href = "../Html/login.html";
       overlay.appendTo(document.body).remove();
       return false;
     });

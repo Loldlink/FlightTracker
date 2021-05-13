@@ -44,11 +44,11 @@ html {
 table{
     position: absolute;
     opacity: 0.9;
-    background-color: whitesmoke;
-    color: rgba(238, 9, 9);
+    background-color: rgba(0, 0, 0,0.7);
+    color: rgb(238, 9, 9);
     top: 25%;
     left: 32%;
-    font-size: 28px;
+    font-size: 30px;
     width: 50%;
     height: 45%;
 }
@@ -60,10 +60,11 @@ table{
     top: 0%;
     left: 0.4%;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .logout:hover{
-    color: black;
+    color: white;
     transition: 1s;
 }
 
@@ -73,10 +74,11 @@ table{
     position: absolute;
     top: 0%;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .login:hover{
-    color: black;
+    color: white;
     transition: 1s;
 }
 
@@ -84,7 +86,7 @@ table{
     color: red;
     font-size: 60px;
     position: absolute;
-    left: 43%;
+    left: 42%;
     top: -2.5%;
 }
 
@@ -94,10 +96,11 @@ table{
     position: absolute;
     right: 1%;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .voli:hover{
-    color: black;
+    color: white;
     transition: 1s;
 }
 

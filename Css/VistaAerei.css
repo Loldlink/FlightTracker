@@ -7,11 +7,12 @@ html {
 
 #map{  /*le impostazioni base della mappa*/
     position:absolute; 
-    height: 94%;
+    height: 94.4%;
     top: 50px; 
     bottom: 0; 
     left: 0; 
     right: 0;
+    background-color: rgb(41, 40, 40);
 } 
 
 #titolo {
@@ -23,7 +24,7 @@ html {
     width: 100%;
     height: 100px;
     margin-top: -10px;
-    margin-left: -9px;
+    margin-left: -8px;
 }
 
 .pulsanteHomepage { 
@@ -31,25 +32,27 @@ html {
     color: red;
     text-decoration: none;
     position: relative;
-    left: 1%;
+    left: 0.5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pulsanteHomepage:hover{
     text-decoration: none;
-    color: black;
+    color: white;
     transition: 1s;
 }
 
 .pulsanteVoli {
     font-size: 40px;
     position: relative;
-    left: 81%;
+    left: 78%;
     color: red;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .pulsanteVoli:hover{
     text-decoration: none;
-    color: black;
+    color: white;
     transition: 1s;
 }

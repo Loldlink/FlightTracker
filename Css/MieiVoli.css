@@ -39,6 +39,7 @@ html{
     position: absolute;
     left: 43%;
     top: 1.7%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .homepage{
@@ -48,11 +49,12 @@ html{
     top: 0%;
     left: 0.5%;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .homepage:hover{
     text-decoration: none;
-    color: black;
+    color: white;
     transition: 1s;
 }
 
@@ -62,11 +64,12 @@ html{
     position: absolute;
     right: 1%;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .crea:hover{
     text-decoration: none;
-    color: black;
+    color: white;
     transition: 1s;
 }
 

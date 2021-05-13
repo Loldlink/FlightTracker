@@ -3,6 +3,6 @@
 	session_unset(); /*Libera tutte le sessioni in corso*/
 	session_destroy(); /*Distrugge la sessione*/
 	
-	header('location: ../html/login.html'); /*Redirect alla login*/
+	header('location: ../Html/login.html'); /*Redirect alla login*/
 	exit();
 ?>

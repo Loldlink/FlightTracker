@@ -20,13 +20,13 @@ if (isset($_POST['send'])) {
 	/*controllo del risultato esatto*/
 	
 	if ($row == 1) {
-		header("location: ../html/homepage.html");
+		header("location: ../Html/homepage.html");
 		$_SESSION['userLogin'] = 'loggato';
 		
 	/*se il controllo è andato a buon fine si viene rimandati nella homepage*/
 	
 	} else {
-		header("location: ../html/loginErrato.html");
+		header("location: ../Html/loginErrato.html");
 	/*altrimenti errore*/
 	}
 	mysqli_close($connection);
