@@ -38,6 +38,7 @@ html {
 .homepage:hover{
     text-decoration: none;
     color: black;
+    transition: 1s;
 }
 
 .registra{
@@ -58,6 +59,7 @@ html {
 .voli:hover{
     color: black;
     text-decoration: none;
+    transition: 1s;
 }
 
 .container{

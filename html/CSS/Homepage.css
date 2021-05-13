@@ -64,6 +64,7 @@ table{
 
 .logout:hover{
     color: black;
+    transition: 1s;
 }
 
 .login{
@@ -76,6 +77,7 @@ table{
 
 .login:hover{
     color: black;
+    transition: 1s;
 }
 
 .homepage {
@@ -96,6 +98,7 @@ table{
 
 .voli:hover{
     color: black;
+    transition: 1s;
 }
 
 .pulsanteCreaPiano{

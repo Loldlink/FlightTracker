@@ -1,4 +1,6 @@
-$.ajax({url: "../Php/dbTable.php",
+function ajax(i){
+    $.ajax({url: "../Php/dbTable.php",
+        data: 'data='+i,
         success: function(data) {
             data = JSON.parse(data);
             document.getElementById('aeroportopartenza').value = data[0];
@@ -9,4 +11,5 @@ $.ajax({url: "../Php/dbTable.php",
             document.getElementById('carburantevolo').value = data[5];
             document.getElementById('quota').value = data[6];
             }
-});
+    });
+}

@@ -21,13 +21,13 @@
     <div id="titolo">
         <a href="homepage.html" class="homepage">Homepage</a>
         <h1 class="voli">I Miei Voli</h1>
+        <a href="flightplan.html" class="crea">Crea volo</a>
     </div>
     
 
 <!--Panello sinistro -->
-      <div  class="pannelloSinistro">
+      <div id="div" class="pannelloSinistro">
         <h1 style="text-align: center;">Lista dei voli</h1> 
-        <form id='div' action="../Php/dbTable.php" method="POST"></form>
         <br/>
       </div>
 <!-- Fine-->
@@ -40,7 +40,7 @@
             <div class="card">
               <div class="card-body">
                 <div class="input-group form-group">
-                  <input type="text"  class="form-control" id="aeroportopartenza" placeholder="Aeroporto di partenza" readonly="readonly"/>   
+                  <input type="text" class="form-control" id="aeroportopartenza" placeholder="Aeroporto di partenza" readonly="readonly"/>   
                 </div>
                 <br/>
                 <div class="input-group form-group">
@@ -84,6 +84,7 @@
 </div>
 
 <script src="../Javascript/cambiaSfondo.js"></script>
+<script src="../Javascript/ajaxTable.js"></script>
 <script src="../Javascript/ajaxFlights.js"></script>
 </body>
 </html>
