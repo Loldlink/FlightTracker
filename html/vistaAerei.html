@@ -30,5 +30,25 @@
         }).addTo(map);
     </script>
 <!-- qui finisce lo script di creazione della mappa-->
+
+
+
+<!-- script per settare l'icona sulla mappa--> 
+    <script> //NON SONO SICURO SE QUESTO BLOCCO VADA QUI O NEL FILE VOLI.JS
+    var aereoicona = L.icon({
+        iconUrl: "Immagini/airplane-mode.png",
+        iconSize:     [15, 15], //dimensione dell'iconcina 
+        iconAnchor:   [2, 2], // punto dell'icona che corrisponde a dove effettivamente si trova il marker
+    });
+    </script>
+    
+
+    
+    <!-- esempio reference per come aggiungere i marcatori-->
+    <script>
+    L.marker([42.1, 26.1], {icon: aereoicona}).addTo(map);
+    </script>
+
+<script src="../Javascript/voli.js"> </script>
 </body>
 </html>
