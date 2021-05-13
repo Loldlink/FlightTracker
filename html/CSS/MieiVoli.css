@@ -78,15 +78,14 @@ html{
     background-color: rgba(0,0,0,0); /*il quarto parametro gestisce l'opacità del background*/
     border: none;
     background: none;
-    font-size: 30px;
+    font-size: 25px;
     width: 15%;
+    margin-left: 45%;
+    color: white;
 }
 
 .volo_btn:hover{
     color: red;
     transition: 1s;
-}
-
-#div{
-    width: 15%;
+    text-decoration: none;
 }
