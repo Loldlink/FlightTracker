@@ -50,12 +50,12 @@ html{
     left: 0.5%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .homepage:hover{
     text-decoration: none;
     color: white;
-    transition: 1s;
 }
 
 .crea{
@@ -65,12 +65,12 @@ html{
     right: 1%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .crea:hover{
     text-decoration: none;
     color: white;
-    transition: 1s;
 }
 
 .container{
@@ -101,10 +101,14 @@ html{
     width: 15%;
     margin-left: 46%;
     color: white;
+    transition: 1s;
 }
 
 .volo_btn:hover{
     color: red;
-    transition: 1s;
     text-decoration: none;
+}
+
+.form-control{
+    background-color: rgb(29, 28, 28);
 }

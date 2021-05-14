@@ -46,11 +46,11 @@ table{
     opacity: 0.9;
     background-color: rgba(0, 0, 0,0.7);
     color: rgb(238, 9, 9);
-    top: 25%;
-    left: 32%;
-    font-size: 30px;
-    width: 50%;
-    height: 45%;
+    top: 21%;
+    left: 23%;
+    font-size: 32px;
+    width: 60%;
+    height: 55%;
 }
 
 .logout{
@@ -61,11 +61,11 @@ table{
     left: 0.4%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .logout:hover{
     color: white;
-    transition: 1s;
 }
 
 .login{
@@ -75,18 +75,18 @@ table{
     top: 0%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .login:hover{
     color: white;
-    transition: 1s;
 }
 
 .homepage {
     color: red;
     font-size: 60px;
     position: absolute;
-    left: 42%;
+    left: 41%;
     top: -2.5%;
 }
 
@@ -97,11 +97,11 @@ table{
     right: 1%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .voli:hover{
     color: white;
-    transition: 1s;
 }
 
 .pulsanteCreaPiano{
@@ -114,12 +114,12 @@ table{
     left: 40%;
     width: 50%;
     height: 5%;
+    transition: 1s;
 }
 
 .pulsanteCreaPiano:hover{
     color: #701121;
     font-size: 25px;
-    transition: 1s;
 }
 
 .testo{
@@ -130,10 +130,10 @@ table{
     width: 190%;
     left: -30%;
     opacity: 0;
+    transition: 3s;
 }
 
 .creaPiano:hover .testo{
-    transition: 3s;
     opacity: 1;
     font-size: 25px;
 }
@@ -149,12 +149,12 @@ table{
     right: 35%;
     width: 40%;
     height: 5%;
+    transition: 1s;
 }
 
 .pulsanteVistaAerei:hover{
     color: #800015;
     font-size: 25px;
-    transition: 1s;
 }
 
 .testo1{
@@ -164,10 +164,10 @@ table{
     top: 48%;
     left: 15%;
     opacity: 0;
+    transition: 3s;
 }
 
 .vistaAerei:hover .testo1{
-    transition: 3s;
     opacity: 1;
     font-size: 25px;
     left: 13%;

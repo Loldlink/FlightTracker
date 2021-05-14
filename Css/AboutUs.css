@@ -29,12 +29,12 @@ a {
     left: 0.5%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .login:hover{
     text-decoration: none;
     color: white;
-    transition: 1s;
 }
 
 .aboutUs {

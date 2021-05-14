@@ -26,12 +26,12 @@ html {
     top: 1%;
     left: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .saltaLogin:hover{
     text-decoration: none;
     color: white;
-    transition: 1s;
 }
 
 .aboutUs{
@@ -43,12 +43,12 @@ html {
     right: 1%;
     top: 1%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .aboutUs:hover{
     text-decoration: none;
     color: white;
-    transition: 1s;
 }
 
 .homepage {
@@ -90,12 +90,12 @@ input:focus{
     position: relative;
     font-size: 20px;
     color: white;
+    transition: 1s;
 }
 
 .login_btn:hover{
     color: black;
     background-color: rgb(206, 193, 193);
-    transition: 1s;
 }
 
 .fa-user{
@@ -104,4 +104,8 @@ input:focus{
 
 .fa-key{
     color: white;
+}
+
+.form-control{
+    background-color: rgb(29, 28, 28);
 }

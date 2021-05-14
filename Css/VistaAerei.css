@@ -34,12 +34,12 @@ html {
     position: relative;
     left: 0.5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .pulsanteHomepage:hover{
     text-decoration: none;
     color: white;
-    transition: 1s;
 }
 
 .pulsanteVoli {
@@ -49,10 +49,10 @@ html {
     color: red;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .pulsanteVoli:hover{
     text-decoration: none;
     color: white;
-    transition: 1s;
 }

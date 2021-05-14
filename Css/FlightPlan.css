@@ -24,12 +24,12 @@ html {
     left: 0.5%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .homepage:hover{
     text-decoration: none;
     color: white;
-    transition: 1s;
 }
 
 .registra{
@@ -47,12 +47,12 @@ html {
     top: 0%;
     right: 1%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
 }
 
 .voli:hover{
     color: white;
     text-decoration: none;
-    transition: 1s;
 }
 
 .container{
@@ -87,12 +87,12 @@ input:focus{
     margin-left: 25%;
     font-size: 20px;
     color: white;
+    transition: 1s;
 }
 
 .crea_btn:hover{
     color: black;
     background-color: white;
-    transition: 1s;
 }
 
 .inverti_btn {
@@ -102,10 +102,10 @@ input:focus{
     margin-left: 25%;
     font-size: 20px;
     color: white;
+    transition: 1s;
 }
 
 .inverti_btn:hover{
     color: black;
     background-color: white;
-    transition: 1s;
 }
