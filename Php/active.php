@@ -1,6 +1,8 @@
 <?php 
-	session_start();
-	if($_SESSION['userLogin'] != 'loggato'){
+	session_start();	//Inizializza la sessione
+
+	if($_SESSION['userLogin'] != 'loggato'){	//controllo sessione attiva nel sistema
 		header("Location: ../Html/login.html");
 	}
+
 ?>

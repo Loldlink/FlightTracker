@@ -4,7 +4,7 @@ html {
     margin: 0;
 }
 
-#titolo{
+#titolo {
     border-style: groove;
     border-width: 10px;
     border: black;
@@ -27,12 +27,12 @@ html {
     transition: 1s;
 }
 
-.homepage:hover{
+.homepage:hover {
     text-decoration: none;
     color: white;
 }
 
-.registra{
+.registra {
     color: red;
     font-size: 50px;
     text-align: center;
@@ -50,17 +50,17 @@ html {
     transition: 1s;
 }
 
-.voli:hover{
+.voli:hover {
     color: white;
     text-decoration: none;
 }
 
-.container{
+.container {
     height: 88%;
     align-content: center;
 }
 
-.card{
+.card {
     position: absolute;
     top: 21%;
     height: 65%;
@@ -68,19 +68,19 @@ html {
     background-color: rgba(0,0,0,0.5);
 }
 
-.input-group-prepend span{
+.input-group-prepend span {
     width: 50px;
     background-color: #FFC312;
     color: black;
     border:0;
 }
 
-input:focus{
+input:focus {
     outline: 0 0 0 0  !important;
     box-shadow: 0 0 0 0 !important;
 }
 
-.crea_btn{
+.crea_btn {
     background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
     width: 50%;
     margin-top: 5%;
@@ -90,7 +90,7 @@ input:focus{
     transition: 1s;
 }
 
-.crea_btn:hover{
+.crea_btn:hover {
     color: black;
     background-color: white;
 }
@@ -106,7 +106,7 @@ input:focus{
     size: 30px;
 }
 
-.inverti_btn:hover{
+.inverti_btn:hover {
     color: black;
     background-color: white;
 }

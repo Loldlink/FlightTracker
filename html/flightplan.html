@@ -2,29 +2,33 @@
 
 <?php require '../Php/active.php'?>
 
-<head>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"/>
-    <script src="https://kit.fontawesome.com/d21c2ccf9a.js" crossorigin="anonymous"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <title>FT-crea piano di Volo</title>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="../Css/FlightPlan.css">
-    <link rel="icon" href="../Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
+  <head>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"/>
+      <script src="https://kit.fontawesome.com/d21c2ccf9a.js" crossorigin="anonymous"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <title>FT-crea piano di Volo</title>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" type="text/css" href="../Css/FlightPlan.css">
+      <link rel="icon" href="../Immagini/favicon.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
 
-<body>
-    <div id='titolo'>
-        <a class="homepage" href="homepage.html">Homepage</a>
-        <h1 class='registra'> Registra piano di volo</h1>
-        <a href="mieivoli.html" class="voli">I Miei Voli</a>
-    </div>
-    <div class="container">
+  <body>
+      <!--barra superiore-->
+      <div id='titolo'>
+          <a class="homepage" href="homepage.html">Homepage</a>
+          <h1 class='registra'> Registra piano di volo</h1>
+          <a href="mieivoli.html" class="voli">I Miei Voli</a>
+      </div>
+
+      <!--div del form-->
+      <div class="container">
         <div class="d-flex justify-content-center h-100">
           <div class="card">
             <div class="card-body">
               <form action="../Php/flightsData.php" method="post">
+
                 <!--aeroporto di partenza-->
                 <div class="input-group form-group">
                   <input type="text"  class="form-control" name="aeroportopartenza" id="aeroportopartenza" placeholder="Aeroporto di partenza" required autocomplete=""/>   
@@ -40,6 +44,7 @@
                 <div class="form-group">
                   <button type="button" class="btn float inverti_btn" id="pulsanteinverti" onclick="invertiCasellaTesto()" style="width:fit-content" style="margin-left: 5%;">Inverti aereoporti</button>
                 </div>
+                <!-- Se devi aggiungere lo stile nella tag, mettila nella classe CSS, anche se non mi pare si dovesse sistemare la posizione-->
 
                 <br/>
 
@@ -65,10 +70,12 @@
 
                 <!-- Quota di crociera -->
                 <div class="input-group form-group">
-                  <input type="text" class="form-control" name="quota" placeholder="Quota" required autocomplete=""/>
+                  <input type="text" class="form-control" name="quota" placeholder="Quota di Crociera" required autocomplete=""/>
                 </div>
-                <!-- in teoria qui sarebbe più corretto mettere NUMBER come tipo, ma ho visto che c'è un motivo per cui l'hai cambiato quindi vedi te -->
+                <!-- in teoria qui sarebbe più corretto mettere NUMBER come tipo, ma ho visto che c'è un motivo per cui l'hai cambiato quindi vedi te ,
+                ho messo tutto text per comodità, tanto facciamo tutti i controlli in back end sull'inserimento-->
 
+                <!-- Bottone di invio -->
                 <div class="form-group">
                 <input type="submit" name="send" value="Crea piano" class="btn float crea_btn">
                 </div>
@@ -79,71 +86,71 @@
       </div>
 
 
-    <!-- NON CANCELLARE QUESTO CODICE, MI SERVE ANCORA PER I PROSSIMI GIORNI, LO FACCIO IO-->
-    <!--
-    <div class="piano1">
-    <form class="pianodivolo">
+      <!-- NON CANCELLARE QUESTO CODICE, MI SERVE ANCORA PER I PROSSIMI GIORNI, LO FACCIO IO-->
+      <!--
+      <div class="piano1">
+      <form class="pianodivolo">
 
-        <label for="nome"> Nome:</label>
-        <input type="text" id="nomePilota">
-        <br>
+          <label for="nome"> Nome:</label>
+          <input type="text" id="nomePilota">
+          <br>
 
-        <label for="cognome"> Cognome:</label>
-        <input type="text" id="cognomePilota">
-        <br>
+          <label for="cognome"> Cognome:</label>
+          <input type="text" id="cognomePilota">
+          <br>
 
-        <label for="tipovolo"> Tipo volo:</label>
-        <input type="radio" id="VFR" name="VFR" value="VFR">
-        <label for="male">VFR</label>
-        <input type="radio" id="IFR" name="IFR" value="IFR">
-        <label for="female">IFR</label><br>
+          <label for="tipovolo"> Tipo volo:</label>
+          <input type="radio" id="VFR" name="VFR" value="VFR">
+          <label for="male">VFR</label>
+          <input type="radio" id="IFR" name="IFR" value="IFR">
+          <label for="female">IFR</label><br>
 
-        <label for="partenza"> Aeroporto di partenza:</label>
-        <input type="text" id="aeroportopartenza" size="5"><br>
+          <label for="partenza"> Aeroporto di partenza:</label>
+          <input type="text" id="aeroportopartenza" size="5"><br>
 
-        <input type="button" id="invertiCampi" value="INVERTI" style="margin-left: 450px;" onclick="invertiCasellaTesto()"> 
-        <br>
+          <input type="button" id="invertiCampi" value="INVERTI" style="margin-left: 450px;" onclick="invertiCasellaTesto()"> 
+          <br>
 
-        <label for="destinazione"> Aeroporto di destinazione:</label>
-        <input type="text" id="aeroportodestinazione" >
-        <br>
+          <label for="destinazione"> Aeroporto di destinazione:</label>
+          <input type="text" id="aeroportodestinazione" >
+          <br>
 
-        <label for="aeroportoAlternativo">Aeroporto Alternativo</label>
-        <input type="text" id="aeroportoAlternativo" style="width: 60px">
-        <br>
+          <label for="aeroportoAlternativo">Aeroporto Alternativo</label>
+          <input type="text" id="aeroportoAlternativo" style="width: 60px">
+          <br>
 
-        <label for="orariopartenza">Orario di Partenza</label> 
-        <input type="number" id="orariopartenza" style="width: 40px">
-        <span>HH.MM</span>
-        <br>
+          <label for="orariopartenza">Orario di Partenza</label> 
+          <input type="number" id="orariopartenza" style="width: 40px">
+          <span>HH.MM</span>
+          <br>
 
-        <label for="TempoInVolo">Tempo in volo</label>
-        <input type="number" style="width: 40px;"><span>hh</span>
-        <input type="number" style="width: 40px;"><span>mm</span>
-        <br>
+          <label for="TempoInVolo">Tempo in volo</label>
+          <input type="number" style="width: 40px;"><span>hh</span>
+          <input type="number" style="width: 40px;"><span>mm</span>
+          <br>
 
-        <label for="CarburanteABordo">Carburante a Bordo</label>
-        <input type="number" style="width: 40px"><span>hh</span>
-        
-        <input type="number" style="width: 40px"><span>mm</span>
-        <br>
+          <label for="CarburanteABordo">Carburante a Bordo</label>
+          <input type="number" style="width: 40px"><span>hh</span>
+          
+          <input type="number" style="width: 40px"><span>mm</span>
+          <br>
 
-        <label for="VelocitaCrociera">Velocità di Crociera</label>
-        <input type="number" style="width: 45px"><span>TAS</span>
-        <br>
+          <label for="VelocitaCrociera">Velocità di Crociera</label>
+          <input type="number" style="width: 45px"><span>TAS</span>
+          <br>
 
-        <label for="AltitudineCrociera">Quota di crociera</label>
-        <input type="number" style="width: 45px">
-        <br>
-        <label for="reset">
-        <input type="reset">
-    </form>
-  -->
-  <!-- non cancellare ti prego ahaha-->
+          <label for="AltitudineCrociera">Quota di crociera</label>
+          <input type="number" style="width: 45px">
+          <br>
+          <label for="reset">
+          <input type="reset">
+      </form>
+    -->
+    <!-- non cancellare ti prego ahaha,
+    tranquillo-->
 
+      <script src = "../Javascript/inverti.js"></script>
+      <script src="../Javascript/cambiaSfondo.js"></script>
 
-</div>
-    <script src = "../Javascript/inverti.js"></script>
-    <script src="../Javascript/cambiaSfondo.js"></script>
-</body>
+  </body>
 </html>

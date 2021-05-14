@@ -1,11 +1,15 @@
 <?php
 
-session_start();
-/*Si attiva quando il bottone del form viene premuto*/
-if (isset($_POST['send'])) {
-	$connection = mysqli_connect("localhost", "root", "") or die(mysqli_error($connection)); /*connessione all'host di phpadmin*/
-	mysqli_select_db($connection, "tracker") or die(mysqli_error($connection)); /*selezione del db*/
-    
+session_start();  //Inizializza la sessione
+
+if (isset($_POST['send'])) {  //Si attiva quando il bottone del form viene premuto
+
+	$connection = mysqli_connect("localhost", "root", "") or die(mysqli_error($connection));  //connessione all'host di phpadmin
+
+	mysqli_select_db($connection, "tracker") or die(mysqli_error($connection)); //selezione del db
+  
+  //acquisizione di tutti i dati del form
+
   $aeroportopartenza = $_POST['aeroportopartenza'];
 	$aeroportodestinazione = $_POST['aeroportodestinazione'];
   $orariopartenza = $_POST['orariopartenza'];
@@ -13,6 +17,8 @@ if (isset($_POST['send'])) {
 	$tempovolo = $_POST['tempovolo'];
   $carburantevolo = $_POST['carburantevolo'];
 	$quota = $_POST['quota'];
+
+  //controlli sui campi del form
 
   if(!(str_contains($orariopartenza,':'))){
     echo '<script>
@@ -49,11 +55,18 @@ if (isset($_POST['send'])) {
           </script>';
   }
 
+  //inserimento dati nella tabella flights
+
   else {$sql = "INSERT INTO flights (aeroportopartenza,aeroportodestinazione,orariopartenza,tipovolo,tempovolo,carburantevolo,quota) 
   VALUES ('$aeroportopartenza','$aeroportodestinazione','$orariopartenza','$tipovolo','$tempovolo','$carburantevolo','$quota')";
+
+  //controllo sul corretto inserimento
+
   if ($connection->query($sql) === TRUE) {
     header("location: ../Html/flightplan.html");
     }}
-  mysqli_close($connection);
+    
+  mysqli_close($connection); ////chiusura connessione con l'host
 }
+
 ?>  

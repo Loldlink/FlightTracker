@@ -2,89 +2,86 @@
 
 <?php require '../Php/active.php'?>
 
-<head>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/d21c2ccf9a.js" crossorigin="anonymous"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <title id="TitoloUser"> Pagina Utente</title>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../Css/MieiVoli.css">
-    <link rel="icon" href="../Immagini/favicon1.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
-</head>
+  <head>
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/d21c2ccf9a.js" crossorigin="anonymous"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <title id="TitoloUser"> Pagina Utente</title>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="../Css/MieiVoli.css">
+      <link rel="icon" href="../Immagini/favicon1.png"> <!-- questa è l'iconcina che compare sulla scheda del browser-->
+  </head>
 
-<body>
-
-<!-- titolo e barra sopra-->
+  <body>
+    <!--barra superiore-->
     <div id="titolo">
         <a href="homepage.html" class="homepage">Homepage</a>
         <h1 class="voli">I Miei Voli</h1>
         <a href="flightplan.html" class="crea">Crea volo</a>
     </div>
+      
+
+    <!--Panello sinistro -->
+    <div id="div" class="pannelloSinistro">
+      <h1 style="text-align: center;">Lista dei voli</h1> 
+      <br/>
+    </div>
     
+    <!-- Panello destro-->
+    <div class="pannelloDestro">
+      <h1 style="text-align: center;">Informazioni del volo</h1> 
+      <div class="container">
+        <div class="d-flex justify-content-center h-100">
+          <div class="card">
+            <div class="card-body">
+              <div class="input-group form-group">
+                <input type="text" class="form-control" id="aeroportopartenza" placeholder="Aeroporto di partenza" readonly="readonly"/>   
+              </div>
+              <br/>
+              <div class="input-group form-group">
+                <input type="text"  id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione" readonly="readonly"/>
+              </div>
 
-<!--Panello sinistro -->
-      <div id="div" class="pannelloSinistro">
-        <h1 style="text-align: center;">Lista dei voli</h1> 
-        <br/>
-      </div>
-<!-- Fine-->
-  
-<!-- Panello destro-->
-      <div class="pannelloDestro">
-        <h1 style="text-align: center;">Informazioni del volo</h1> 
-        <div class="container">
-          <div class="d-flex justify-content-center h-100">
-            <div class="card">
-              <div class="card-body">
-                <div class="input-group form-group">
-                  <input type="text" class="form-control" id="aeroportopartenza" placeholder="Aeroporto di partenza" readonly="readonly"/>   
-                </div>
-                <br/>
-                <div class="input-group form-group">
-                  <input type="text"  id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione" readonly="readonly"/>
-                </div>
-  
-                <br/>
-                
-                <div class="input-group form-group">
-                  <input type="text"  id="orariopartenza" class="form-control" placeholder="Orario di Partenza (HH:MM)" readonly="readonly"/>
-                </div>
+              <br/>
+              
+              <div class="input-group form-group">
+                <input type="text"  id="orariopartenza" class="form-control" placeholder="Orario di Partenza (HH:MM)" readonly="readonly"/>
+              </div>
 
-                <br/>
-                
-                <div class="input-group form-group">
-                  <input type="text"  id="tipovolo" class="form-control" placeholder="Tipo di Volo (VFR/IFR)" readonly="readonly"/>
-                </div>
+              <br/>
+              
+              <div class="input-group form-group">
+                <input type="text"  id="tipovolo" class="form-control" placeholder="Tipo di Volo (VFR/IFR)" readonly="readonly"/>
+              </div>
 
-                <br/>
+              <br/>
 
-                <div class="input-group form-group">
-                  <input type="text" id="tempodivolo" class="form-control" placeholder="Tempo di volo" readonly="readonly"/>
-                </div>
+              <div class="input-group form-group">
+                <input type="text" id="tempodivolo" class="form-control" placeholder="Tempo di volo" readonly="readonly"/>
+              </div>
 
-                <br/>
+              <br/>
 
-                <div class="input-group form-group">
-                    <input type="text" id="carburantevolo" class="form-control" placeholder="Carburante a bordo" readonly="readonly"/>   
-                </div>
-                
-                <br/> 
-                <div class="input-group form-group">
-                  <input type="text" id="quota" class="form-control" placeholder="Quota" readonly="readonly"/>
-                </div>
+              <div class="input-group form-group">
+                  <input type="text" id="carburantevolo" class="form-control" placeholder="Carburante a bordo" readonly="readonly"/>   
+              </div>
+              
+              <br/> 
+
+              <div class="input-group form-group">
+                <input type="text" id="quota" class="form-control" placeholder="Quota" readonly="readonly"/>
               </div>
             </div>
           </div>
         </div>
       </div>
-<!-- Fine -->
-</div>
+    </div>
 
-<script src="../Javascript/cambiaSfondo.js"></script>
-<script src="../Javascript/ajaxTable.js"></script>
-<script src="../Javascript/ajaxFlights.js"></script>
-</body>
+    <script src="../Javascript/cambiaSfondo.js"></script>
+    <script src="../Javascript/ajaxTable.js"></script>
+    <script src="../Javascript/ajaxFlights.js"></script>
+  </body>
 </html>

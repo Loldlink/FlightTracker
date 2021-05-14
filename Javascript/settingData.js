@@ -1,6 +1,3 @@
-/* ajax serve per far collegare js e php, non c'è altro modo. 
-nella chiamata ajax URL è il link al file php locale, SUCCESS è dove va a finire l'output del file php per poi leggerlo. */
-
 $.ajax({url: "../Php/data.php",
         success: function(data) {
             var obj = JSON.parse(data);

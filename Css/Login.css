@@ -5,7 +5,7 @@ html {
     overflow: hidden;
 }
 
-#titolo{
+#titolo {
     border-style: groove;
     border-width: 15px;
     border: black;
@@ -17,7 +17,7 @@ html {
     height: 12%;
 }
 
-.saltaLogin{
+.saltaLogin {
     text-decoration: none;
     color: black;
     font-size: 35px;
@@ -29,12 +29,12 @@ html {
     transition: 1s;
 }
 
-.saltaLogin:hover{
+.saltaLogin:hover {
     text-decoration: none;
     color: white;
 }
 
-.aboutUs{
+.aboutUs {
     text-decoration: none;
     color: black;
     font-size: 35px;
@@ -46,7 +46,7 @@ html {
     transition: 1s;
 }
 
-.aboutUs:hover{
+.aboutUs:hover {
     text-decoration: none;
     color: white;
 }
@@ -59,12 +59,12 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
+.container {
     height: 100%;
     align-content: center;
 }
 
-.card{
+.card {
     position: absolute;
     top: 25%;
     height: 30%;
@@ -72,19 +72,19 @@ html {
     background-color: rgba(0,0,0,0.5);
 }
 
-.input-group-prepend span{
+.input-group-prepend span {
     width: 50px;
     background-color: rgba(0,0,0,0); /*il quarto parametro gestisce l'opacità del background*/
     color: black;
     border:0;
 }
 
-input:focus{
+input:focus {
     outline: 0 0 0 0  !important;
     box-shadow: 0 0 0 0 !important;
 }
 
-.login_btn{
+.login_btn {
     background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
     width: 25%;
     position: relative;
@@ -93,19 +93,19 @@ input:focus{
     transition: 1s;
 }
 
-.login_btn:hover{
+.login_btn:hover {
     color: black;
     background-color: rgb(206, 193, 193);
 }
 
-.fa-user{
+.fa-user {
     color: white;
 }
 
-.fa-key{
+.fa-key {
     color: white;
 }
 
-.form-control{
+.form-control {
     background-color: rgb(29, 28, 28);
 }

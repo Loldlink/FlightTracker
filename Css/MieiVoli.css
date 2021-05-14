@@ -1,11 +1,11 @@
-html{
+html {
     height:100%;
     width:100%;
     margin:0px;
     overflow: hidden;
 }
 
-#titolo{
+#titolo {
     border-style: groove;
     border-width: 10px;
     border: black;
@@ -42,7 +42,7 @@ html{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.homepage{
+.homepage {
     font-size: 35px;
     color: red;
     position: absolute;
@@ -53,12 +53,12 @@ html{
     transition: 1s;
 }
 
-.homepage:hover{
+.homepage:hover {
     text-decoration: none;
     color: white;
 }
 
-.crea{
+.crea {
     font-size: 35px;
     color: red;
     position: absolute;
@@ -68,17 +68,17 @@ html{
     transition: 1s;
 }
 
-.crea:hover{
+.crea:hover {
     text-decoration: none;
     color: white;
 }
 
-.container{
+.container {
     height: 100%;
     align-content: center;
 }
 
-.card{
+.card {
     position: absolute;
     top: 15%;
     height: 70%;
@@ -86,14 +86,14 @@ html{
     background-color: rgba(0,0,0,0.5);
 }
 
-.input-group-prepend span{
+.input-group-prepend span {
     width: 50px;
     background-color: #FFC312;
     color: black;
     border:0;
 }
 
-.volo_btn{
+.volo_btn {
     background-color: rgba(0,0,0,0); /*il quarto parametro gestisce l'opacità del background*/
     border: none;
     background: none;
@@ -104,11 +104,11 @@ html{
     transition: 1s;
 }
 
-.volo_btn:hover{
+.volo_btn:hover {
     color: red;
     text-decoration: none;
 }
 
-.form-control{
+.form-control {
     background-color: rgb(29, 28, 28);
 }
