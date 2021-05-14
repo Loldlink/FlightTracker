@@ -98,11 +98,12 @@ input:focus{
 .inverti_btn {
     background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
     border-color: rgb(0, 45, 248);
-    width: 50%;
+    width: 70%;
     margin-left: 25%;
     font-size: 20px;
     color: white;
     transition: 1s;
+    size: 30px;
 }
 
 .inverti_btn:hover{

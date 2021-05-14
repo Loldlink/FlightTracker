@@ -25,11 +25,12 @@
           <div class="card">
             <div class="card-body">
               <form action="../Php/flightsData.php" method="post">
+                <!--aeroporto di partenza-->
                 <div class="input-group form-group">
                   <input type="text"  class="form-control" name="aeroportopartenza" id="aeroportopartenza" placeholder="Aeroporto di partenza" required autocomplete=""/>   
                 </div>
 
-
+                <!-- aeroporto di destinazione-->
                 <div class="input-group form-group">
                   <input type="text" name="aeroportodestinazione" id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione" required autocomplete=""/>
                 </div>
@@ -37,7 +38,7 @@
 
                 <!-- il pulsante per invertire i due campi-->
                 <div class="form-group">
-                  <button type="button" class="btn float inverti_btn" id="pulsanteinverti" onclick="invertiCasellaTesto()">Inverti aereoporti</button>
+                  <button type="button" class="btn float inverti_btn" id="pulsanteinverti" onclick="invertiCasellaTesto()" style="width:fit-content" style="margin-left: 5%;">Inverti aereoporti</button>
                 </div>
 
                 <br/>
@@ -59,13 +60,14 @@
 
                 <!-- carburante a bordo -->
                 <div class="input-group form-group">
-                    <input type="text" class="form-control" name='carburantevolo' placeholder="Carburante a bordo" required autocomplete=""/>   
+                    <input type="text" class="form-control" name='carburantevolo' placeholder="Carburante a bordo" required autocomplete="" style="width: 10%"/>   
                 </div>
 
                 <!-- Quota di crociera -->
                 <div class="input-group form-group">
                   <input type="text" class="form-control" name="quota" placeholder="Quota" required autocomplete=""/>
                 </div>
+                <!-- in teoria qui sarebbe più corretto mettere NUMBER come tipo, ma ho visto che c'è un motivo per cui l'hai cambiato quindi vedi te -->
 
                 <div class="form-group">
                 <input type="submit" name="send" value="Crea piano" class="btn float crea_btn">
