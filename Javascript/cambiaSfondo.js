@@ -7,6 +7,7 @@ var urls = ["https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180761060_397845
 "https://scontent.ffco3-1.fna.fbcdn.net/v/t1.6435-9/180269491_3978459765565559_7026819055658952044_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=0debeb&_nc_ohc=j1Xa9YpVBlQAX_szykb&_nc_ht=scontent.ffco3-1.fna&oh=2f84fd4c584e4959c52d62c09587658b&oe=60B04EE1"
 ];
 
+
 $('body').css('background-image', 'url("' + urls[Math.floor(Math.random() * ((urls.length-1) + 1))] + '")'); //funzione che prende un indice random dell'array urls
 $('body').css('width', "100%");
 $('body').css('height', "100%");
@@ -14,6 +15,7 @@ $('body').css('background-repeat', "no-repeat");
 $('body').css('background-size', "cover");
 $('body').css("margin-top","auto");
 $('body').css("margin-left","auto");
+
 setInterval(function() {
     $('body').css('background-image', 'url("' + urls[Math.floor(Math.random() * ((urls.length-1) + 1))] + '")');
     $('body').css('width', "100%");
@@ -23,3 +25,5 @@ setInterval(function() {
     $('body').css("margin-top","auto");
     $('body').css("margin-left","auto");
 }, 60000);
+
+

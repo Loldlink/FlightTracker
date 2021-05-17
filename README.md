@@ -1,7 +1,7 @@
 # FlightTracker
 
 ## Nota
-Il progetto è ancora in fase di sviluppo e lontano dalla sua conclusione.
+Il progetto è ancora in fase di sviluppo.
 
 ## Descrizione
 FlightsTracker è un progetto per il corso di "Linguaggi e Tecnologie per il Web" ideato e creato da Musciaglia Marco e Lorenzo Magni.
