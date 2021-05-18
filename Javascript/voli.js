@@ -1,3 +1,5 @@
+var markers = []; //array per permettere la creazione di multivariabili
+
 $.ajax({url: "../Php/data.php",
         success: function(data) {
           var aereoicona = L.icon({
@@ -8,7 +10,6 @@ $.ajax({url: "../Php/data.php",
 
           var voli = JSON.parse(data); //faccio il parsing del file json con tutti i dati
           
-          var markers = []; //array per permettere la creazione di multivariabili
 
           for (var i = 0; i < 100; ++i) { //ciclo nell'array di variabili N volte
 
@@ -27,14 +28,14 @@ $.ajax({url: "../Php/data.php",
             */
 
             //Riga per aggiungere aereo alla mappa
-            markers[i] = L.marker([latitudine, longitudine], {icon: aereoicona}, {rotationAngle: direzione}).addTo(map).bindPopup(nomepilota + "   "+altitudine+"ft");
-            //var update = document.getElementsByTagName('img')[i]; 
+            markers[i] = L.marker([latitudine, longitudine], {icon: aereoicona}).addTo(map).bindPopup(nomepilota + "   "+altitudine+"ft");
+            console.log(markers[i].style);
         } 
         }
 });
 
 //funzione che fa l'update
-/*
+
 setInterval(function() {
     $.ajax({url: "../Php/data.php",
     success: function(data) {
@@ -46,26 +47,23 @@ setInterval(function() {
 
         var voli = JSON.parse(data); //faccio il parsing del file json con tutti i dati
 
-        console.log("Update aerei");
-
         for (var i = 0; i < 100; ++i) { //ciclo nell'array di variabili N volte
 
             var latitudine = voli['pilots'][i]['latitude'];
             var longitudine = voli['pilots'][i]['longitude'];
             var nomepilota = voli['pilots'][i]['name'];
+            var altitudine = voli['pilots'][i]['altitude'];
             
             //Riga per fare l'update dell'icona
-            var newLatLng = new L.LatLng(latitudine, longitudine);
-            var update = document.getElementsByTagName('img')[i];
+            var newLatLng = [latitudine, longitudine];
+            markers[i].setLatLng(newLatLng); //setta lat e lng 
+            markers[i].setPopupContent(nomepilota + "   "+altitudine+"ft"); //update del popup
         } 
     }
     });
 }, 10000); 
-*/
-/*
 
-//HO COMMENTATO TUTTA QUESTA SEZIONE PERCHè NON PENSO SI POSSA FARE L'UPDATE DINAMICO DEI VOLI
-//LEAFLET NON HA UNA FUNZIONE PER CANCELLARE I MARKERS E QUINDI QUELLO CHE SUCCEDE è CHE LA MAPPA VIENE SBALLATA
+/*
 
 //funzione IMPORTATA ma non riesco a farla andare:   https://github.com/bbecquet/Leaflet.RotatedMarker
 (function() {

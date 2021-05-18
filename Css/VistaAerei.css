@@ -7,12 +7,11 @@ html {
 
 #map { 
     position:absolute; 
-    height: 94.4%;
-    top: 50px; 
+    height: 91%;
+    top: 9.3%; 
     bottom: 0; 
     left: 0; 
     right: 0;
-    background-color: rgb(41, 40, 40);
 } 
 
 #titolo {
@@ -22,7 +21,7 @@ html {
     border: black;
     background-color: rgb(19, 19, 34);
     width: 100%;
-    height: 100px;
+    height: 12%;
     margin-top: -10px;
     margin-left: -8px;
 }
@@ -31,8 +30,8 @@ html {
     font-size: 40px;
     color: red;
     text-decoration: none;
-    position: relative;
-    left: 0.5%;
+    position: absolute;
+    left: 0.3%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 1s;
 }
@@ -44,8 +43,8 @@ html {
 
 .pulsanteVoli {
     font-size: 40px;
-    position: relative;
-    left: 78%;
+    position: absolute;
+    right: 0.6%;
     color: red;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
