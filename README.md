@@ -17,7 +17,7 @@ esso garantirà il corretto funzionamento del server Apache e del database MySQL
 * Dopo ciò si procede a far partire sia il server Apache che il database mySQL, tramite l'apposito pannello di controllo di XAMPP, bisognerà andare tramite browser nel seguente link : 
     http://localhost/phpmyadmin/
 
-* Nel pannello di sinistra creare un nuovo database col nome [tracker.sql](tracker.sql).
+* Nel pannello di sinistra creare un nuovo database col nome [tracker](tracker.sql).
 
 * Nella barra superiore scegliere in sequenza :
     'Import', 'Choose File', '[tracker.sql](tracker.sql)'.
