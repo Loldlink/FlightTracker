@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 12, 2021 at 08:00 PM
+-- Generation Time: May 18, 2021 at 01:58 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -42,7 +42,9 @@ CREATE TABLE `flights` (
 --
 
 INSERT INTO `flights` (`aeroportopartenza`, `aeroportodestinazione`, `orariopartenza`, `tipovolo`, `tempovolo`, `carburantevolo`, `quota`) VALUES
-('12', '21', 32, '', 43, '55', 1);
+('lo', 'lo', 23, 'VFR', 0, 'lo', 0),
+('yt', 'rr', 23, 'IFR', 56, 'dfgsd', 56),
+('lo', 'l', 23, 'VFR', 23, 'er', 32);
 
 -- --------------------------------------------------------
 
