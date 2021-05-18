@@ -2,11 +2,6 @@ var markers = []; //array per permettere la creazione di multivariabili
 
 $.ajax({url: "../Php/data.php",
         success: function(data) {
-          var aereoicona = L.icon({
-              iconUrl: "../Immagini/airplane-mode.png",
-              iconSize:     [15, 15], //dimensione dell'iconcina 
-              iconAnchor:   [2, 2], // punto dell'icona che corrisponde a dove effettivamente si trova il marker
-            });
 
           var voli = JSON.parse(data); //faccio il parsing del file json con tutti i dati
           
@@ -19,6 +14,13 @@ $.ajax({url: "../Php/data.php",
             var direzione = voli['pilots'][i]['heading'];
             var altitudine = voli['pilots'][i]['altitude'];
 
+            var aereoicona = L.icon({
+                iconUrl: "../Immagini/airplane-mode.png",
+                iconSize:     [15, 15], //dimensione dell'iconcina 
+                iconAnchor:   [2, 2], // punto dell'icona che corrisponde a dove effettivamente si trova il marker
+                className: i+1,
+              });
+
             /*
             console.log("Dati Aereo")
             console.log("Latitudine" + latitudine);
@@ -29,7 +31,12 @@ $.ajax({url: "../Php/data.php",
 
             //Riga per aggiungere aereo alla mappa
             markers[i] = L.marker([latitudine, longitudine], {icon: aereoicona}).addTo(map).bindPopup(nomepilota + "   "+altitudine+"ft");
-            console.log(markers[i].style);
+            
+            //prendo nel dom il lo stile transform che ha come classe l'inidice i+1 aggiungendo la rotazione e lo salvo in css
+            var css = document.getElementsByClassName(i+1)[0].style.transform+' rotate(+'+direzione+'deg)'; 
+            //sovrascrivo lo stile transform con css per avere tutto senza perdere informazioni
+            document.getElementsByClassName(i+1)[0].style.transform = css;
+
         } 
         }
 });
@@ -39,12 +46,6 @@ $.ajax({url: "../Php/data.php",
 setInterval(function() {
     $.ajax({url: "../Php/data.php",
     success: function(data) {
-        var aereoicona = L.icon({
-            iconUrl: "../Immagini/airplane-mode.png",
-            iconSize:     [15, 15], //dimensione dell'iconcina 
-            iconAnchor:   [2, 2], // punto dell'icona che corrisponde a dove effettivamente si trova il marker
-        });
-
         var voli = JSON.parse(data); //faccio il parsing del file json con tutti i dati
 
         for (var i = 0; i < 100; ++i) { //ciclo nell'array di variabili N volte
@@ -53,11 +54,17 @@ setInterval(function() {
             var longitudine = voli['pilots'][i]['longitude'];
             var nomepilota = voli['pilots'][i]['name'];
             var altitudine = voli['pilots'][i]['altitude'];
-            
+            var direzione = voli['pilots'][i]['heading'];
+
             //Riga per fare l'update dell'icona
             var newLatLng = [latitudine, longitudine];
             markers[i].setLatLng(newLatLng); //setta lat e lng 
             markers[i].setPopupContent(nomepilota + "   "+altitudine+"ft"); //update del popup
+
+            //prendo nel dom il lo stile transform che ha come classe l'inidice i+1 aggiungendo la rotazione e lo salvo in css
+            var css = document.getElementsByClassName(i+1)[0].style.transform+' rotate(+'+direzione+'deg)'; 
+            //sovrascrivo lo stile transform con css per avere tutto senza perdere informazioni
+            document.getElementsByClassName(i+1)[0].style.transform = css;
         } 
     }
     });
