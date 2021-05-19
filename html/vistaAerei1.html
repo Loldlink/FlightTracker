@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../Css/VistaAerei.css">
@@ -21,27 +20,7 @@
         <!-- poi crea una variabile map e ci mette dentro la mappa scaricata dai due link ref sotto-->
         <div id="map"></div>
 
-        <script>
-            var map = L.map('map').setView([41, 12], 1); 
-            L.tileLayer('https://api.maptiler.com/maps/outdoor/{z}/{x}/{y}.png?key=9SAhLgukQT30FwYja7II', {
-            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>', 
-            }).addTo(map);
-            map.setZoom(3);
-
-            //script per SETTARE i "confini" della mappa, l'utente non può trascinare la mappa oltre
-            // reference:   https://leafletjs.com/reference-1.7.1.html#latlngbounds
-            var angoloSUDEST = L.latLng(-89.5, 179.5),
-            angoloNORDOVEST = L.latLng(89.5, -179.5), 
-            bounds = L.latLngBounds(angoloSUDEST, angoloNORDOVEST);
-
-            map.fitBounds([
-                [179.5, -89.5],
-                [-179.5, 89.5]
-            ]);
-
-            map.setMaxBounds(bounds)
-        </script>
-
+        <script src='../Javascript/mapCreation.js'></script>   
         <script src="../Javascript/voli.js"> </script> 
     </body>
 </html>
