@@ -15,7 +15,9 @@ a:hover{
     color: red;
     transition: 1s;
 }
-
+#nomi {
+    opacity: 0.9;
+}
 #titolo {
     border-style: groove;
     border-width: 10px;
@@ -54,4 +56,19 @@ a:hover{
 .nomi {
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+.card {
+    position: absolute;
+    top: 25%;
+    height: 30%;
+    width: 25%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.input-group-prepend span {
+    width: 50px;
+    background-color: rgba(0,0,0,0); /*il quarto parametro gestisce l'opacità del background*/
+    color: black;
+    border:0;
 }
