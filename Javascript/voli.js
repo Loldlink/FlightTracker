@@ -7,7 +7,7 @@ $.ajax({url: "../Php/data.php",
           var voli = JSON.parse(data); //faccio il parsing del file json con tutti i dati
           
 
-          for (var i = 0; i < 50; ++i) { 
+          for (var i = 0; i < 100; ++i) { 
 
             var latitudine = voli['pilots'][i]['latitude'];
             var longitudine = voli['pilots'][i]['longitude'];
@@ -40,7 +40,7 @@ setInterval(function() {
     success: function(data) {
         var voli = JSON.parse(data); //faccio il parsing del file json con tutti i dati
 
-        for (var i = 0; i < 50; ++i) { 
+        for (var i = 0; i < 100; ++i) { 
 
             var latitudine = voli['pilots'][i]['latitude'];
             var longitudine = voli['pilots'][i]['longitude'];
@@ -64,7 +64,7 @@ setInterval(function() {
     success: function(data) {
         var voli = JSON.parse(data); //faccio il parsing del file json con tutti i dati
 
-        for (var i = 0; i < 50; ++i) { 
+        for (var i = 0; i < 100; ++i) { 
 
             var direzione = voli['pilots'][i]['heading'];
 

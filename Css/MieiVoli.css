@@ -86,6 +86,15 @@ html {
     background-color: rgba(0,0,0,0.5);
 }
 
+.card1 {
+    position: relative;
+    top: 8%;
+    left: 37%;
+    height: 70%;
+    width: 30%;
+    background-color: rgba(0,0,0,0.5);
+}
+
 .input-group-prepend span {
     width: 50px;
     background-color: #FFC312;
@@ -94,12 +103,13 @@ html {
 }
 
 .volo_btn {
+    position: relative;
+    left: 29%;
     background-color: rgba(0,0,0,0); /*il quarto parametro gestisce l'opacità del background*/
     border: none;
     background: none;
     font-size: 30px;
     width: 15%;
-    margin-left: 46%;
     color: white;
     transition: 1s;
 }
