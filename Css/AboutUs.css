@@ -58,6 +58,7 @@ h1 {
 
 .card {
     position: absolute;
+    border-radius: 15px;
     top: 25%;
     height: 50%;
     width: 35%;
