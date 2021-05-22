@@ -28,7 +28,13 @@ if (isset($_POST['send'])) { //Si attiva quando il bottone del form viene premut
 		header("location: ../Html/homepage.html");
 		$_SESSION['userLogin'] = 'loggato';	
 	} 
-	else {header("location: ../Html/loginErrato.html");}
+	else {
+		echo 
+		'<script>
+			alert("Credenziali non corrette !");
+			window.location.replace("../Html/login.html");
+	  	</script>';
+	}
 
 	mysqli_close($connection);	//chiusura connessione con l'host
 }

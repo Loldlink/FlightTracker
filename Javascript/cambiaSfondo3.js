@@ -15,7 +15,6 @@ function sfondo() {
     $('body').css('background-size', "cover");
     $('body').css("margin-top","auto");
     $('body').css("margin-left","auto");
-    console.log('pippo');
 }
 
 sfondo();
