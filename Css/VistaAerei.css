@@ -27,11 +27,12 @@ html {
 }
 
 .pulsanteHomepage { 
-    font-size: 40px;
+    font-size: 35px;
     color: red;
     text-decoration: none;
     position: absolute;
     left: 0.3%;
+    top: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 1s;
 }
@@ -45,6 +46,7 @@ html {
     font-size: 40px;
     position: absolute;
     right: 0.6%;
+    top: 10%;
     color: red;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

@@ -60,13 +60,14 @@ if (isset($_POST['send'])) {  //Si attiva quando il bottone del form viene premu
   else {$sql = "INSERT INTO flights (aeroportopartenza,aeroportodestinazione,orariopartenza,tipovolo,tempovolo,carburantevolo,quota) 
   VALUES ('$aeroportopartenza','$aeroportodestinazione','$orariopartenza','$tipovolo','$tempovolo','$carburantevolo','$quota')";
 
-  //controllo sul corretto inserimento
-
   if ($connection->query($sql) === TRUE) {
-    header("location: ../Html/flightplan.html");
+    echo '<script>
+            alert("Piano di volo creato correttamente");
+            window.location.replace("../Html/flightplan.html");
+          </script>';
     }}
     
-  mysqli_close($connection); ////chiusura connessione con l'host
+  mysqli_close($connection); //chiusura connessione con l'host
 }
 
 ?>  

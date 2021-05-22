@@ -46,7 +46,7 @@ html {
     font-size: 35px;
     color: red;
     position: absolute;
-    top: 0%;
+    top: 1%;
     left: 0.5%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,6 +63,7 @@ html {
     color: red;
     position: absolute;
     right: 1%;
+    top: 1%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 1s;
@@ -80,6 +81,7 @@ html {
 
 .card {
     position: absolute;
+    border-radius: 15px;
     top: 15%;
     height: 70%;
     width: 50%;
@@ -88,6 +90,7 @@ html {
 
 .card1 {
     position: relative;
+    border-radius: 15px;
     top: 8%;
     left: 37%;
     height: 70%;

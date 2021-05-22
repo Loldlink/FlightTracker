@@ -20,7 +20,7 @@ html {
     font-size: 35px;
     color: red;
     position: absolute;
-    top: 0%;
+    top: 1%;
     left: 0.5%;
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,7 +44,7 @@ html {
     font-size: 35px;
     color: red;
     position: absolute;
-    top: 0%;
+    top: 1%;
     right: 1%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 1s;
@@ -82,6 +82,8 @@ input:focus {
 
 .crea_btn {
     background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
+    border-radius: 15px;
+    border-color: rgba(255,0,0,0.8);
     width: 50%;
     margin-top: 5%;
     margin-left: 25%;
@@ -97,9 +99,10 @@ input:focus {
 
 .inverti_btn {
     background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
-    border-color: rgb(0, 45, 248);
+    border-color: rgba(255,0,0,0.8);
+    border-radius: 15px;
     width: 70%;
-    margin-left: 29%;
+    margin-left: 28%;
     font-size: 20px;
     color: white;
     transition: 1s;

@@ -107,6 +107,7 @@ html {
 
 .card {
     position: absolute;
+    border-radius: 15px;
     top: 25%;
     height: 30%;
     width: 25%;
