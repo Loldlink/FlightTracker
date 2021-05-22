@@ -29,11 +29,7 @@ if (isset($_POST['send'])) { //Si attiva quando il bottone del form viene premut
 		$_SESSION['userLogin'] = 'loggato';	
 	} 
 	else {
-		echo 
-		'<script>
-			alert("Credenziali non corrette !");
-			window.location.replace("../Html/login.html");
-	  	</script>';
+		header("location: ../Html/loginErrato.html");
 	}
 
 	mysqli_close($connection);	//chiusura connessione con l'host
