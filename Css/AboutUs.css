@@ -47,8 +47,9 @@ a:hover{
 .aboutUs {
     color: red;
     font-size: 60px;
-    text-align: center;
-    margin-top: 20px;
+    position: absolute;
+    left: 43%;
+    top: 1.8%;
 }
 
 h1 {

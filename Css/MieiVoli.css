@@ -37,7 +37,7 @@ html {
     color: red;
     font-size: 60px;
     position: absolute;
-    left: 43%;
+    left: 42%;
     top: 1.7%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -89,12 +89,12 @@ html {
 }
 
 .card1 {
-    position: relative;
+    position: absolute;
     border-radius: 15px;
-    top: 8%;
-    left: 37%;
+    top: 15%;
+    left: 35%;
     height: 70%;
-    width: 30%;
+    width: 35%;
     background-color: rgba(0,0,0,0.5);
 }
 
@@ -106,15 +106,10 @@ html {
 }
 
 .volo_btn {
-    position: relative;
-    left: 29%;
-    background-color: rgba(0,0,0,0); /*il quarto parametro gestisce l'opacità del background*/
-    border: none;
-    background: none;
     font-size: 30px;
-    width: 15%;
     color: white;
     transition: 1s;
+    margin-left: 31%;
 }
 
 .volo_btn:hover {

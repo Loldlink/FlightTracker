@@ -35,8 +35,9 @@ html {
 .registra {
     color: red;
     font-size: 50px;
-    text-align: center;
-    margin-top: 20px;
+    position: absolute;
+    left: 36%;
+    top: 3%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -84,9 +85,10 @@ input:focus {
     background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
     border-radius: 15px;
     border-color: rgba(255,0,0,0.8);
-    width: 50%;
-    margin-top: 5%;
-    margin-left: 25%;
+    width: 40%;
+    position: absolute;
+    left: 29%;
+    top: 86%;
     font-size: 20px;
     color: white;
     transition: 1s;
@@ -101,8 +103,9 @@ input:focus {
     background-color: rgba(0,0,0,0.2); /*il quarto parametro gestisce l'opacità del background*/
     border-color: rgba(255,0,0,0.8);
     border-radius: 15px;
-    width: 70%;
-    margin-left: 28%;
+    position: absolute;
+    left: 29%;
+    top: 24%;
     font-size: 20px;
     color: white;
     transition: 1s;
