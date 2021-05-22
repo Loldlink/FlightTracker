@@ -14,6 +14,8 @@ $.ajax({url: "../Php/data.php",
             var nomepilota = voli['pilots'][i]['name'];
             var direzione = voli['pilots'][i]['heading'];
             var altitudine = voli['pilots'][i]['altitude'];
+            var partenza = voli['pilots'][i]['flight_plan']['departure'];
+            var arrivo = voli['pilots'][i]['flight_plan']['arrival'];
 
             var aereoicona = L.icon({
                 iconUrl: "../Immagini/airplane-mode.png",
@@ -23,7 +25,10 @@ $.ajax({url: "../Php/data.php",
               });
 
             //Riga per aggiungere aereo alla mappa
-            markers[i] = L.marker([latitudine, longitudine], {icon: aereoicona}).addTo(map).bindPopup(nomepilota + "   "+altitudine+"ft");
+            markers[i] = L.marker([latitudine, longitudine], {icon: aereoicona}).addTo(map)
+            .bindPopup(nomepilota.split(' ')[0]+' '+nomepilota.split(' ')[1]
+            + " "+altitudine+"ft"
+            +' '+partenza+' '+arrivo);
             
             //prendo nel dom lo stile transform che ha come classe l'inidice i+1 aggiungendo la rotazione e lo salvo in css
             var css = document.getElementsByClassName(i+1)[0].style.transform+' rotate('+direzione+'deg)'; 
@@ -47,11 +52,16 @@ setInterval(function() {
             var nomepilota = voli['pilots'][i]['name'];
             var altitudine = voli['pilots'][i]['altitude'];
             var direzione = voli['pilots'][i]['heading'];
+            var partenza = voli['pilots'][i]['flight_plan']['departure'];
+            var arrivo = voli['pilots'][i]['flight_plan']['arrival'];
 
             //Riga per fare l'update dell'icona
             var newLatLng = [latitudine, longitudine];
             markers[i].setLatLng(newLatLng); //setta lat e lng 
-            markers[i].setPopupContent(nomepilota + "   "+altitudine+"ft"); //update del popup
+            markers[i] = L.marker([latitudine, longitudine], {icon: aereoicona}).addTo(map)
+            .bindPopup(nomepilota.split(' ')[0]+' '+nomepilota.split(' ')[1]
+            + " "+altitudine+"ft"
+            +' '+partenza+' '+arrivo);
         } 
     }
     });
