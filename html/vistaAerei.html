@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang>
 
 <?php require '../Php/active.php'?>
 
@@ -23,18 +23,31 @@
         <!-- poi crea una variabile map e ci mette dentro la mappa scaricata dai due link ref sotto-->
         <div id="map"></div>
 
+
+
         <!-- overlay con info-->
-        <div class="popup">
-            <div class="overlay">
-              <p>
-                Login errato
-                <br />
-                <br />
-                <a href="" class="close">X</a>
-              </p>
-              <br>
-            </div>
-          </div>
+         <!-- overlay con info-->
+         <div id="overlay" onclick="off()">
+          <h1 id="text" ></h1>
+         </div>
+          
+
+          
+
+          <script>
+            function on() {
+              document.getElementById("overlay").style.display = "block";
+            }
+
+            function off() {
+              document.getElementById("overlay").style.display = "none";
+            }
+
+          </script>
+        </div>
+        <!-- fine PROVA OVERLAY CON INFO-->
+
+
 
         <script src='../Javascript/mapCreation.js'></script>   
         <script src="../Javascript/voli.js"> </script> 

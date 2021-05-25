@@ -33,7 +33,10 @@ $.ajax({url: "../Php/data.php",
                     .bindPopup(nomepilota.split(' ')[0]+' '+nomepilota.split(' ')[1]
                     + " "+altitudine+"ft"
                     +' '+partenza+' '+arrivo);
+
+                    $(document.getElementsByClassName(i+1)[0]).bind('click',function(){click(i);});
                     
+
                     //prendo nel dom lo stile transform che ha come classe l'inidice i+1 aggiungendo la rotazione e lo salvo in css
                     var css = document.getElementsByClassName(i+1)[0].style.transform+' rotate('+direzione+'deg)'; 
                     //sovrascrivo lo stile transform con css per avere tutto senza perdere informazioni
@@ -100,3 +103,8 @@ setInterval(function() {
             }
     });
 }, 800); 
+
+function click(e) {
+    document.getElementById('text').innerHTML = e;
+    document.getElementById("overlay").style.display = "block";
+  }
