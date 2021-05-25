@@ -72,12 +72,51 @@ html {
     cursor: pointer; /* Add a pointer on hover */ 
 }
 
-#text{
+#partenza{
     position: absolute;
-    top: 25%;
-    left: 50%;
-    font-size: 50px;
+    right: 0%;
     color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    }
+}
+
+#arrivo{
+    position: absolute;
+    right: 0%;
+    color: white;
+}
+
+#direzione{
+    position: absolute;
+    right: 0%;
+    color: white;
+}
+
+#altitudine{
+    position: absolute;
+    right: 0%;
+    color: white;
+}
+
+#pilota{
+    position: absolute;
+    right: 0%;
+    color: white;
+}
+
+.info{
+    color: white;
+}
+
+#info{
+    position: absolute;
+    left: 34%;
+    color: red;
+}
+
+.card {
+    position: absolute;
+    border-radius: 15px;
+    top: 25%;
+    height: 55%;
+    width: 60%;
+    background-color: rgba(0,0,0,0.5);
+}

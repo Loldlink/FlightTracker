@@ -104,6 +104,10 @@ setInterval(function() {
 }, 800); 
 
 function click(pilota,partenza,arrivo,altitudine,direzione) {
-    document.getElementById('text').innerHTML =pilota.split(' ')[0]+' '+pilota.split(' ')[1]+ " "+altitudine+"ft"+' '+partenza+' '+arrivo+' '+direzione;
+    document.getElementById('partenza').innerHTML = partenza ; 
+    document.getElementById('arrivo').innerHTML = arrivo ;
+    document.getElementById('direzione').innerHTML = direzione+'°' ;
+    document.getElementById('pilota').innerHTML = pilota.split(' ')[0]+' '+pilota.split(' ')[1] ;
+    document.getElementById('altitudine').innerHTML = altitudine+" ft" ;
     document.getElementById("overlay").style.display = "block";
   }

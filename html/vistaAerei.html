@@ -3,13 +3,15 @@
 <?php require '../Php/active.php'?>
 
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../Css/VistaAerei.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />  <!-- la referenziazione a LEAFLET, ci stà il css e il javascript di leaflet-->
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-        <title>Flight Tracker - Map</title>
-        <link rel="icon" href="../Immagini/favicon.png">  <!-- questa è l'iconcina che compare sulla scheda del browser-->
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../Css/VistaAerei.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />  <!-- la referenziazione a LEAFLET, ci stà il css e il javascript di leaflet-->
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+      <title>Flight Tracker - Map</title>
+      <link rel="icon" href="../Immagini/favicon.png">  <!-- questa è l'iconcina che compare sulla scheda del browser-->
     </head>
 
     <body>
@@ -27,8 +29,41 @@
 
         <!-- overlay con info-->
          <!-- overlay con info-->
-        <div id="overlay" onclick="off()">
-          <h1 id="text" ></h1>
+         <div id="overlay" onclick="off()">
+          <div class="container">
+            <div class="d-flex justify-content-center h-100">
+              <div class="card">
+                <div class="card-body">
+                  <div class="input-group form-group">
+                    <h1 id='info'>Informazioni Volo</h1>
+                  </div>
+                  <br/>
+                  <br/>
+                  <br/>
+                  <div class="input-group form-group">
+                    <h1 class="info"> Nome Pilota </h1>
+                    <h1 id="pilota"></h1>
+                  </div>
+                  <div class="input-group form-group">
+                    <h1 class="info"> Aereoporto di Partenza </h1>
+                    <h1 id="partenza"></h1>
+                  </div>
+                  <div class="input-group form-group">
+                    <h1 class="info"> Aereoporto di Arrivo </h1>
+                    <h1 id="arrivo"></h1>
+                  </div>
+                  <div class="input-group form-group">
+                    <h1 class="info"> Direzione </h1>
+                    <h1 id="direzione"></h1>
+                  </div>
+                  <div class="input-group form-group">
+                    <h1 class="info"> Altitudine </h1>
+                    <h1 id="altitudine"></h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
           
 
