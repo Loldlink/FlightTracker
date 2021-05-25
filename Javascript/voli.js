@@ -29,13 +29,11 @@ $.ajax({url: "../Php/data.php",
         
                     //Riga per aggiungere aereo alla mappa
 
-                    markers[i] = L.marker([latitudine, longitudine], {icon: aereoicona}).addTo(map)
-                    .bindPopup(nomepilota.split(' ')[0]+' '+nomepilota.split(' ')[1]
-                    + " "+altitudine+"ft"
-                    +' '+partenza+' '+arrivo);
+                    markers[i] = L.marker([latitudine, longitudine], {icon: aereoicona}).addTo(map);
 
-                    $(document.getElementsByClassName(i+1)[0]).bind('click',function(){click(i);});
-                    
+                    $(document.getElementsByClassName(i+1)[0]).bind('click',
+                    {nomepilota:nomepilota,partenza:partenza,arrivo:arrivo,altitudine:altitudine,direzione:direzione},
+                    function(event){click(event.data.nomepilota,event.data.partenza,event.data.arrivo,event.data.altitudine,event.data.direzione)});
 
                     //prendo nel dom lo stile transform che ha come classe l'inidice i+1 aggiungendo la rotazione e lo salvo in css
                     var css = document.getElementsByClassName(i+1)[0].style.transform+' rotate('+direzione+'deg)'; 
@@ -70,9 +68,10 @@ setInterval(function() {
                         //Riga per fare l'update dell'icona
                         var newLatLng = [latitudine, longitudine];
                         markers[i].setLatLng(newLatLng); //setta lat e lng 
-                        markers[i].setPopupContent(nomepilota.split(' ')[0]+' '+nomepilota.split(' ')[1]
-                        + " "+altitudine+"ft"
-                        +' '+partenza+' '+arrivo); //update del popup
+                        
+                        $(document.getElementsByClassName(i+1)[0]).bind('click',
+                        {nomepilota:nomepilota,partenza:partenza,arrivo:arrivo,altitudine:altitudine,direzione:direzione},
+                        function(event){click(event.data.nomepilota,event.data.partenza,event.data.arrivo,event.data.altitudine,event.data.direzione)});
                     }
                 } 
             }
@@ -104,7 +103,7 @@ setInterval(function() {
     });
 }, 800); 
 
-function click(e) {
-    document.getElementById('text').innerHTML = e;
+function click(pilota,partenza,arrivo,altitudine,direzione) {
+    document.getElementById('text').innerHTML =pilota.split(' ')[0]+' '+pilota.split(' ')[1]+ " "+altitudine+"ft"+' '+partenza+' '+arrivo+' '+direzione;
     document.getElementById("overlay").style.display = "block";
   }
