@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
     <head>
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <meta charset = "utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" type="text/css" href="../Css/Homepage.css">
@@ -34,39 +35,39 @@
 
         <!--div pannello centrale-->
         <div class="pannelloCentrale">
-        <table class="table">
+            <table>
                 <tbody>
                     <tr>
-                        <th><img src="//stats.vatsim.net/images/connection_atc.png" height="16" width="16"> Utenti Totali  </th>
-                        <th id='connected'></th>
+                        <th style="padding-left: 12%;"><!--<img src="//stats.vatsim.net/images/connection_atc.png" height="16" width="16">!-->Utenti Totali </th>
+                        <th style="padding-left: 12%;" id='connected'></th>
                     </tr>
                     <tr>
-                        <th> Piloti unici </th>
-                        <th id='unique'></th>
+                        <th style="padding-left: 12%;"><!--<img src="//stats.vatsim.net/images/connection_pilot.png" height="16" width="16">!-->Piloti in volo</th>
+                        <th style="padding-left: 12%;" id='fly'></th>
                     </tr>
                     <tr>
-                        <th><img src="//stats.vatsim.net/images/connection_pilot.png" height="16" width="16"> Piloti in volo </th>
-                        <th id='fly'></th>
+                        <th style="padding-left: 12%;"> Piloti unici </th>
+                        <th style="padding-left: 12%;" id='unique'></th>
                     </tr>
                     <tr>
-                        <th><img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16"> Controllori </th>
-                        <th id='controllers'></th>
+                        <th style="padding-left: 12%;"><!--<img src="//stats.vatsim.net/images/connection_atis.png" height="16" width="16">!-->Controllori</th>
+                        <th style="padding-left: 12%;" id='controllers'></th>
                     </tr>
                     <tr>
-                        <th><img src="//stats.vatsim.net/images/connection_sup.png" height="16" width="16"> Supervisori </th>
-                        <th id='supervisors'></th>
+                        <th style="padding-left: 12%;"><!--<img src="//stats.vatsim.net/images/connection_sup.png" height="16" width="16">!-->Supervisori</th>
+                        <th style="padding-left: 12%;" id='supervisors'></th>
                     </tr>
                     <tr>
-                        <th><img src="//stats.vatsim.net/images/connection_obs.png" height="16" width="16"> Atis </th>
-                        <th id='atis'></th>
+                        <th style="padding-left: 12%;"><!--<img src="//stats.vatsim.net/images/connection_obs.png" height="16" width="16">!-->Atis</th>
+                        <th style="padding-left: 12%;" id='atis'></th>
                     </tr>
                     <tr>
-                        <th> Osservatori </th>
-                        <th id='observers'></th>
+                        <th style="padding-left: 12%;">Osservatori</th>
+                        <th style="padding-left: 12%;" id='observers'></th>
                     </tr>
                     <tr>
-                        <th> Ultime 24 ore </th>
-                        <th id='twentyfour'></th>
+                        <th style="padding-left: 12%;">Ultime 24 ore</th>
+                        <th style="padding-left: 12%;" id='twentyfour'></th>
                     </tr>
                 </tbody>
             </table>
@@ -75,7 +76,7 @@
         <!--div pannello destro-->
         <div class="pannelloDestro">
             <div class="vistaAerei"> 
-                <a href="vistaAerei1.html">
+                <a href="vistaAereiGuest.html">
                     <button class="pulsanteVistaAerei">Mappa</button> 
                 </a>  
                 <h3 class="testo1">

@@ -28,7 +28,7 @@ html {
 
 .pulsanteHomepage { 
     font-size: 35px;
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     text-decoration: none;
     position: absolute;
     left: 0.3%;
@@ -39,7 +39,7 @@ html {
 
 .pulsanteHomepage:hover {
     text-decoration: none;
-    color: white;
+    color: red;
 }
 
 .pulsanteVoli {
@@ -47,7 +47,7 @@ html {
     position: absolute;
     right: 0.6%;
     top: 10%;
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: 1s;
@@ -55,7 +55,7 @@ html {
 
 .pulsanteVoli:hover {
     text-decoration: none;
-    color: white;
+    color: red;
 }
 
 #overlay {

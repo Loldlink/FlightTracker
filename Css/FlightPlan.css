@@ -18,7 +18,7 @@ html {
 
 .homepage {
     font-size: 35px;
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     position: absolute;
     top: 1%;
     left: 0.5%;
@@ -29,11 +29,11 @@ html {
 
 .homepage:hover {
     text-decoration: none;
-    color: white;
+    color: red;
 }
 
 .registra {
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     font-size: 50px;
     position: absolute;
     left: 36%;
@@ -43,7 +43,7 @@ html {
 
 .voli {
     font-size: 35px;
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     position: absolute;
     top: 1%;
     right: 1%;
@@ -52,7 +52,7 @@ html {
 }
 
 .voli:hover {
-    color: white;
+    color: red;
     text-decoration: none;
 }
 

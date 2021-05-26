@@ -1,4 +1,8 @@
-var markers = []; //array per permettere la creazione di multivariabili
+var markers = []; //array per salvarsi tutti i marker
+var nomepartenza;
+var nomearrivo;
+
+//script che inizializza le icone e relative informazioni
 
 
 $.ajax({url: "../Php/data.php",
@@ -18,21 +22,22 @@ $.ajax({url: "../Php/data.php",
                     var nomepilota = voli['pilots'][i]['name'];
                     var direzione = voli['pilots'][i]['heading'];
                     var altitudine = voli['pilots'][i]['altitude'];
-                    var partenza = voli['pilots'][i]['flight_plan']['departure'];
-                    var arrivo = voli['pilots'][i]['flight_plan']['arrival'];
+                    var iatapartenza = voli['pilots'][i]['flight_plan']['departure'];
+                    var iataarrivo = voli['pilots'][i]['flight_plan']['arrival'];
                     var aereoicona = L.icon({
                         iconUrl: "../Immagini/airplane-mode.png",
                         iconSize:     [15, 15], //dimensione dell'iconcina 
                         iconAnchor:   [2, 2], // punto dell'icona che corrisponde a dove effettivamente si trova il marker
                         className: i+1, //nome della classe per accedere all'icona
                     });
+
         
                     //Riga per aggiungere aereo alla mappa
 
                     markers[i] = L.marker([latitudine, longitudine], {icon: aereoicona}).addTo(map);
 
                     $(document.getElementsByClassName(i+1)[0]).bind('click',
-                    {nomepilota:nomepilota,partenza:partenza,arrivo:arrivo,altitudine:altitudine,direzione:direzione},
+                    {nomepilota:nomepilota,partenza:iatapartenza,arrivo:iataarrivo,altitudine:altitudine,direzione:direzione},
                     function(event){click(event.data.nomepilota,event.data.partenza,event.data.arrivo,event.data.altitudine,event.data.direzione)});
 
                     //prendo nel dom lo stile transform che ha come classe l'inidice i+1 aggiungendo la rotazione e lo salvo in css
@@ -43,6 +48,7 @@ $.ajax({url: "../Php/data.php",
             } 
         }
 });
+
 
 //funzione che fa l'update della posizione delle icone
 
@@ -78,6 +84,7 @@ setInterval(function() {
     });
 }, 60000); 
 
+
 //funzione che fa l'update della rotazione delle icone
 
 setInterval(function() {
@@ -101,9 +108,13 @@ setInterval(function() {
                 } 
             }
     });
-}, 800); 
+}, 2000); 
+
+
+//funzione che setta il popup delle informazioni
 
 function click(pilota,partenza,arrivo,altitudine,direzione) {
+    //nomeAereoporto(partenza,arrivo);
     document.getElementById('partenza').innerHTML = partenza ; 
     document.getElementById('arrivo').innerHTML = arrivo ;
     document.getElementById('direzione').innerHTML = direzione+'°' ;

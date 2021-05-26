@@ -21,7 +21,7 @@ html {
     text-decoration: none;
     color: black;
     font-size: 35px;
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     position: absolute;
     top: 1%;
     left: 10px;
@@ -31,14 +31,14 @@ html {
 
 .saltaLogin:hover {
     text-decoration: none;
-    color: white;
+    color: red;
 }
 
 .aboutUs {
     text-decoration: none;
     color: black;
     font-size: 35px;
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     position: absolute;
     right: 1%;
     top: 1%;
@@ -48,11 +48,11 @@ html {
 
 .aboutUs:hover {
     text-decoration: none;
-    color: white;
+    color: red;
 }
 
 .homepage {
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     font-size: 60px;
     position: absolute;
     left: 29%;
@@ -91,6 +91,7 @@ input:focus {
     width: 25%;
     position: absolute;
     border-radius: 15px;
+    border-color: rgba(255,0,0,0.8);
     font-size: 20px;
     color: white;
     transition: 1s;

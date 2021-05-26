@@ -6,7 +6,7 @@ html {
 
 a {
     text-decoration: none;
-    color: rgb(226, 219, 219);    
+    color: rgba(245, 245, 245, 0.904);
     transition: 1s;
     font-size: 25px;
 }
@@ -30,7 +30,7 @@ a:hover{
 
 .login {
     font-size: 35px;
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     position: absolute;
     top: 1%;
     left: 0.5%;
@@ -41,11 +41,11 @@ a:hover{
 
 .login:hover {
     text-decoration: none;
-    color: white;
+    color: red;
 }
 
 .aboutUs {
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     font-size: 60px;
     position: absolute;
     left: 43%;

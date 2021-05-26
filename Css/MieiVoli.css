@@ -34,7 +34,7 @@ html {
 }
 
 .voli {
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     font-size: 60px;
     position: absolute;
     left: 42%;
@@ -44,7 +44,7 @@ html {
 
 .homepage {
     font-size: 35px;
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     position: absolute;
     top: 1%;
     left: 0.5%;
@@ -55,12 +55,12 @@ html {
 
 .homepage:hover {
     text-decoration: none;
-    color: white;
+    color: red;
 }
 
 .crea {
     font-size: 35px;
-    color: red;
+    color: rgba(245, 245, 245, 0.904);
     position: absolute;
     right: 1%;
     top: 1%;
@@ -71,7 +71,7 @@ html {
 
 .crea:hover {
     text-decoration: none;
-    color: white;
+    color: red;
 }
 
 .container {
@@ -107,7 +107,7 @@ html {
 
 .volo_btn {
     font-size: 30px;
-    color: white;
+    color: rgba(245, 245, 245, 0.904);
     transition: 1s;
     margin-left: 31%;
 }
