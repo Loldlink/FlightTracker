@@ -31,12 +31,12 @@
 
                 <!--aeroporto di partenza-->
                 <div class="input-group form-group">
-                  <input type="text"  class="form-control" name="aeroportopartenza" id="aeroportopartenza" placeholder="Aeroporto di partenza" required autocomplete=""/>   
+                  <input type="text"  class="form-control" name="aeroportopartenza" id="aeroportopartenza" placeholder="Aeroporto di partenza(ICAO)" required autocomplete=""/>   
                 </div>
 
                 <!-- aeroporto di destinazione-->
                 <div class="input-group form-group">
-                  <input type="text" name="aeroportodestinazione" id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione" required autocomplete=""/>
+                  <input type="text" name="aeroportodestinazione" id="aeroportodestinazione" class="form-control" placeholder="Aeroporto di destinazione(ICAO)" required autocomplete=""/>
                 </div>
                 
 
@@ -44,7 +44,6 @@
                 <div class="form-group">
                   <button type="button" class="btn float inverti_btn" id="pulsanteinverti" onclick="invertiCasellaTesto()" style="width:fit-content" style="margin-left: 5%;">Inverti aereoporti</button>
                 </div>
-                <!-- Se devi aggiungere lo stile nella tag, mettila nella classe CSS, anche se non mi pare si dovesse sistemare la posizione-->
 
                 <br/>
                 <br/>
@@ -75,9 +74,7 @@
                 <div class="input-group form-group">
                   <input type="text" class="form-control" name="quota" placeholder="Quota di Crociera" required autocomplete=""/>
                 </div>
-                <!-- in teoria qui sarebbe più corretto mettere NUMBER come tipo, ma ho visto che c'è un motivo per cui l'hai cambiato quindi vedi te ,
-                ho messo tutto text per comodità, tanto facciamo tutti i controlli in back end sull'inserimento-->
-
+                
                 <!-- Bottone di invio -->
                 <div class="form-group">
                 <input type="submit" name="send" value="Crea piano" class="btn float crea_btn">

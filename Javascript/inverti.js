@@ -1,4 +1,4 @@
-//funzione per invertire partenza/arrivo
+//funzione per invertire partenza/arrivo nella pagina flightplan.html
 
 function invertiCasellaTesto() { 
     var partenza = document.getElementById("aeroportopartenza");

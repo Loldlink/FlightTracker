@@ -4,7 +4,7 @@ attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&cop
 }).addTo(map);
 map.setZoom(3);
 
-//qui finisce lo script di creazione della mappa
+//lo script di creazione della mappa
 
 
 //script per SETTARE i "confini" della mappa, l'utente non può trascinare la mappa oltre

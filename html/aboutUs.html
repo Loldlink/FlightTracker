@@ -12,34 +12,88 @@
         <script src="https://kit.fontawesome.com/d21c2ccf9a.js" crossorigin="anonymous"></script> 
     </head>
 
-    <body>
-        <!--barra superiore-->
-        <div id='titolo'> 
-            <a href="login.html" class="login">Login</a>
-            <h1 class="aboutUs">About Us</h1>
-        </div>
+<body>
+        
+<!--barra superiore-->
+    <div id='titolo'> 
+        <a href="login.html" class="login">Login</a>
+        <h1 class="aboutUs">About Us</h1>
+    </div>
 
-        <!--div contenuto-->
-        <div class="container">
+<!-- DA UN'IDEA DI... -->
+<h1 style="margin-top: 1%;" style="color: brown;" style="font-family: 'Times New Roman', Times, serif">Flight Tracker: da un'idea di...</h1>
+
+<style>
+
+    .pannelloSinistro {
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        height: 88%;
+        width: 90%;
+        border-collapse: collapse;
+        text-indent: 50px;
+    }
+
+    .pannelloDestro {
+        position: absolute;
+        top: 10%;
+        right: 25%;
+        height: 88%;
+        width: 90%;
+        border-collapse: collapse;
+    }
+    
+
+    #sx, #dx {
+        text-align: left;
+    }
+</style>
+
+        <!--div contenuto DESTRO MARCO-->
+        <div class="pannelloSinistro">
+            <div class="container">
+                <div class="d-flex justify-content-center h-100">
+                  <div class="card">
+                    <div class="card-body" id="dx">
+                        <h1>Marco Musciaglia</h1>
+                        <br />
+                        <ul>
+                            <a href="mailto:musciaglia.1816864@studenti.uniroma1.it" target="_blank" style="font-size: 24px;"><img src="https://freepngimg.com/download/android/64743-mobile-phones-client-mail-android-email.png" width="16" height ="16" >musciaglia.1816864@studenti.uniroma1.it </a>
+                        </ul>
+                        <ul>
+                            <a href="https://github.com/Loldilink" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" widht="16" height="16">Github </a><br />
+                        </ul>
+                        <ul>
+                            <h2 style="color: white";> Backend developer</h2>
+                        </ul>
+                        <br />
+                        <br />
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- fine colonna di destra-->
+
+
+
+        <!-- DIV CONTENUTO SINISTRO LORENZO-->
+         <div class="pannelloDestro">
+           <div class="container">
             <div class="d-flex justify-content-center h-100">
               <div class="card">
-                <div class="card-body">
-                    <h1>Musciaglia Marco</h1>
-                    <br />
-                    <ul>
-                        <a href="mailto:musciaglia.1816864@studenti.uniroma1.it" target="_blank">musciaglia.1816864@studenti.uniroma1.it</a>
-                    </ul>
-                    <ul>
-                        <a href="https://github.com/Loldlink" target="_blank">Github</a><br /><br />
-                    </ul>
-                    <br />
+                <div class="card-body" id="dx">
                     <h1>Lorenzo Magni</h1>
                     <br />
                     <ul>
-                        <a href="mailto:magni.1872113@studenti.uniroma1.it" target="_blank">magni.1872113@studenti.uniroma1.it </a>
+                        <a href="mailto:magni.1872113@studenti.uniroma1.it" target="_blank" ><img src="https://freepngimg.com/download/android/64743-mobile-phones-client-mail-android-email.png" width="16" height ="16" >magni.1872113@studenti.uniroma1.it </a>
                     </ul>
                     <ul>
-                        <a href="https://github.com/Lolloilpazzo" target="_blank">Github </a><br />
+                        <a href="https://github.com/Lolloilpazzo" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" widht="16" height="16">Github </a><br />
+                    </ul>
+                    <ul>
+                        <h2 style="color: white";> Frontend developer</h2>
                     </ul>
                     <br />
                     <br />
@@ -47,7 +101,8 @@
               </div>
             </div>
         </div>
-
+        </div>
+        <!--fine colonna di sinistra-->
 
         <script src="../Javascript/cambiaSfondo3.js"></script>
         
