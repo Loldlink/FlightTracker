@@ -1,7 +1,6 @@
-# FlightTracker
+# Flights Tracker
 
 ## Nota
-Il progetto è ancora in fase di sviluppo.
 **Per la migliore esperienza, in termini di interfaccia browser, si consiglia di impostare lo zoom al 110%**
 
 ## Descrizione
